@@ -1,0 +1,32 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "github": "^3.1.1",
+    "node-github": "^0.0.3"
+  },
+  "devDependencies": {
+     "chai": "^3.5.0",
+     "mocha": "^2.4.5",
+     "supertest": "^1.2.0",
+     "supertest-as-promised": "^3.1.0"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --recursive",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package/issues"
+  },
+  "homepage": "https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package#readme"
+}
