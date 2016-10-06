@@ -108,11 +108,12 @@ describe("Github API package", () => {
                         section: section,
                         name:    githubName
                     },
-                    url:       block.url,
-                    method:    block.method,
-                    name:      funcName, 
-                    args:      args,
-                    callbacks: [{name: 'error', info: 'Error'}, {name: 'success', info: 'Success'}]
+                    url:         block.url,
+                    description: block.description,
+                    method:      block.method,
+                    name:        funcName, 
+                    args:        args,
+                    callbacks:   [{name: 'error', info: 'Error'}, {name: 'success', info: 'Success'}]
                 });
 
                 apiTest.push(testBlock

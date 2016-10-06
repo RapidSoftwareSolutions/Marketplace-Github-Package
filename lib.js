@@ -14,4 +14,6 @@ module.exports.toUnderscore = (str) =>
         (x, y) => "_" + y.toLowerCase()
     ).replace(/^_/, "");
 
-module.exports.metadata = () => fs.readFileSync('./git_metadata.json').toString();
+module.exports.metadata     = () => fs.readFileSync('./git_metadata.json').toString();
+module.exports.truemetadata = () => fs.readFileSync('./metadata.json').toString();
+

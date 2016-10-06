@@ -4,7 +4,7 @@
 const app     = require('./index');
 const assert  = require('chai').assert;
 const request = require('supertest-as-promised');
-const token   = 'abce39cfe02adda9bb989b67ea27ff43ceccfb40';
+const token   = '';
 
 describe("Github API package", () => {
     
@@ -1069,6 +1069,18 @@ describe("Github API package", () => {
         .post("/api/Github/updateReference")
         .send({args:{
             accessToken: token, user: "String", repo: "String", ref: "String", sha: "String", force: "Boolean", 
+        }})
+        .expect(200)
+        .then((res) => {
+            assert.notEqual(res.body.contextWrites.to, '404');
+        });
+    });
+
+    it("/createInstallation", () => {
+        return request(app)
+        .post("/api/Github/createInstallation")
+        .send({args:{
+            accessToken: token, installation_id: "Number", user_id: "Number", 
         }})
         .expect(200)
         .then((res) => {

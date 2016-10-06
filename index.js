@@ -18,6 +18,7 @@ const optionsHash   = {
 };
 
 let metadata   = lib.metadata(),
+    trueMeta   = lib.truemetadata(),
     metaObject = JSON.parse(metadata);
 
 let client = new GitHubApi({
@@ -31,7 +32,7 @@ let client = new GitHubApi({
 
 app.use(bodyParser.json(({limit: '50mb'})));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
-app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(metadata); });
+app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(trueMeta); });
 
 for (let {name, args, github} of metaObject.blocks) {
     let gitSection = github.section,
@@ -90,6 +91,7 @@ for (let {name, args, github} of metaObject.blocks) {
                 }
 
                 res.send(response);
+                return;
             });
         } else {
             response.contextWrites[to] = '404';
