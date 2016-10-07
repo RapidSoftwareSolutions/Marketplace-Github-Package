@@ -1,9 +1,8 @@
 const fs = require('fs');
 
 module.exports.toCamelCase = (str, upper) => {
-    str = str.toLowerCase().replace(/(?:(^.)|(\s+.)|(-.)|(_.))/g, function(match) {
-        return match.charAt(match.length - 1).toUpperCase();
-    });
+    str = str.toLowerCase().replace(/(?:(^.)|(\s+.)|(-.)|(_.))/g, 
+    	(match) => match.charAt(match.length - 1).toUpperCase())
     if (upper)
         return str;
     return str.charAt(0).toLowerCase() + str.substr(1);

@@ -16,7 +16,7 @@
      "supertest-as-promised": "^3.1.0"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --recursive",
+    "test": "node_modules/mocha/bin/mocha -R spec ./unit.js",
     "start": "node ."
   },
   "repository": {
