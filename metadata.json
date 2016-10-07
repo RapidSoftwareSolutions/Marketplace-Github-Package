@@ -4,7 +4,7 @@
 	"tagline": "Github Package",
 	"image": "http://forgedsoftware.com/icon-images/github-icon.png",
 	"description": "An object oriented wrapper for the GitHub v3 API.",
-	"repositoryName": "https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package",
+	"repo": "https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package",
 	"blocks": [{
 		"name": "checkNotificationThreadSubscription",
 		"args": [{
@@ -383,15 +383,15 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "all",
-			"type": "Boolean",
+			"type": "String",
 			"info": "If true, show notifications marked as read. Default: false (optional)"
 		}, {
 			"name": "participating",
-			"type": "Boolean",
+			"type": "String",
 			"info": "If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "before",
@@ -421,15 +421,15 @@
 			"info": "The name of the repository (required)"
 		}, {
 			"name": "all",
-			"type": "Boolean",
+			"type": "String",
 			"info": "If true, show notifications marked as read. Default: false (optional)"
 		}, {
 			"name": "participating",
-			"type": "Boolean",
+			"type": "String",
 			"info": "If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "before",
@@ -703,11 +703,11 @@
 			"info": "The ID of the thread (required)"
 		}, {
 			"name": "subscribed",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines if notifications should be received from this thread (optional)"
 		}, {
 			"name": "ignored",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines if all notifications should be blocked from this thread (optional)"
 		}],
 		"callbacks": [{
@@ -733,11 +733,11 @@
 			"info": "The name of the repository (required)"
 		}, {
 			"name": "subscribed",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines if notifications should be received from this repository. (optional)"
 		}, {
 			"name": "ignored",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines if all notifications should be blocked from this repository. (optional)"
 		}],
 		"callbacks": [{
@@ -839,7 +839,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "scopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes that this authorization is in. (optional)"
 		}, {
 			"name": "note",
@@ -1009,7 +1009,7 @@
 			"info": "The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)"
 		}, {
 			"name": "scopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes that this authorization is in. (optional)"
 		}, {
 			"name": "note",
@@ -1051,7 +1051,7 @@
 			"info": "The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)"
 		}, {
 			"name": "scopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes that this authorization is in. (optional)"
 		}, {
 			"name": "note",
@@ -1117,15 +1117,15 @@
 			"info": "The authorization ID (required)"
 		}, {
 			"name": "scopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes that this authorization is in. (optional)"
 		}, {
 			"name": "addScopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes to add to this authorization. (optional)"
 		}, {
 			"name": "removeScopes",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of scopes to remove from this authorization. (optional)"
 		}, {
 			"name": "note",
@@ -1329,7 +1329,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "files",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)"
 		}, {
 			"name": "description",
@@ -1337,7 +1337,7 @@
 			"info": "A description of the gist. (optional)"
 		}, {
 			"name": "public",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Indicates whether the gist is public. Default: false (required)"
 		}],
 		"callbacks": [{
@@ -1425,7 +1425,7 @@
 			"info": "A description of the gist. (optional)"
 		}, {
 			"name": "files",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)"
 		}],
 		"callbacks": [{
@@ -1513,7 +1513,7 @@
 			"info": "A custom page size up to 100. Default is 30. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -1601,7 +1601,7 @@
 			"info": "A custom page size up to 100. Default is 30. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -1645,7 +1645,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -1685,7 +1685,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -1785,15 +1785,15 @@
 			"info": "String of the SHA of the tree object this commit points to (required)"
 		}, {
 			"name": "parents",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Array of the SHAs of the commits that were the parents of this commit. If omitted or empty, the commit will be written as a root commit. For a single parent, an array of one SHA should be provided, for a merge commit, an array of more than one should be provided. (required)"
 		}, {
 			"name": "author",
-			"type": "Json",
+			"type": "JSON",
 			"info": "An object containing information about the author (optional). Avaliable parameters: \"name\" (string) The name of the author (or committer) of the commit; \"email\" (string) The email of the author (or committer) of the commit; \"date\" (string) Indicates when this commit was authored (or committed). This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Ex.:\"author\": {\"name\": \"Scott Chacon\", \"email\": \"schacon@gmail.com\", \"date\": \"2008-07-09T16:13:30+12:00\"}"
 		}, {
 			"name": "committer",
-			"type": "Json",
+			"type": "JSON",
 			"info": "An object containing information about the committer (optional). Both the author and committer parameters have the same keys."
 		}],
 		"callbacks": [{
@@ -1865,7 +1865,7 @@
 			"info": "String of the type of the object we’re tagging. Normally this is a commit but it can also be a tree or a blob. (required)"
 		}, {
 			"name": "tagger",
-			"type": "Json",
+			"type": "JSON",
 			"info": "JSON object that contains the following keys: `name` - String of the name of the author of the tag, `email` - String of the email of the author of the tag, `date` - Timestamp of when this object was tagged (required)"
 		}],
 		"callbacks": [{
@@ -1891,7 +1891,7 @@
 			"info": "The name of the repository (required)"
 		}, {
 			"name": "tree",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Array of Hash objects (of path, mode, type and sha) specifying a tree structure (required)"
 		}, {
 			"name": "baseTree",
@@ -2175,7 +2175,7 @@
 			"info": "The SHA1 value to set this reference to (required)"
 		}, {
 			"name": "recursive",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Get a Tree Recursively (optional). True or false"
 		}],
 		"callbacks": [{
@@ -2209,7 +2209,7 @@
 			"info": "The SHA1 value to set this reference to (required)"
 		}, {
 			"name": "force",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you’re not overwriting work. (optional)"
 		}],
 		"callbacks": [{
@@ -2261,7 +2261,7 @@
 			"info": "The number of the issue (required)"
 		}, {
 			"name": "assignees",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Logins for the users that should be added to the issue. (required)"
 		}],
 		"callbacks": [{
@@ -2291,7 +2291,7 @@
 			"info": "The number of the issue (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Array of the labels that should be added to the issue. (required)"
 		}],
 		"callbacks": [{
@@ -2359,11 +2359,11 @@
 			"info": "Milestone to associate this issue with. (optional)"
 		}, {
 			"name": "labels",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Array of strings - Labels to associate with this issue. (optional)"
 		}, {
 			"name": "assignees",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Logins for Users to assign to this issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)"
 		}],
 		"callbacks": [{
@@ -2461,7 +2461,7 @@
 			"info": "A description of the milestone. (optional)"
 		}, {
 			"name": "dueOn",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -2585,11 +2585,11 @@
 			"info": "Milestone to associate this issue with. (optional)"
 		}, {
 			"name": "labels",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Array of strings - Labels to associate with this issue. (optional)"
 		}, {
 			"name": "assignees",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Logins for Users to assign to this issue. Pass one or more user logins to replace the set of assignees on this Issue. .Send an empty array ([]) to clear all assignees from the Issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)"
 		}],
 		"callbacks": [{
@@ -2683,7 +2683,7 @@
 			"info": "The direction of the sort. Can be either asc or desc. Default: desc (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -2807,7 +2807,7 @@
 			"info": "Either asc or desc. Ignored without the sort parameter. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -2981,7 +2981,7 @@
 			"info": "The direction of the sort. Can be either asc or desc. Default: desc (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -3047,7 +3047,7 @@
 			"info": "The direction of the sort. Can be either asc or desc. Default: desc (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Only issues updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -3093,7 +3093,7 @@
 			"info": "The direction of the sort. Can be either asc or desc. Default: desc (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -3359,7 +3359,7 @@
 			"info": "The number of the issue. (required)"
 		}, {
 			"name": "assignees",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Logins for the users that should be removed from the issue. (required). Ex.: \"assignees\": [\"hubot\", \"other_assignee\"]"
 		}],
 		"callbacks": [{
@@ -3419,7 +3419,7 @@
 			"info": "The number of the issue. (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Array of the labels that should be replaced for the issue. Sending an empty array ([]) will remove all Labels from the Issue. (required)"
 		}],
 		"callbacks": [{
@@ -3521,7 +3521,7 @@
 			"info": "A description of the milestone. (optional)"
 		}, {
 			"name": "dueOn",
-			"type": "Date",
+			"type": "String",
 			"info": "The milestone due date. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}],
 		"callbacks": [{
@@ -3825,15 +3825,15 @@
 			"info": "The name of the organization (required)"
 		}, {
 			"name": "repositories",
-			"type": "Array",
+			"type": "JSON",
 			"info": "A list of arrays indicating which repositories should be migrated. (required)"
 		}, {
 			"name": "lockRepositories",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Indicates whether repositories should be locked (to prevent manipulation) while migrating data. Default: false. (optional)"
 		}, {
 			"name": "excludeAttachments",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Indicates whether attachments should be excluded from the migration (to reduce migration archive file size). Default: false. (optional)"
 		}],
 		"callbacks": [{
@@ -4257,15 +4257,15 @@
 			"info": "Must be passed as \"web\". (required)"
 		}, {
 			"name": "config",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include \"0\" (verification is performed) and \"1\" (verification is not performed). The default is \"0\". We strongly recommend not setting this to \"1\" as you are subject to man-in-the-middle and other attacks."
 		}, {
 			"name": "events",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines what events the hook is triggered for. Default: [\"push\"]. (optional)"
 		}, {
 			"name": "active",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines whether the hook is actually triggered on pushes. (optional)"
 		}],
 		"callbacks": [{
@@ -4295,7 +4295,7 @@
 			"info": "The description of the team. (optional)"
 		}, {
 			"name": "repoNames",
-			"type": "Array",
+			"type": "JSON",
 			"info": "The full name (e.g., \"organization-name/repository-name\") of repositories to add the team to. (optional)"
 		}, {
 			"name": "privacy",
@@ -4391,15 +4391,15 @@
 			"info": "The hook ID (required)"
 		}, {
 			"name": "config",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include \"0\" (verification is performed) and \"1\" (verification is not performed). The default is \"0\". We strongly recommend not setting this to \"1\" as you are subject to man-in-the-middle and other attacks."
 		}, {
 			"name": "events",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines what events the hook is triggered for. Default: [\"push\"]. (optional)"
 		}, {
 			"name": "active",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines whether the hook is actually triggered on pushes. (optional)"
 		}],
 		"callbacks": [{
@@ -5329,7 +5329,7 @@
 			"info": "Can be either asc or desc. Ignored without sort parameter. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -5807,7 +5807,7 @@
 			"info": "The branch name (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)"
 		}, {
 			"name": "page",
@@ -5845,7 +5845,7 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of team slugs (e.g. justice-league). (required)"
 		}, {
 			"name": "page",
@@ -5883,7 +5883,7 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of team slugs (e.g. justice-league). (required)"
 		}, {
 			"name": "page",
@@ -5977,19 +5977,19 @@
 			"info": "A URL with more information about the repository (optional)"
 		}, {
 			"name": "private",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)"
 		}, {
 			"name": "hasIssues",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable issues for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "hasWiki",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable the wiki for this repository, false to disable it. Default is true. (optional)"
 		}, {
 			"name": "hasDownloads",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable downloads for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "teamId",
@@ -5997,7 +5997,7 @@
 			"info": "The id of the team that will be granted access to this repository. This is only valid when creating a repository in an organization. (optional)"
 		}, {
 			"name": "autoInit",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to create an initial commit with empty README. Default is false (optional)"
 		}, {
 			"name": "gitignoreTemplate",
@@ -6009,15 +6009,15 @@
 			"info": "Desired LICENSE template to apply. Use the name of the template without the extension. For example, \"mit\" or \"mozilla\". (optional)"
 		}, {
 			"name": "allowSquashMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowMergeCommit",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowRebaseMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)"
 		}],
 		"callbacks": [{
@@ -6089,11 +6089,11 @@
 			"info": "The named task to execute. e.g. deploy or deploy:migrations. Default: deploy (optional)"
 		}, {
 			"name": "autoMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Optional parameter to merge the default branch into the requested ref if it is behind the default branch. Default: true (optional)"
 		}, {
 			"name": "requiredContexts",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Optional array of status contexts verified against commit status checks. If this parameter is omitted from the parameters then all unique contexts will be verified before a deployment is created. To bypass checking entirely pass an empty array. Defaults to all unique contexts. (optional)"
 		}, {
 			"name": "payload",
@@ -6109,11 +6109,11 @@
 			"info": "Optional short description. Default: \"\" (optional)"
 		}, {
 			"name": "transientEnvironment",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Specifies if the given environment is specific to the deployment and will no longer exist at some point in the future. Default: false. (In preview period. See README.) (optional)"
 		}, {
 			"name": "productionEnvironment",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Specifies if the given environment is a one that end-users directly interact with. Default: true when environment is `production` and false otherwise. (In preview period. See README.) (optional)"
 		}],
 		"callbacks": [{
@@ -6163,7 +6163,7 @@
 			"info": "URL for accessing the deployment environment. Default: \"\". (In preview period. See README.) (optional)"
 		}, {
 			"name": "autoInactive",
-			"type": "Boolean",
+			"type": "String",
 			"info": "When true the new `inactive` status is added to all other non-transient, non-production environment deployments with the same repository and environment name as the created status's deployment. Default: true. (In preview period. See README.) (optional)"
 		}],
 		"callbacks": [{
@@ -6205,7 +6205,7 @@
 			"info": "The branch name. If not provided, uses the repository’s default branch (usually master). (optional)"
 		}, {
 			"name": "committer",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Object containing information about the committer. You must provide values for both name and email (optional). Ex.: \"committer\": {\"name\": \"Scott Chacon\", \"email\": \"schacon@gmail.com\"}"
 		}],
 		"callbacks": [{
@@ -6239,19 +6239,19 @@
 			"info": "A URL with more information about the repository (optional)"
 		}, {
 			"name": "private",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)"
 		}, {
 			"name": "hasIssues",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable issues for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "hasWiki",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable the wiki for this repository, false to disable it. Default is true. (optional)"
 		}, {
 			"name": "hasDownloads",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable downloads for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "teamId",
@@ -6259,7 +6259,7 @@
 			"info": "The id of the team that will be granted access to this repository. This is only valid when creating a repositoryName in an organization. (optional)"
 		}, {
 			"name": "autoInit",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to create an initial commit with empty README. Default is false (optional)"
 		}, {
 			"name": "gitignoreTemplate",
@@ -6271,15 +6271,15 @@
 			"info": "Desired LICENSE template to apply. Use the name of the template without the extension. For example, \"mit\" or \"mozilla\". (optional)"
 		}, {
 			"name": "allowSquashMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowMergeCommit",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowRebaseMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)"
 		}],
 		"callbacks": [{
@@ -6309,15 +6309,15 @@
 			"info": "Use web for a webhook or use the name of a valid service. (required)"
 		}, {
 			"name": "config",
-			"type": "Json",
+			"type": "JSON",
 			"info": "A Hash containing key/value pairs to provide settings for this hook. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)"
 		}, {
 			"name": "events",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines what events the hook is triggered for. Default: `['push']`. (optional)"
 		}, {
 			"name": "active",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines whether the hook is actually triggered on pushes. (optional)"
 		}],
 		"callbacks": [{
@@ -6351,7 +6351,7 @@
 			"info": "The contents of the key. (required)"
 		}, {
 			"name": "readOnly",
-			"type": "Boolean",
+			"type": "String",
 			"info": "If true, the key will only be able to read repository contents. Otherwise, the key will be able to read and write. (optional)"
 		}],
 		"callbacks": [{
@@ -6491,11 +6491,11 @@
 			"info": "Text describing the contents of the tag. (optional)"
 		}, {
 			"name": "draft",
-			"type": "Boolean",
+			"type": "String",
 			"info": "true to create a draft (unpublished) release, false to create a published one. Default: false (optional)"
 		}, {
 			"name": "prerelease",
-			"type": "Boolean",
+			"type": "String",
 			"info": "true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)"
 		}],
 		"callbacks": [{
@@ -6679,7 +6679,7 @@
 			"info": "The branch name. If not provided, uses the repository’s default branch (usually master). (optional)"
 		}, {
 			"name": "committer",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Object containing information about the committer. You must provide values for both name and email (optional). Ex.: \"committer\": {\"name\": \"Scott Chacon\", \"email\": \"schacon@gmail.com\"} (optional)"
 		}],
 		"callbacks": [{
@@ -6895,19 +6895,19 @@
 			"info": "A URL with more information about the repository (optional)"
 		}, {
 			"name": "private",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)"
 		}, {
 			"name": "hasIssues",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable issues for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "hasWiki",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable the wiki for this repository, false to disable it. Default is true. (optional)"
 		}, {
 			"name": "hasDownloads",
-			"type": "Boolean",
+			"type": "String",
 			"info": "True to enable downloads for this repository, false to disable them. Default is true. (optional)"
 		}, {
 			"name": "defaultBranch",
@@ -6915,15 +6915,15 @@
 			"info": "Updates the default branch for this repository. (optional)"
 		}, {
 			"name": "allowSquashMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowMergeCommit",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)"
 		}, {
 			"name": "allowRebaseMerge",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)"
 		}],
 		"callbacks": [{
@@ -6987,23 +6987,23 @@
 			"info": "The hook ID (required)"
 		}, {
 			"name": "config",
-			"type": "Json",
+			"type": "JSON",
 			"info": "A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)"
 		}, {
 			"name": "events",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines what events the hook is triggered for. This replaces the entire array of events. Default: `['push']`. (optional)"
 		}, {
 			"name": "addEvents",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines a list of events to be added to the list of events that the Hook triggers for. (optional)"
 		}, {
 			"name": "removeEvents",
-			"type": "Array",
+			"type": "JSON",
 			"info": "Determines a list of events to be removed from the list of events that the Hook triggers for. (optional)"
 		}, {
 			"name": "active",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Determines whether the hook is actually triggered on pushes. (optional)"
 		}],
 		"callbacks": [{
@@ -7049,11 +7049,11 @@
 			"info": "Text describing the contents of the tag. (optional)"
 		}, {
 			"name": "draft",
-			"type": "Boolean",
+			"type": "String",
 			"info": "true to create a draft (unpublished) release, false to create a published one. Default: false (optional)"
 		}, {
 			"name": "prerelease",
-			"type": "Boolean",
+			"type": "String",
 			"info": "true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)"
 		}],
 		"callbacks": [{
@@ -7323,7 +7323,7 @@
 			"info": "The name of the repository (required)"
 		}, {
 			"name": "protected",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Set to true to only return protected branches (optional)"
 		}, {
 			"name": "page",
@@ -7567,11 +7567,11 @@
 			"info": "GitHub login or email address by which to filter by commit author. (optional)"
 		}, {
 			"name": "since",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "until",
-			"type": "Date",
+			"type": "String",
 			"info": "Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)"
 		}, {
 			"name": "page",
@@ -7635,7 +7635,7 @@
 			"info": "The name of the repository (required)"
 		}, {
 			"name": "anon",
-			"type": "Boolean",
+			"type": "String",
 			"info": "Set to 1 or true to include anonymous contributors in results. (optional)"
 		}, {
 			"name": "page",
@@ -9341,7 +9341,7 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)"
 		}, {
 			"name": "page",
@@ -9379,7 +9379,7 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of team slugs (e.g. justice-league). (required)"
 		}, {
 			"name": "page",
@@ -9417,7 +9417,7 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "An array of team slugs (e.g. justice-league). (required)"
 		}, {
 			"name": "page",
@@ -9503,11 +9503,11 @@
 			"info": "The name of the branch (required)"
 		}, {
 			"name": "requiredStatusChecks",
-			"type": "Json",
+			"type": "JSON",
 			"info": "JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. This object can have the value of `null` for disabled. (required)"
 		}, {
 			"name": "restrictions",
-			"type": "Json",
+			"type": "JSON",
 			"info": "JSON object that contains the following keys: `users` - The list of user logins with push access, `teams` - The list of team slugs with push access. This object can have the value of `null` for disabled. (required)"
 		}, {
 			"name": "page",
@@ -9591,7 +9591,7 @@
 			"info": "The branch name. If not provided, uses the repository’s default branch (usually master). (optional)"
 		}, {
 			"name": "committer",
-			"type": "Json",
+			"type": "JSON",
 			"info": "Object containing information about the committer. You must provide values for both name and email (optional). Ex.: \"committer\": {\"name\": \"Scott Chacon\", \"email\": \"schacon@gmail.com\"} (optional)"
 		}],
 		"callbacks": [{
@@ -9741,7 +9741,7 @@
 			"info": "The branch name (required)"
 		}, {
 			"name": "body",
-			"type": "Json",
+			"type": "JSON",
 			"info": "JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. (required)"
 		}, {
 			"name": "page",
@@ -9977,7 +9977,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "You can post a single email address or an array of addresses. (required)"
 		}],
 		"callbacks": [{
@@ -10093,7 +10093,7 @@
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "body",
-			"type": "Array",
+			"type": "JSON",
 			"info": "You can post a single email address or an array of addresses. (required)"
 		}],
 		"callbacks": [{
@@ -10665,7 +10665,7 @@
 			"info": "The new location of the user. (optional)"
 		}, {
 			"name": "hireable",
-			"type": "Boolean",
+			"type": "String",
 			"info": "The new hiring availability of the user. (optional)"
 		}, {
 			"name": "bio",

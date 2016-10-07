@@ -32,7 +32,7 @@ let client = new GitHubApi({
 
 app.use(bodyParser.json(({limit: '50mb'})));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
-app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(trueMeta); });
+app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(JSON.parse(trueMeta)); });
 
 for (let {name, args, github} of metaObject.blocks) {
     let gitSection = github.section,
