@@ -68,8 +68,6 @@ for (let {name, args, url, github} of metaObject.blocks) {
             delete req.body.args.twoFactorCode;
         }
 
-        console.log(auth);
-
         client.authenticate(auth);
         res.status(200);
 
