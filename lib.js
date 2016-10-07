@@ -7,8 +7,8 @@ const path = require('path');
     let clients    = {};
 
     let mediaHash = JSON.parse(fs.readFileSync(path.join(__dirname, "media_tree.json"), "utf8"));
-    let createClient = (accept) => {
-        return new GH({
+    let createClient = (accept) => 
+        new GH({
             debug: false,
             protocol: 'https',
             host: 'api.github.com',
@@ -19,7 +19,6 @@ const path = require('path');
                 'accept': accept,
             },
         });
-    };
 
     for(let accept in mediaHash) {
         clients[accept] = createClient(accept);

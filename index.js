@@ -5,8 +5,7 @@ global.PACKAGE_NAME = "Github";
 const express       = require('express'),
     bodyParser      = require('body-parser'),
     fs              = require('fs'),
-    lib             = require('./lib'),
-    GitHubApi       = require("github");
+    lib             = require('./lib');
 
 const PORT          = process.env.PORT || 8080;
 const app           = express();
@@ -30,8 +29,6 @@ for (let {name, args, url, github} of metaObject.blocks) {
         reqArgs    = [];
 
     for(let arg in args) if(arg.req) reqArgs.push(arg);
-
-    if(url == '/licenses') console.log(lib.accept[url]);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
         let auth     = { type: 'oauth' };
