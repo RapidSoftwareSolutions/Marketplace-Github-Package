@@ -850,9 +850,9 @@ Get all notifications for the current user, grouped by repository.
 | Field        | Type       | Description
 |--------------|------------|----------
 | accessToken  | credentials| The access_token obtained from Github. (optional)
-| all          | Boolean    | If true, show notifications marked as read. Default: false (optional)
-| participating| Boolean    | If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)
-| since        | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| all          | String     | If true, show notifications marked as read. Default: false (optional)
+| participating| String     | If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)
+| since        | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | before       | String     | Only show notifications updated before the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. (optional)
 
 #### Request example
@@ -885,9 +885,9 @@ Get all notifications for the given user.
 | accessToken   | credentials| The access_token obtained from Github. (optional)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
-| all           | Boolean    | If true, show notifications marked as read. Default: false (optional)
-| participating | Boolean    | If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)
-| since         | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| all           | String     | If true, show notifications marked as read. Default: false (optional)
+| participating | String     | If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)
+| since         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | before        | String     | Only show notifications updated before the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. (optional)
 
 #### Request example
@@ -1225,8 +1225,8 @@ This lets you subscribe or unsubscribe from a conversation. Unsubscribing from a
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
 | id         | String     | The ID of the thread (required)
-| subscribed | Boolean    | Determines if notifications should be received from this thread (optional)
-| ignored    | Boolean    | Determines if all notifications should be blocked from this thread (optional)
+| subscribed | String     | Determines if notifications should be received from this thread (optional)
+| ignored    | String     | Determines if all notifications should be blocked from this thread (optional)
 
 #### Request example
 ```json
@@ -1257,8 +1257,8 @@ Set a Repository Subscription
 | accessToken   | credentials| The access_token obtained from Github. (optional)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
-| subscribed    | Boolean    | Determines if notifications should be received from this repository. (optional)
-| ignored       | Boolean    | Determines if all notifications should be blocked from this repository. (optional)
+| subscribed    | String     | Determines if notifications should be received from this repository. (optional)
+| ignored       | String     | Determines if all notifications should be blocked from this repository. (optional)
 
 #### Request example
 ```json
@@ -1399,19 +1399,25 @@ Check an authorization
 ## Github.createAuthorization
 Create a new authorization
 
-| Field       | Type       | Description
-|-------------|------------|----------
-| accessToken | credentials| The access_token obtained from Github. (optional)
-| scopes      | Array      | A list of scopes that this authorization is in. (optional)
-| note        | String     | A note to remind you what the OAuth token is for. (optional)
-| noteUrl     | String     | A URL to remind you what app the OAuth token is for. (optional)
-| clientId    | String     | The 20 character OAuth app client key for which to create the token. (optional)
-| clientSecret| String     | The 40 character OAuth app client secret for which to create the token. (optional)
-| fingerprint | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| scopes       | JSON       | A list of scopes that this authorization is in. (optional)
+| note         | String     | A note to remind you what the OAuth token is for. (optional)
+| noteUrl      | String     | A URL to remind you what app the OAuth token is for. (optional)
+| clientId     | String     | The 20 character OAuth app client key for which to create the token. (optional)
+| clientSecret | String     | The 40 character OAuth app client secret for which to create the token. (optional)
+| fingerprint  | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"scopes": "...",
 	"note": "...",
 	"noteUrl": "...",
@@ -1436,14 +1442,20 @@ Create a new authorization
 ## Github.deleteAuthorization
 Delete an authorization
 
-| Field      | Type       | Description
-|------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
-| id         | String     | The authorization ID (required)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| id           | String     | The authorization ID (required)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"id": "..."
 }
 ```
@@ -1463,14 +1475,20 @@ Delete an authorization
 ## Github.deleteGrantAuthorization
 Delete a grant. (In preview period. See README.)
 
-| Field      | Type       | Description
-|------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
-| id         | String     | The authorization ID (required)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| id           | String     | The authorization ID (required)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"id": "..."
 }
 ```
@@ -1490,14 +1508,20 @@ Delete a grant. (In preview period. See README.)
 ## Github.getAuthorization
 Get a single authorization
 
-| Field      | Type       | Description
-|------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
-| id         | String     | The authorization ID (required)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| id           | String     | The authorization ID (required)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"id": "..."
 }
 ```
@@ -1520,12 +1544,16 @@ List your authorizations
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
+| username   | String     | The username obtained from Github. (required)
+| password   | String     | The password obtained from Github. (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
 	"page": 0,
 	"perPage": 0
 }
@@ -1546,17 +1574,23 @@ List your authorizations
 ## Github.getGrantAuthorization
 Get a single grant. (In preview period. See README.)
 
-| Field      | Type       | Description
-|------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
-| id         | String     | The authorization ID (required)
-| page       | Number     | Page number of the results to fetch. (optional)
-| perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| id           | String     | The authorization ID (required)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| page         | Number     | Page number of the results to fetch. (optional)
+| perPage      | Number     | A custom page size up to 100. Default is 30. (optional)
 
 #### Request example
 ```json
 {	"accessToken": "...",
 	"id": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"page": 0,
 	"perPage": 0
 }
@@ -1577,15 +1611,21 @@ Get a single grant. (In preview period. See README.)
 ## Github.getGrantsAuthorization
 List your grants. (In preview period. See README.)
 
-| Field      | Type       | Description
-|------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
-| page       | Number     | Page number of the results to fetch. (optional)
-| perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
+| Field        | Type       | Description
+|--------------|------------|----------
+| accessToken  | credentials| The access_token obtained from Github. (optional)
+| username     | String     | The username obtained from Github. (required)
+| password     | String     | The password obtained from Github. (required)
+| twoFactorCode| String     | Required for two-factor auth method. (optional)
+| page         | Number     | Page number of the results to fetch. (optional)
+| perPage      | Number     | A custom page size up to 100. Default is 30. (optional)
 
 #### Request example
 ```json
 {	"accessToken": "...",
+	"username": "...",
+	"password": "...",
+	"twoFactorCode": "...",
 	"page": 0,
 	"perPage": 0
 }
@@ -1611,7 +1651,7 @@ Get or create an authorization for a specific app
 | accessToken | credentials| The access_token obtained from Github. (optional)
 | clientId    | String     | The 20 character OAuth app client key for which to create the token. (optional)
 | clientSecret| String     | The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
-| scopes      | Array      | A list of scopes that this authorization is in. (optional)
+| scopes      | JSON       | A list of scopes that this authorization is in. (optional)
 | note        | String     | A note to remind you what the OAuth token is for. (optional)
 | noteUrl     | String     | A URL to remind you what app the OAuth token is for. (optional)
 | fingerprint | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
@@ -1649,7 +1689,7 @@ Get or create an authorization for a specific app and fingerprint
 | clientId    | String     | The 20 character OAuth app client key for which to create the token. (optional)
 | fingerprint | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 | clientSecret| String     | The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
-| scopes      | Array      | A list of scopes that this authorization is in. (optional)
+| scopes      | JSON       | A list of scopes that this authorization is in. (optional)
 | note        | String     | A note to remind you what the OAuth token is for. (optional)
 | noteUrl     | String     | A URL to remind you what app the OAuth token is for. (optional)
 
@@ -1738,9 +1778,9 @@ Update an existing authorization
 |-------------|------------|----------
 | accessToken | credentials| The access_token obtained from Github. (optional)
 | id          | String     | The authorization ID (required)
-| scopes      | Array      | A list of scopes that this authorization is in. (optional)
-| addScopes   | Array      | A list of scopes to add to this authorization. (optional)
-| removeScopes| Array      | A list of scopes to remove from this authorization. (optional)
+| scopes      | JSON       | A list of scopes that this authorization is in. (optional)
+| addScopes   | JSON       | A list of scopes to add to this authorization. (optional)
+| removeScopes| JSON       | A list of scopes to remove from this authorization. (optional)
 | note        | String     | A note to remind you what the OAuth token is for. (optional)
 | noteUrl     | String     | A URL to remind you what app the OAuth token is for. (optional)
 | fingerprint | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
@@ -2025,9 +2065,9 @@ Create a gist
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
-| files      | Json       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
+| files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
 | description| String     | A description of the gist. (optional)
-| public     | Boolean    | Indicates whether the gist is public. Default: false (required)
+| public     | String     | Indicates whether the gist is public. Default: false (required)
 
 #### Request example
 ```json
@@ -2143,7 +2183,7 @@ Edit a gist
 | accessToken| credentials| The access_token obtained from Github. (optional)
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 | description| String     | A description of the gist. (optional)
-| files      | Json       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
+| files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
 
 #### Request example
 ```json
@@ -2259,7 +2299,7 @@ List the authenticated user's gists or if called anonymously, this will return a
 | accessToken| credentials| The access_token obtained from Github. (optional)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -2374,7 +2414,7 @@ List a user's gists
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -2435,7 +2475,7 @@ List all public gists
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -2491,7 +2531,7 @@ List the authenticated user's starred gists
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -2609,9 +2649,9 @@ Create a Commit
 | repositoryName| String     | The name of the repository (required)
 | message       | String     | String of the commit message (required)
 | tree          | String     | String of the SHA of the tree object this commit points to (required)
-| parents       | Array      | Array of the SHAs of the commits that were the parents of this commit. If omitted or empty, the commit will be written as a root commit. For a single parent, an array of one SHA should be provided, for a merge commit, an array of more than one should be provided. (required)
-| author        | Json       | An object containing information about the author (optional). Avaliable parameters: "name" (string) The name of the author (or committer) of the commit; "email" (string) The email of the author (or committer) of the commit; "date" (string) Indicates when this commit was authored (or committed). This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Ex.:"author": {"name": "Scott Chacon", "email": "schacon@gmail.com", "date": "2008-07-09T16:13:30+12:00"}
-| committer     | Json       | An object containing information about the committer (optional). Both the author and committer parameters have the same keys.
+| parents       | JSON       | Array of the SHAs of the commits that were the parents of this commit. If omitted or empty, the commit will be written as a root commit. For a single parent, an array of one SHA should be provided, for a merge commit, an array of more than one should be provided. (required)
+| author        | JSON       | An object containing information about the author (optional). Avaliable parameters: "name" (string) The name of the author (or committer) of the commit; "email" (string) The email of the author (or committer) of the commit; "date" (string) Indicates when this commit was authored (or committed). This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Ex.:"author": {"name": "Scott Chacon", "email": "schacon@gmail.com", "date": "2008-07-09T16:13:30+12:00"}
+| committer     | JSON       | An object containing information about the committer (optional). Both the author and committer parameters have the same keys.
 
 #### Request example
 ```json
@@ -2683,7 +2723,7 @@ Create a Tag Object
 | message       | String     | String of the tag message (required)
 | object        | String     | String of the SHA of the git object this is tagging (required)
 | type          | String     | String of the type of the object we’re tagging. Normally this is a commit but it can also be a tree or a blob. (required)
-| tagger        | Json       | JSON object that contains the following keys: `name` - String of the name of the author of the tag, `email` - String of the email of the author of the tag, `date` - Timestamp of when this object was tagged (required)
+| tagger        | JSON       | JSON object that contains the following keys: `name` - String of the name of the author of the tag, `email` - String of the email of the author of the tag, `date` - Timestamp of when this object was tagged (required)
 
 #### Request example
 ```json
@@ -2718,7 +2758,7 @@ Create a Tree
 | accessToken   | credentials| The access_token obtained from Github. (optional)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
-| tree          | Json       | Array of Hash objects (of path, mode, type and sha) specifying a tree structure (required)
+| tree          | JSON       | Array of Hash objects (of path, mode, type and sha) specifying a tree structure (required)
 | baseTree      | String     | String of the SHA1 of the tree you want to update with new data (optional)
 
 #### Request example
@@ -3039,7 +3079,7 @@ Get a Tree
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
-| recursive     | Boolean    | Get a Tree Recursively (optional). True or false
+| recursive     | String     | Get a Tree Recursively (optional). True or false
 
 #### Request example
 ```json
@@ -3073,7 +3113,7 @@ Update a Reference
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
-| force         | Boolean    | Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you’re not overwriting work. (optional)
+| force         | String     | Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you’re not overwriting work. (optional)
 
 #### Request example
 ```json
@@ -3136,7 +3176,7 @@ Add assignees to an issue.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
-| assignees     | Array      | Logins for the users that should be added to the issue. (required)
+| assignees     | JSON       | Logins for the users that should be added to the issue. (required)
 
 #### Request example
 ```json
@@ -3169,7 +3209,7 @@ Add labels to an issue
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
-| body          | Array      | Array of the labels that should be added to the issue. (required)
+| body          | JSON       | Array of the labels that should be added to the issue. (required)
 
 #### Request example
 ```json
@@ -3236,8 +3276,8 @@ Create an issue
 | body          | String     | The contents of the issue. (optional)
 | assignee      | String     | Login for the user that this issue should be assigned to. (optional)
 | milestone     | Number     | Milestone to associate this issue with. (optional)
-| labels        | Json       | Array of strings - Labels to associate with this issue. (optional)
-| assignees     | Array      | Logins for Users to assign to this issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
+| labels        | JSON       | Array of strings - Labels to associate with this issue. (optional)
+| assignees     | JSON       | Logins for Users to assign to this issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
 
 #### Request example
 ```json
@@ -3342,7 +3382,7 @@ Create a milestone
 | title         | String     | The title of the milestone. (required)
 | state         | String     | The state of the milestone. Either open or closed. Default: open (optional)
 | description   | String     | A description of the milestone. (optional)
-| dueOn         | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| dueOn         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -3474,8 +3514,8 @@ Edit an issue
 | body          | String     | The contents of the issue. (optional)
 | state         | String     | State of the issue. Either open or closed. (optional)
 | milestone     | Number     | Milestone to associate this issue with. (optional)
-| labels        | Json       | Array of strings - Labels to associate with this issue. (optional)
-| assignees     | Array      | Logins for Users to assign to this issue. Pass one or more user logins to replace the set of assignees on this Issue. .Send an empty array ([]) to clear all assignees from the Issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
+| labels        | JSON       | Array of strings - Labels to associate with this issue. (optional)
+| assignees     | JSON       | Logins for Users to assign to this issue. Pass one or more user logins to replace the set of assignees on this Issue. .Send an empty array ([]) to clear all assignees from the Issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
 
 #### Request example
 ```json
@@ -3579,7 +3619,7 @@ List all issues across all the authenticated user's visible repositories includi
 | labels     | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
 | sort       | String     | What to sort results by. Can be either created, updated, comments. Default: created (optional)
 | direction  | String     | The direction of the sort. Can be either asc or desc. Default: desc (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -3714,7 +3754,7 @@ List comments in a repository
 | repositoryName| String     | The name of the repository. (required)
 | sort          | String     | Either created or updated. Default: created (optional)
 | direction     | String     | Either asc or desc. Ignored without the sort parameter. (optional)
-| since         | Date       | Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since         | String     | Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -3889,7 +3929,7 @@ List all issues for a given organization for the authenticated user
 | labels          | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
 | sort            | String     | What to sort results by. Can be either created, updated, comments. Default: created (optional)
 | direction       | String     | The direction of the sort. Can be either asc or desc. Default: desc (optional)
-| since           | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since           | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -3936,7 +3976,7 @@ List issues for a repository
 | labels        | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
 | sort          | String     | What to sort results by. Can be either created, updated, comments. Default: created (optional)
 | direction     | String     | The direction of the sort. Can be either asc or desc. Default: desc (optional)
-| since         | Date       | Only issues updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since         | String     | Only issues updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -3982,7 +4022,7 @@ List all issues across owned and member repositories for the authenticated user
 | labels     | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
 | sort       | String     | What to sort results by. Can be either created, updated, comments. Default: created (optional)
 | direction  | String     | The direction of the sort. Can be either asc or desc. Default: desc (optional)
-| since      | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -4279,7 +4319,7 @@ Remove assignees from an issue.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
-| assignees     | Array      | Logins for the users that should be removed from the issue. (required). Ex.: "assignees": ["hubot", "other_assignee"]
+| assignees     | JSON       | Logins for the users that should be removed from the issue. (required). Ex.: "assignees": ["hubot", "other_assignee"]
 
 #### Request example
 ```json
@@ -4345,7 +4385,7 @@ Replace all labels for an issue
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
-| body          | Array      | Array of the labels that should be replaced for the issue. Sending an empty array ([]) will remove all Labels from the Issue. (required)
+| body          | JSON       | Array of the labels that should be replaced for the issue. Sending an empty array ([]) will remove all Labels from the Issue. (required)
 
 #### Request example
 ```json
@@ -4447,7 +4487,7 @@ Update a milestone
 | title         | String     | The title of the milestone. (required)
 | state         | String     | The state of the milestone. Either open or closed. Default: open (optional)
 | description   | String     | A description of the milestone. (optional)
-| dueOn         | Date       | The milestone due date. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| dueOn         | String     | The milestone due date. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
 ```json
@@ -4820,9 +4860,9 @@ Start a migration.
 |-------------------|------------|----------
 | accessToken       | credentials| The access_token obtained from Github. (optional)
 | organizationName  | String     | The name of the organization (required)
-| repositories      | Array      | A list of arrays indicating which repositories should be migrated. (required)
-| lockRepositories  | Boolean    | Indicates whether repositories should be locked (to prevent manipulation) while migrating data. Default: false. (optional)
-| excludeAttachments| Boolean    | Indicates whether attachments should be excluded from the migration (to reduce migration archive file size). Default: false. (optional)
+| repositories      | JSON       | A list of arrays indicating which repositories should be migrated. (required)
+| lockRepositories  | String     | Indicates whether repositories should be locked (to prevent manipulation) while migrating data. Default: false. (optional)
+| excludeAttachments| String     | Indicates whether attachments should be excluded from the migration (to reduce migration archive file size). Default: false. (optional)
 
 #### Request example
 ```json
@@ -5395,9 +5435,9 @@ Create a hook
 | accessToken     | credentials| The access_token obtained from Github. (optional)
 | orginizationName| String     | The name of the organization (required)
 | name            | String     | Must be passed as "web". (required)
-| config          | Json       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
-| events          | Array      | Determines what events the hook is triggered for. Default: ["push"]. (optional)
-| active          | Boolean    | Determines whether the hook is actually triggered on pushes. (optional)
+| config          | JSON       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
+| events          | JSON       | Determines what events the hook is triggered for. Default: ["push"]. (optional)
+| active          | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
 #### Request example
 ```json
@@ -5431,7 +5471,7 @@ Create team
 | orginizationName| String     | The name of the organization (required)
 | name            | String     | The name of the team. (required)
 | description     | String     | The description of the team. (optional)
-| repoNames       | Array      | The full name (e.g., "organization-name/repository-name") of repositories to add the team to. (optional)
+| repoNames       | JSON       | The full name (e.g., "organization-name/repository-name") of repositories to add the team to. (optional)
 | privacy         | String     | The level of privacy this team should have. (optional). Can be one of: * secret - only visible to organization owners and members of this team. * closed - visible to all members of this organization. Default: secret
 
 #### Request example
@@ -5552,9 +5592,9 @@ Edit a hook
 | accessToken     | credentials| The access_token obtained from Github. (optional)
 | orginizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
-| config          | Json       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
-| events          | Array      | Determines what events the hook is triggered for. Default: ["push"]. (optional)
-| active          | Boolean    | Determines whether the hook is actually triggered on pushes. (optional)
+| config          | JSON       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
+| events          | JSON       | Determines what events the hook is triggered for. Default: ["push"]. (optional)
+| active          | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
 #### Request example
 ```json
@@ -6613,7 +6653,7 @@ List comments in a repository
 | repositoryName| String     | The name of the repository (required)
 | sort          | String     | Possible values are: `created`, `updated`, Default: `created` (optional)
 | direction     | String     | Can be either asc or desc. Ignored without sort parameter. (optional)
-| since         | Date       | Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since         | String     | Only comments updated at or after this time are returned. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -7123,7 +7163,7 @@ Add required status checks contexts of protected branch. (In preview period. See
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The branch name (required)
-| body          | Array      | An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)
+| body          | JSON       | An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -7160,7 +7200,7 @@ Add team restrictions of protected branch. (In preview period. See README.)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
-| body          | Array      | An array of team slugs (e.g. justice-league). (required)
+| body          | JSON       | An array of team slugs (e.g. justice-league). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -7197,7 +7237,7 @@ Add user restrictions of protected branch. (In preview period. See README.)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
-| body          | Array      | An array of team slugs (e.g. justice-league). (required)
+| body          | JSON       | An array of team slugs (e.g. justice-league). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -7298,17 +7338,17 @@ Create a new repository for the authenticated user.
 | name             | String     | The name of the repository (required)
 | description      | String     | A short description of the repository (optional)
 | homepage         | String     | A URL with more information about the repository (optional)
-| private          | Boolean    | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
-| hasIssues        | Boolean    | True to enable issues for this repository, false to disable them. Default is true. (optional)
-| hasWiki          | Boolean    | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
-| hasDownloads     | Boolean    | True to enable downloads for this repository, false to disable them. Default is true. (optional)
+| private          | String     | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
+| hasIssues        | String     | True to enable issues for this repository, false to disable them. Default is true. (optional)
+| hasWiki          | String     | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
+| hasDownloads     | String     | True to enable downloads for this repository, false to disable them. Default is true. (optional)
 | teamId           | String     | The id of the team that will be granted access to this repository. This is only valid when creating a repository in an organization. (optional)
-| autoInit         | Boolean    | True to create an initial commit with empty README. Default is false (optional)
+| autoInit         | String     | True to create an initial commit with empty README. Default is false (optional)
 | gitignoreTemplate| String     | Desired language or platform .gitignore template to apply. Ignored if auto_init parameter is not provided. (optional)
 | licenseTemplate  | String     | Desired LICENSE template to apply. Use the name of the template without the extension. For example, "mit" or "mozilla". (optional)
-| allowSquashMerge | Boolean    | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
-| allowMergeCommit | Boolean    | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
-| allowRebaseMerge | Boolean    | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
+| allowSquashMerge | String     | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
+| allowMergeCommit | String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
+| allowRebaseMerge | String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
 #### Request example
 ```json
@@ -7389,13 +7429,13 @@ Create a deployment.
 | repositoryName       | String     | The name of the repository (required)
 | ref                  | String     | The ref to deploy. This can be a branch, tag, or sha. (required)
 | task                 | String     | The named task to execute. e.g. deploy or deploy:migrations. Default: deploy (optional)
-| autoMerge            | Boolean    | Optional parameter to merge the default branch into the requested ref if it is behind the default branch. Default: true (optional)
-| requiredContexts     | Array      | Optional array of status contexts verified against commit status checks. If this parameter is omitted from the parameters then all unique contexts will be verified before a deployment is created. To bypass checking entirely pass an empty array. Defaults to all unique contexts. (optional)
+| autoMerge            | String     | Optional parameter to merge the default branch into the requested ref if it is behind the default branch. Default: true (optional)
+| requiredContexts     | JSON       | Optional array of status contexts verified against commit status checks. If this parameter is omitted from the parameters then all unique contexts will be verified before a deployment is created. To bypass checking entirely pass an empty array. Defaults to all unique contexts. (optional)
 | payload              | String     | Optional JSON payload with extra information about the deployment. Default: "" (optional)
 | environment          | String     | The name of the environment that was deployed to. e.g. staging or production. Default: none. (optional)
 | description          | String     | Optional short description. Default: "" (optional)
-| transientEnvironment | Boolean    | Specifies if the given environment is specific to the deployment and will no longer exist at some point in the future. Default: false. (In preview period. See README.) (optional)
-| productionEnvironment| Boolean    | Specifies if the given environment is a one that end-users directly interact with. Default: true when environment is `production` and false otherwise. (In preview period. See README.) (optional)
+| transientEnvironment | String     | Specifies if the given environment is specific to the deployment and will no longer exist at some point in the future. Default: false. (In preview period. See README.) (optional)
+| productionEnvironment| String     | Specifies if the given environment is a one that end-users directly interact with. Default: true when environment is `production` and false otherwise. (In preview period. See README.) (optional)
 
 #### Request example
 ```json
@@ -7440,7 +7480,7 @@ Create a deployment status.
 | logUrl        | String     | Functionally equivalent to target_url. Default: "". (In preview period. See README.) (optional)
 | description   | String     | A short description of the status. Default: "" (optional)
 | environmentUrl| String     | URL for accessing the deployment environment. Default: "". (In preview period. See README.) (optional)
-| autoInactive  | Boolean    | When true the new `inactive` status is added to all other non-transient, non-production environment deployments with the same repository and environment name as the created status's deployment. Default: true. (In preview period. See README.) (optional)
+| autoInactive  | String     | When true the new `inactive` status is added to all other non-transient, non-production environment deployments with the same repository and environment name as the created status's deployment. Default: true. (In preview period. See README.) (optional)
 
 #### Request example
 ```json
@@ -7481,7 +7521,7 @@ Create a new file in the given repository.
 | message       | String     | The commit message. (required)
 | content       | String     | The new file content, Base64 encoded. (required)
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
-| committer     | Json       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"}
+| committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"}
 
 #### Request example
 ```json
@@ -7518,17 +7558,17 @@ Create a new repository for an organization.
 | name             | String     | The name of the repository (required)
 | description      | String     | A short description of the repository (optional)
 | homepage         | String     | A URL with more information about the repository (optional)
-| private          | Boolean    | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
-| hasIssues        | Boolean    | True to enable issues for this repository, false to disable them. Default is true. (optional)
-| hasWiki          | Boolean    | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
-| hasDownloads     | Boolean    | True to enable downloads for this repository, false to disable them. Default is true. (optional)
+| private          | String     | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
+| hasIssues        | String     | True to enable issues for this repository, false to disable them. Default is true. (optional)
+| hasWiki          | String     | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
+| hasDownloads     | String     | True to enable downloads for this repository, false to disable them. Default is true. (optional)
 | teamId           | Number     | The id of the team that will be granted access to this repository. This is only valid when creating a repositoryName in an organization. (optional)
-| autoInit         | Boolean    | True to create an initial commit with empty README. Default is false (optional)
+| autoInit         | String     | True to create an initial commit with empty README. Default is false (optional)
 | gitignoreTemplate| String     | Desired language or platform .gitignore template to apply. Ignored if auto_init parameter is not provided. (optional)
 | licenseTemplate  | String     | Desired LICENSE template to apply. Use the name of the template without the extension. For example, "mit" or "mozilla". (optional)
-| allowSquashMerge | Boolean    | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
-| allowMergeCommit | Boolean    | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
-| allowRebaseMerge | Boolean    | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
+| allowSquashMerge | String     | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
+| allowMergeCommit | String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
+| allowRebaseMerge | String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
 #### Request example
 ```json
@@ -7572,9 +7612,9 @@ Create a hook.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | name          | String     | Use web for a webhook or use the name of a valid service. (required)
-| config        | Json       | A Hash containing key/value pairs to provide settings for this hook. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)
-| events        | Array      | Determines what events the hook is triggered for. Default: `['push']`. (optional)
-| active        | Boolean    | Determines whether the hook is actually triggered on pushes. (optional)
+| config        | JSON       | A Hash containing key/value pairs to provide settings for this hook. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)
+| events        | JSON       | Determines what events the hook is triggered for. Default: `['push']`. (optional)
+| active        | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
 #### Request example
 ```json
@@ -7610,7 +7650,7 @@ Add a new deploy key.
 | repositoryName| String     | The name of the repository (required)
 | title         | String     | A name for the key. (required)
 | key           | String     | The contents of the key. (required)
-| readOnly      | Boolean    | If true, the key will only be able to read repository contents. Otherwise, the key will be able to read and write. (optional)
+| readOnly      | String     | If true, the key will only be able to read repository contents. Otherwise, the key will be able to read and write. (optional)
 
 #### Request example
 ```json
@@ -7750,8 +7790,8 @@ Create a release.
 | targetCommitish| String     | Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually master). (optional)
 | name           | String     | The name of the release (optional)
 | body           | String     | Text describing the contents of the tag. (optional)
-| draft          | Boolean    | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
-| prerelease     | Boolean    | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
+| draft          | String     | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
+| prerelease     | String     | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
 
 #### Request example
 ```json
@@ -7952,7 +7992,7 @@ Delete a file.
 | message       | String     | The commit message. (required)
 | sha           | String     | The blob SHA of the file being removed. (required)
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
-| committer     | Json       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
+| committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
 
 #### Request example
 ```json
@@ -8205,14 +8245,14 @@ Update a repo.
 | name            | String     | The name of the repository (required)
 | description     | String     | A short description of the repository (optional)
 | homepage        | String     | A URL with more information about the repository (optional)
-| private         | Boolean    | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
-| hasIssues       | Boolean    | True to enable issues for this repository, false to disable them. Default is true. (optional)
-| hasWiki         | Boolean    | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
-| hasDownloads    | Boolean    | True to enable downloads for this repository, false to disable them. Default is true. (optional)
+| private         | String     | True to create a private repository, false to create a public one. Creating private repositories requires a paid GitHub account. Default is false. (optional)
+| hasIssues       | String     | True to enable issues for this repository, false to disable them. Default is true. (optional)
+| hasWiki         | String     | True to enable the wiki for this repository, false to disable it. Default is true. (optional)
+| hasDownloads    | String     | True to enable downloads for this repository, false to disable them. Default is true. (optional)
 | defaultBranch   | String     | Updates the default branch for this repository. (optional)
-| allowSquashMerge| Boolean    | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
-| allowMergeCommit| Boolean    | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
-| allowRebaseMerge| Boolean    | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
+| allowSquashMerge| String     | Either true to allow squash-merging pull requests, or false to prevent squash-merging. Default: true. (In preview period. See README.) (optional)
+| allowMergeCommit| String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
+| allowRebaseMerge| String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
 #### Request example
 ```json
@@ -8289,11 +8329,11 @@ Edit a hook.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
-| config        | Json       | A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)
-| events        | Array      | Determines what events the hook is triggered for. This replaces the entire array of events. Default: `['push']`. (optional)
-| addEvents     | Array      | Determines a list of events to be added to the list of events that the Hook triggers for. (optional)
-| removeEvents  | Array      | Determines a list of events to be removed from the list of events that the Hook triggers for. (optional)
-| active        | Boolean    | Determines whether the hook is actually triggered on pushes. (optional)
+| config        | JSON       | A Hash containing key/value pairs to provide settings for this hook. Modifying this will replace the entire config object. These settings vary between the services and are defined in the github-services repositoryName. Booleans are stored internally as `1` for true, and `0` for false. Any JSON true/false values will be converted automatically. (required)
+| events        | JSON       | Determines what events the hook is triggered for. This replaces the entire array of events. Default: `['push']`. (optional)
+| addEvents     | JSON       | Determines a list of events to be added to the list of events that the Hook triggers for. (optional)
+| removeEvents  | JSON       | Determines a list of events to be removed from the list of events that the Hook triggers for. (optional)
+| active        | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
 #### Request example
 ```json
@@ -8334,8 +8374,8 @@ Edit a release.
 | targetCommitish| String     | Specifies the commitish value that determines where the Git tag is created from. Can be any branch or commit SHA. Unused if the Git tag already exists. Default: the repository's default branch (usually master). (optional)
 | name           | String     | The name of the release. (optional)
 | body           | String     | Text describing the contents of the tag. (optional)
-| draft          | Boolean    | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
-| prerelease     | Boolean    | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
+| draft          | String     | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
+| prerelease     | String     | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
 
 #### Request example
 ```json
@@ -8638,7 +8678,7 @@ List branches. (In preview period. See README.)
 | accessToken   | credentials| The access_token obtained from Github. (optional)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
-| protected     | Boolean    | Set to true to only return protected branches (optional)
+| protected     | String     | Set to true to only return protected branches (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -8901,8 +8941,8 @@ List commits on a repository.
 | sha           | String     | Sha or branch to start listing commits from. (optional)
 | path          | String     | Only commits containing this file path will be returned. (optional)
 | author        | String     | GitHub login or email address by which to filter by commit author. (optional)
-| since         | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
-| until         | Date       | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| since         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
+| until         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -8974,7 +9014,7 @@ Get contributors for the specified repository.
 | accessToken   | credentials| The access_token obtained from Github. (optional)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
-| anon          | Boolean    | Set to 1 or true to include anonymous contributors in results. (optional)
+| anon          | String     | Set to 1 or true to include anonymous contributors in results. (optional)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -10888,7 +10928,7 @@ Replace required status checks contexts of protected branch. (In preview period.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
-| body          | Array      | An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)
+| body          | JSON       | An array of protected branch required status checks contexts (e.g. continuous-integration/jenkins). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -10925,7 +10965,7 @@ Replace team restrictions of protected branch. (In preview period. See README.)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
-| body          | Array      | An array of team slugs (e.g. justice-league). (required)
+| body          | JSON       | An array of team slugs (e.g. justice-league). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -10962,7 +11002,7 @@ Replace user restrictions of protected branch. (In preview period. See README.)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
-| body          | Array      | An array of team slugs (e.g. justice-league). (required)
+| body          | JSON       | An array of team slugs (e.g. justice-league). (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -11059,8 +11099,8 @@ Update branch protection. (In preview period. See README.)
 | user                | String     | The owner name (required)
 | repositoryName      | String     | The name of the repository (required)
 | branch              | String     | The name of the branch (required)
-| requiredStatusChecks| Json       | JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. This object can have the value of `null` for disabled. (required)
-| restrictions        | Json       | JSON object that contains the following keys: `users` - The list of user logins with push access, `teams` - The list of team slugs with push access. This object can have the value of `null` for disabled. (required)
+| requiredStatusChecks| JSON       | JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. This object can have the value of `null` for disabled. (required)
+| restrictions        | JSON       | JSON object that contains the following keys: `users` - The list of user logins with push access, `teams` - The list of team slugs with push access. This object can have the value of `null` for disabled. (required)
 | page                | Number     | Page number of the results to fetch. (optional)
 | perPage             | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -11135,7 +11175,7 @@ Update a file.
 | content       | String     | The updated file content, Base64 encoded. (required)
 | sha           | String     | The blob SHA of the file being replaced. (required)
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
-| committer     | Json       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
+| committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
 
 #### Request example
 ```json
@@ -11304,7 +11344,7 @@ Update required status checks of protected branch. (In preview period. See READM
 | user          | String     | The owner name (required)
 | repositoryName| String     | The new name of the column (required)
 | branch        | String     | The branch name (required)
-| body          | Json       | JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. (required)
+| body          | JSON       | JSON object that contains the following keys: `include_admins` - Enforce required status checks for repository administrators, `strict` - Require branches to be up to date before merging, `contexts` - The list of status checks to require in order to merge into this branch. (required)
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -11569,7 +11609,7 @@ Add email address(es)
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
-| body       | Array      | You can post a single email address or an array of addresses. (required)
+| body       | JSON       | You can post a single email address or an array of addresses. (required)
 
 #### Request example
 ```json
@@ -11735,7 +11775,7 @@ Delete email address(es)
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github. (optional)
-| body       | Array      | You can post a single email address or an array of addresses. (required)
+| body       | JSON       | You can post a single email address or an array of addresses. (required)
 
 #### Request example
 ```json
@@ -12520,7 +12560,7 @@ Update the authenticated user
 | blog       | String     | The new blog URL of the user. (optional)
 | company    | String     | The new company of the user. (optional)
 | location   | String     | The new location of the user. (optional)
-| hireable   | Boolean    | The new hiring availability of the user. (optional)
+| hireable   | String     | The new hiring availability of the user. (optional)
 | bio        | String     | The new short biography of the user. (optional)
 
 #### Request example

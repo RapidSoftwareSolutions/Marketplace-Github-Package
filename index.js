@@ -40,19 +40,46 @@ for (let {name, args, github} of metaObject.blocks) {
     for(let arg in args) if(arg.req) reqArgs.push(arg);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
+        let auth     = { type: 'oauth' };
         let options  = {};
         let response = {
             callback     : "",
             contextWrites: {}
         };
 
-        if(req.body.args.accessToken) {
-            client.authenticate({
-                type: 'oauth',
-                token: req.body.args.accessToken
-            });
+        req.body.args = lib.clearArgs(req.body.args);
+
+        auth.token = req.body.args.accessToken;
+
+        if(req.body.args.username || req.body.args.password) {
+            auth.type     = 'basic';
+            auth.username = req.body.args.username;
+            auth.password = req.body.args.password;
+
+            delete req.body.args.username;
+            delete req.body.args.password;
+            delete auth.token;
         }
 
+        if(req.body.args.clientSecret) {
+            auth.key    = req.body.args.clientId;
+            auth.secret = req.body.args.clientSecret;
+
+            delete req.body
+            delete auth.token;
+        }
+
+        if(req.body.args.twoFactorCode) {
+            options.headers = {
+                "X-GitHub-OTP": req.body.args.twoFactorCode
+            }
+
+            delete req.body.args.twoFactorCode;
+        }
+
+        console.log(auth);
+
+        client.authenticate(auth);
         res.status(200);
 
         for(let key in req.body.args) {

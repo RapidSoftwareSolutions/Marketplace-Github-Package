@@ -1,4 +1,3 @@
-
 {
 	"package": "Github",
 	"tagline": "Github Package",
@@ -838,6 +837,18 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
+		}, {
 			"name": "scopes",
 			"type": "JSON",
 			"info": "A list of scopes that this authorization is in. (optional)"
@@ -876,6 +887,18 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
+		}, {
 			"name": "id",
 			"type": "String",
 			"info": "The authorization ID (required)"
@@ -893,6 +916,18 @@
 			"name": "accessToken",
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
+		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
 		}, {
 			"name": "id",
 			"type": "String",
@@ -912,6 +947,18 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
+		}, {
 			"name": "id",
 			"type": "String",
 			"info": "The authorization ID (required)"
@@ -929,6 +976,14 @@
 			"name": "accessToken",
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
+		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -956,6 +1011,18 @@
 			"type": "String",
 			"info": "The authorization ID (required)"
 		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
+		}, {
 			"name": "page",
 			"type": "Number",
 			"info": "Page number of the results to fetch. (optional)"
@@ -977,6 +1044,18 @@
 			"name": "accessToken",
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
+		}, {
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
+		}, {
+			"name": "twoFactorCode",
+			"type": "String",
+			"info": "Required for two-factor auth method. (optional)"
 		}, {
 			"name": "page",
 			"type": "Number",

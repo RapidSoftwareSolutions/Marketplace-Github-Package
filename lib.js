@@ -13,5 +13,14 @@ module.exports.toUnderscore = (str) =>
         (x, y) => "_" + y.toLowerCase()
     ).replace(/^_/, "");
 
+module.exports.clearArgs = (obj) => {
+    for (let i in obj)
+        if (obj[i] == undefined || obj[i] == '')
+            delete obj[i];
+
+    return obj;
+}
+
+
 module.exports.metadata     = () => fs.readFileSync('./git_metadata.json').toString();
 module.exports.truemetadata = () => fs.readFileSync('./metadata.json').toString();
