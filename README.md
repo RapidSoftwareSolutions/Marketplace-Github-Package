@@ -449,7 +449,7 @@ Check if you are starring a repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -476,7 +476,7 @@ Delete a notification thread subscription.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2127,7 +2127,7 @@ Mark a notification thread as read.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2154,7 +2154,7 @@ Mark notifications as read for authenticated user.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2185,7 +2185,7 @@ Mark notifications in a repo as read.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2292,7 +2292,7 @@ Star a repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2321,7 +2321,7 @@ Unstar a repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2350,7 +2350,7 @@ Unwatch a repository.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2510,7 +2510,7 @@ Delete an authorization
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2543,7 +2543,7 @@ Delete a grant. (In preview period. See README.)
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -2953,7 +2953,7 @@ Revoke an authorization for an application
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -3377,7 +3377,7 @@ Check if a gist is starred
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -3592,7 +3592,7 @@ Delete a gist
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -3621,7 +3621,7 @@ Delete a comment
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -4695,7 +4695,7 @@ Star a gist
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -4722,7 +4722,7 @@ Unstar a gist
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -4993,7 +4993,7 @@ Delete a Reference
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -5830,7 +5830,7 @@ Check assignee
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -6191,7 +6191,7 @@ Delete a comment
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -6222,7 +6222,7 @@ Delete a label
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -6253,7 +6253,7 @@ Delete a milestone
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -8233,7 +8233,7 @@ Users with push access can lock an issue's conversation.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -8264,7 +8264,7 @@ Remove all labels from an issue
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -8492,7 +8492,7 @@ Remove a label from an issue
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -8562,7 +8562,7 @@ Users with push access can unlock an issue's conversation.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -8751,7 +8751,7 @@ Delete a migration archive
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -9415,7 +9415,7 @@ Unlock a repository that was locked for migration.
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10115,7 +10115,7 @@ Add team repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10144,7 +10144,7 @@ Check membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10173,7 +10173,7 @@ Check public membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10204,7 +10204,7 @@ Check if a team manages a repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10233,7 +10233,7 @@ Conceal a user's membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10416,7 +10416,7 @@ Method description
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -10447,7 +10447,7 @@ Remove team repository
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11389,7 +11389,7 @@ Ping a hook
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11418,7 +11418,7 @@ Publicize a user's membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11447,7 +11447,7 @@ Remove a member
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11476,7 +11476,7 @@ Remove organization membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11505,7 +11505,7 @@ Remove team membership
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -11614,7 +11614,7 @@ Get if a pull request has been merged
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
@@ -12575,7 +12575,7 @@ Delete a comment
 	"callback":"success",
 	"contextWrites":{
 		"#":{
-			"to":"[empty]"
+			"to":"Status: 204 No Content"
 		}
 	}
 }
