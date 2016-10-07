@@ -48,8 +48,8 @@ An object oriented wrapper for the GitHub v3 API.
 * [getAllAuthorization](#getAllAuthorization)
 * [getGrantAuthorization](#getGrantAuthorization)
 * [getGrantsAuthorization](#getGrantsAuthorization)
-* [getOrCreateAuthorizationForAppAuthorization](#getOrCreateAuthorizationForAppAuthorization)
-* [getOrCreateAuthorizationForAppAndFingerprintAuthorization](#getOrCreateAuthorizationForAppAndFingerprintAuthorization)
+* [getOrCreateAuthorizationForApp](#getOrCreateAuthorizationForApp)
+* [getOrCreateAuthorizationForAppAndFingerprint](#getOrCreateAuthorizationForAppAndFingerprint)
 * [resetAuthorization](#resetAuthorization)
 * [revokeAuthorization](#revokeAuthorization)
 * [updateAuthorization](#updateAuthorization)
@@ -1602,8 +1602,8 @@ List your grants. (In preview period. See README.)
 }
 ```
 
-<a name="getOrCreateAuthorizationForAppAuthorization"/>
-## Github.getOrCreateAuthorizationForAppAuthorization
+<a name="getOrCreateAuthorizationForApp"/>
+## Github.getOrCreateAuthorizationForApp
 Get or create an authorization for a specific app
 
 | Field       | Type       | Description
@@ -1639,8 +1639,8 @@ Get or create an authorization for a specific app
 }
 ```
 
-<a name="getOrCreateAuthorizationForAppAndFingerprintAuthorization"/>
-## Github.getOrCreateAuthorizationForAppAndFingerprintAuthorization
+<a name="getOrCreateAuthorizationForAppAndFingerprint"/>
+## Github.getOrCreateAuthorizationForAppAndFingerprint
 Get or create an authorization for a specific app and fingerprint
 
 | Field       | Type       | Description

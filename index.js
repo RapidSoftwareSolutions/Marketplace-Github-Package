@@ -62,8 +62,6 @@ for (let {name, args, github} of metaObject.blocks) {
                 options[optionsHash[optkey] || optkey] = req.body.args[key];
             }
 
-            console.log('call')
-
             if(!!~reqArgs.indexOf(key) && (key == '' || !key)) {
                 response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
                    response.callback = 'error';
