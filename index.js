@@ -19,25 +19,19 @@ let metadata   = lib.metadata(),
     trueMeta   = lib.truemetadata(),
     metaObject = JSON.parse(metadata);
 
-let client = new GitHubApi({
-    debug:            false,
-    protocol:        'https',
-    host:            'api.github.com',
-    headers:         { 'user-agent': 'RapidApi-App' },
-    followRedirects: false,
-    timeout:         5000
-});
-
 app.use(bodyParser.json(({limit: '50mb'})));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(JSON.parse(trueMeta)); });
 
-for (let {name, args, github} of metaObject.blocks) {
+for (let {name, args, url, github} of metaObject.blocks) {
     let gitSection = github.section,
         gitName    = github.name,
+        client     = lib.client[lib.accept[url] || 'default'],
         reqArgs    = [];
 
     for(let arg in args) if(arg.req) reqArgs.push(arg);
+
+    if(url == '/licenses') console.log(lib.accept[url]);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
         let auth     = { type: 'oauth' };
@@ -89,7 +83,7 @@ for (let {name, args, github} of metaObject.blocks) {
                 options[optionsHash[optkey] || optkey] = req.body.args[key];
             }
 
-            if(!!~reqArgs.indexOf(key) && (key == '' || !key)) {
+            if(!!~reqArgs.indexOf(key) && !key) {
                 response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
                    response.callback = 'error';
 
