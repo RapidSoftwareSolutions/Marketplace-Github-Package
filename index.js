@@ -1,8 +1,6 @@
 "use strict";
 
 global.PACKAGE_NAME = "Github";
-// upload-asset - file upload
-// render-markdown-raw - raw header
 
 const express       = require('express'),
     bodyParser      = require('body-parser'),
@@ -13,8 +11,8 @@ const express       = require('express'),
 const PORT          = process.env.PORT || 8080;
 const app           = express();
 const optionsHash   = {
-    'organisationName': 'org',
-    'repositoryName':   'repo'
+    'organization_name': 'org',
+    'repository_name':   'repo'
 };
 
 let metadata   = lib.metadata(),
@@ -64,6 +62,8 @@ for (let {name, args, github} of metaObject.blocks) {
                 options[optionsHash[optkey] || optkey] = req.body.args[key];
             }
 
+            console.log('call')
+
             if(!!~reqArgs.indexOf(key) && (key == '' || !key)) {
                 response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
                    response.callback = 'error';
@@ -73,15 +73,15 @@ for (let {name, args, github} of metaObject.blocks) {
             }
         }
 
-           let to = options['to'] || 'to';
+        let to = options['to'] || 'to';
 
         if(typeof client[gitSection][gitName] === "function") {
             client[gitSection][gitName](options, (err, result) => {
                 if(!err) {
-                    response.contextWrites[to] = result;
+                    response.contextWrites[to] = JSON.stringify(result);
                     response.callback = 'success'; 
                 } else {
-                    response.contextWrites[to] = err || result;
+                    response.contextWrites[to] = JSON.stringify(err || result);
                     response.callback = 'error';
                 }
 

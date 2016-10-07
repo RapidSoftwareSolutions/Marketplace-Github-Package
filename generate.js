@@ -172,7 +172,7 @@ describe("Github API package", () => {
 
     prepareApi(routes);
 
-    fs.writeFile("./test.js", test.replace('<%blocks%>', apiTest.join('')), function(err) {
+    fs.writeFile("./unit.js", test.replace('<%blocks%>', apiTest.join('')), function(err) {
         if(err) return console.log(err);
     }); 
 
