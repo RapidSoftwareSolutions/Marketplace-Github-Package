@@ -122,10 +122,8 @@ describe("Github API package", () => {
                     .replace('<%method%>', funcName)
                 );
             }
-            else {
-                // recurse into this block next:
+            else 
                 prepareApi(block, messageType);
-            }
         });
     }
 

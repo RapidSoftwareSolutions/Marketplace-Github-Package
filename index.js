@@ -39,11 +39,6 @@ for (let {name, args, github} of metaObject.blocks) {
         gitName    = github.name,
         reqArgs    = [];
 
-
-    console.log(gitSection, gitName);
-
-    //console.log(`/api/${PACKAGE_NAME}/${name}`);
-
     for(let arg in args) if(arg.req) reqArgs.push(arg);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
@@ -69,7 +64,7 @@ for (let {name, args, github} of metaObject.blocks) {
                 options[optionsHash[optkey] || optkey] = req.body.args[key];
             }
 
-            if(!!~reqArgs.indexOf(key) && (key == '') || !key) {
+            if(!!~reqArgs.indexOf(key) && (key == '' || !key)) {
                 response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
                    response.callback = 'error';
 
@@ -82,7 +77,7 @@ for (let {name, args, github} of metaObject.blocks) {
 
         if(typeof client[gitSection][gitName] === "function") {
             client[gitSection][gitName](options, (err, result) => {
-                if(!err /*&& result.statusCode == 200*/) {
+                if(!err) {
                     response.contextWrites[to] = result;
                     response.callback = 'success'; 
                 } else {

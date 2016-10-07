@@ -16,4 +16,3 @@ module.exports.toUnderscore = (str) =>
 
 module.exports.metadata     = () => fs.readFileSync('./git_metadata.json').toString();
 module.exports.truemetadata = () => fs.readFileSync('./metadata.json').toString();
-
