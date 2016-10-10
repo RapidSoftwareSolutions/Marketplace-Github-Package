@@ -88,6 +88,9 @@ for (let {name, args, url, github} of metaObject.blocks) {
         }
 
         let to = options['to'] || 'to';
+        
+        if(gitName == 'createFile')
+            options['content'] = new Buffer(options['content'] || ' ').toString('base64');
 
         if(typeof client[gitSection][gitName] === "function") {
             client[gitSection][gitName](options, (err, result) => {
