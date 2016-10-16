@@ -56,7 +56,7 @@ for (let {name, args, url, github} of metaObject.blocks) {
             auth.key    = req.body.args.clientId;
             auth.secret = req.body.args.clientSecret;
 
-            delete req.body
+            delete req.body.args.clientSecret
             delete auth.token;
         }
 
