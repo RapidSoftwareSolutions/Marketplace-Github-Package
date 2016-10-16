@@ -837,41 +837,49 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github. (optional)"
 		}, {
-			"name": "username",
-			"type": "String",
-			"info": "The username obtained from Github. (required)"
-		}, {
-			"name": "password",
-			"type": "String",
-			"info": "The password obtained from Github. (required)"
-		}, {
-			"name": "twoFactorCode",
-			"type": "String",
-			"info": "Required for two-factor auth method. (optional)"
-		}, {
 			"name": "scopes",
-			"type": "JSON",
+			"type": "Array",
 			"info": "A list of scopes that this authorization is in. (optional)"
+		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "note",
 			"type": "String",
 			"info": "A note to remind you what the OAuth token is for. (optional)"
 		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
+		}, {
 			"name": "noteUrl",
 			"type": "String",
 			"info": "A URL to remind you what app the OAuth token is for. (optional)"
+		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
 		}, {
 			"name": "clientId",
 			"type": "String",
 			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
 		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
+		}, {
 			"name": "clientSecret",
 			"type": "String",
 			"info": "The 40 character OAuth app client secret for which to create the token. (optional)"
 		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
+		}, {
 			"name": "fingerprint",
 			"type": "String",
-			"info": "A unique string to distinguish an authorization from others created for the same client ID and user. (optional)"
+			"info": "A unique string to distinguish an authorization from others created for the same client ID and user. (optional)",
 		}],
 		"callbacks": [{
 			"name": "error",
