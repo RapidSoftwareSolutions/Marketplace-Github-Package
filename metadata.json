@@ -844,7 +844,7 @@
 			"name": "note",
 			"type": "String",
 			"info": "A note to remind you what the OAuth token is for. (optional)"
-		},  {
+		}, {
 			"name": "noteUrl",
 			"type": "String",
 			"info": "A URL to remind you what app the OAuth token is for. (optional)"
@@ -859,7 +859,7 @@
 		}, {
 			"name": "fingerprint",
 			"type": "String",
-			"info": "A unique string to distinguish an authorization from others created for the same client ID and user. (optional)",
+			"info": "A unique string to distinguish an authorization from others created for the same client ID and user. (optional)"
 		}],
 		"callbacks": [{
 			"name": "error",
