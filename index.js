@@ -68,9 +68,10 @@ for (let {name, args, url, github} of metaObject.blocks) {
             delete req.body.args.twoFactorCode;
         }
 
-        if(auth.token && auth.token != "") {
-            client.authenticate(auth);
+        if(!auth.token && auth.token == "") {
+            delete auth.token
         }
+        client.authenticate(auth);
         res.status(200);
 
         for(let key in req.body.args) {
