@@ -815,13 +815,17 @@
 	}, {
 		"name": "checkAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (required)"
+			"name": "token",
+			"type": "String",
+			"info": "The access token to check. (required)"
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
+		}, {
+			"name": "clientSecret",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -833,10 +837,6 @@
 	}, {
 		"name": "createAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
 			"name": "username",
 			"type": "String",
 			"info": "The username obtained from Github. (required)"
@@ -863,7 +863,7 @@
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
 		}, {
 			"name": "clientSecret",
 			"type": "String",
@@ -882,11 +882,7 @@
 		}]
 	}, {
 		"name": "deleteAuthorization",
-		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
+		"args": [ {
 			"name": "username",
 			"type": "String",
 			"info": "The username obtained from Github. (required)"
@@ -894,10 +890,6 @@
 			"name": "password",
 			"type": "String",
 			"info": "The password obtained from Github. (required)"
-		}, {
-			"name": "twoFactorCode",
-			"type": "String",
-			"info": "Required for two-factor auth method. (optional)"
 		}, {
 			"name": "id",
 			"type": "String",
@@ -913,10 +905,6 @@
 	}, {
 		"name": "deleteGrantAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
 			"name": "username",
 			"type": "String",
 			"info": "The username obtained from Github. (required)"
@@ -924,10 +912,6 @@
 			"name": "password",
 			"type": "String",
 			"info": "The password obtained from Github. (required)"
-		}, {
-			"name": "twoFactorCode",
-			"type": "String",
-			"info": "Required for two-factor auth method. (optional)"
 		}, {
 			"name": "id",
 			"type": "String",
@@ -973,10 +957,6 @@
 	}, {
 		"name": "getAllAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
 			"name": "username",
 			"type": "String",
 			"info": "The username obtained from Github. (required)"
@@ -1003,10 +983,6 @@
 	}, {
 		"name": "getGrantAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
 			"name": "id",
 			"type": "String",
 			"info": "The authorization ID (required)"
@@ -1041,10 +1017,6 @@
 	}, {
 		"name": "getGrantsAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
-		}, {
 			"name": "username",
 			"type": "String",
 			"info": "The username obtained from Github. (required)"
@@ -1075,13 +1047,17 @@
 	}, {
 		"name": "getOrCreateAuthorizationForApp",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
 		}, {
 			"name": "clientSecret",
 			"type": "String",
@@ -1113,13 +1089,17 @@
 	}, {
 		"name": "getOrCreateAuthorizationForAppAndFingerprint",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
 		}, {
 			"name": "fingerprint",
 			"type": "String",
@@ -1151,13 +1131,17 @@
 	}, {
 		"name": "resetAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (required)"
+			"name": "token",
+			"type": "String",
+			"info": "The access token to check. (required)"
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
+		}, {
+			"name": "clientSecret",
+			"type": "String",
+			"info": "The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)"
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -1169,13 +1153,17 @@
 	}, {
 		"name": "revokeAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (required)"
+			"name": "token",
+			"type": "String",
+			"info": "The access token to check. (required)"
 		}, {
 			"name": "clientId",
 			"type": "String",
-			"info": "The 20 character OAuth app client key for which to create the token. (optional)"
+			"info": "The 20 character OAuth app client key for which to create the token. (required)"
+		}, {
+			"name": "clientSecret",
+			"type": "String",
+			"info": "The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)"
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -1187,9 +1175,13 @@
 	}, {
 		"name": "updateAuthorization",
 		"args": [{
-			"name": "accessToken",
-			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"name": "username",
+			"type": "String",
+			"info": "The username obtained from Github. (required)"
+		}, {
+			"name": "password",
+			"type": "String",
+			"info": "The password obtained from Github. (required)"
 		}, {
 			"name": "id",
 			"type": "String",
