@@ -9,7 +9,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -27,7 +27,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -57,7 +57,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -75,7 +75,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -97,7 +97,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -123,7 +123,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -153,7 +153,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -183,7 +183,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -213,7 +213,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -239,7 +239,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -269,7 +269,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -295,7 +295,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -321,7 +321,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -347,7 +347,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -361,7 +361,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -379,7 +379,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "all",
 			"type": "String",
@@ -409,7 +409,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -447,7 +447,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -477,7 +477,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -507,7 +507,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -529,7 +529,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -555,7 +555,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -577,7 +577,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -603,7 +603,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -633,7 +633,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -651,7 +651,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "lastReadAt",
 			"type": "String",
@@ -669,7 +669,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -695,7 +695,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -721,7 +721,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -751,7 +751,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -773,7 +773,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -795,7 +795,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -929,7 +929,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "username",
 			"type": "String",
@@ -1223,7 +1223,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "login",
 			"type": "String",
@@ -1249,7 +1249,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -1263,7 +1263,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "target",
 			"type": "String",
@@ -1281,7 +1281,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "type",
 			"type": "String",
@@ -1299,7 +1299,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "teamId",
 			"type": "Number",
@@ -1317,7 +1317,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1335,7 +1335,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "teamId",
 			"type": "Number",
@@ -1357,7 +1357,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1379,7 +1379,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1397,7 +1397,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "files",
 			"type": "JSON",
@@ -1423,7 +1423,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "gistId",
 			"type": "String",
@@ -1445,7 +1445,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1463,7 +1463,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "gistId",
 			"type": "String",
@@ -1485,7 +1485,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1511,7 +1511,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "gistId",
 			"type": "String",
@@ -1537,7 +1537,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1555,7 +1555,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1573,7 +1573,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -1599,7 +1599,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "gistId",
 			"type": "String",
@@ -1621,7 +1621,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "gistId",
 			"type": "String",
@@ -1639,7 +1639,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1657,7 +1657,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1687,7 +1687,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1713,7 +1713,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "since",
 			"type": "String",
@@ -1731,7 +1731,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1753,7 +1753,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "since",
 			"type": "String",
@@ -1771,7 +1771,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1789,7 +1789,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -1807,7 +1807,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1837,7 +1837,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1879,7 +1879,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1909,7 +1909,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1951,7 +1951,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -1981,7 +1981,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2007,7 +2007,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2041,7 +2041,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2067,7 +2067,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2093,7 +2093,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2119,7 +2119,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2149,7 +2149,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2175,7 +2175,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2201,7 +2201,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2231,7 +2231,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2261,7 +2261,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2295,7 +2295,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "installationId",
 			"type": "Number",
@@ -2317,7 +2317,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2347,7 +2347,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2377,7 +2377,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2403,7 +2403,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2449,7 +2449,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2479,7 +2479,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2509,7 +2509,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2547,7 +2547,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2573,7 +2573,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2599,7 +2599,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2625,7 +2625,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2675,7 +2675,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2705,7 +2705,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2731,7 +2731,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "filter",
 			"type": "String",
@@ -2777,7 +2777,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2799,7 +2799,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2825,7 +2825,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2859,7 +2859,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2901,7 +2901,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2927,7 +2927,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2961,7 +2961,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -2991,7 +2991,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3025,7 +3025,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3075,7 +3075,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3141,7 +3141,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "filter",
 			"type": "String",
@@ -3187,7 +3187,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3213,7 +3213,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3239,7 +3239,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3269,7 +3269,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3295,7 +3295,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3321,7 +3321,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3363,7 +3363,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3389,7 +3389,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3415,7 +3415,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3445,7 +3445,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3475,7 +3475,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3505,7 +3505,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3531,7 +3531,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3565,7 +3565,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3607,7 +3607,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3629,7 +3629,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3651,7 +3651,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3677,7 +3677,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3699,7 +3699,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3721,7 +3721,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3743,7 +3743,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3765,7 +3765,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3791,7 +3791,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3825,7 +3825,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3847,7 +3847,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3889,7 +3889,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3919,7 +3919,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "organizationName",
 			"type": "String",
@@ -3945,7 +3945,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -3971,7 +3971,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -3985,7 +3985,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "name",
 			"type": "String",
@@ -4003,7 +4003,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -4017,7 +4017,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "license",
 			"type": "String",
@@ -4035,7 +4035,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -4049,7 +4049,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -4063,7 +4063,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -4077,7 +4077,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -4099,7 +4099,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "text",
 			"type": "String",
@@ -4125,7 +4125,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "data",
 			"type": "String",
@@ -4143,7 +4143,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4169,7 +4169,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4195,7 +4195,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4225,7 +4225,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4247,7 +4247,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4269,7 +4269,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4295,7 +4295,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4317,7 +4317,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4351,7 +4351,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4385,7 +4385,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4407,7 +4407,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4425,7 +4425,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4451,7 +4451,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4485,7 +4485,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4515,7 +4515,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4541,7 +4541,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "since",
 			"type": "String",
@@ -4567,7 +4567,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -4593,7 +4593,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4615,7 +4615,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4641,7 +4641,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4675,7 +4675,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4697,7 +4697,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "state",
 			"type": "String",
@@ -4715,7 +4715,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4733,7 +4733,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4751,7 +4751,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4781,7 +4781,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4803,7 +4803,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4829,7 +4829,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4855,7 +4855,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4877,7 +4877,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4899,7 +4899,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4921,7 +4921,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -4943,7 +4943,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -4965,7 +4965,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -5007,7 +5007,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5041,7 +5041,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5079,7 +5079,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5121,7 +5121,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5155,7 +5155,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5189,7 +5189,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5215,7 +5215,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5245,7 +5245,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5271,7 +5271,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5321,7 +5321,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5347,7 +5347,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5381,7 +5381,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5423,7 +5423,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5457,7 +5457,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5491,7 +5491,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5533,7 +5533,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5575,7 +5575,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5605,7 +5605,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5635,7 +5635,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5665,7 +5665,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5695,7 +5695,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -5713,7 +5713,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5743,7 +5743,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5773,7 +5773,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5803,7 +5803,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5833,7 +5833,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5863,7 +5863,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5901,7 +5901,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5939,7 +5939,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -5977,7 +5977,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6003,7 +6003,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6033,7 +6033,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "name",
 			"type": "String",
@@ -6103,7 +6103,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6141,7 +6141,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6199,7 +6199,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6249,7 +6249,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6291,7 +6291,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -6365,7 +6365,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6403,7 +6403,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6437,7 +6437,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6467,7 +6467,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6505,7 +6505,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6535,7 +6535,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6581,7 +6581,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6623,7 +6623,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6645,7 +6645,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6671,7 +6671,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6697,7 +6697,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6723,7 +6723,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6765,7 +6765,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6791,7 +6791,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "repositoryName",
 			"type": "String",
@@ -6813,7 +6813,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6839,7 +6839,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6865,7 +6865,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6891,7 +6891,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6917,7 +6917,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -6943,7 +6943,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7009,7 +7009,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7043,7 +7043,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7089,7 +7089,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7139,7 +7139,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7165,7 +7165,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7187,7 +7187,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "visibility",
 			"type": "String",
@@ -7229,7 +7229,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7259,7 +7259,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7289,7 +7289,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7315,7 +7315,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7349,7 +7349,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7383,7 +7383,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7417,7 +7417,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -7435,7 +7435,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7465,7 +7465,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7495,7 +7495,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7529,7 +7529,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7555,7 +7555,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7581,7 +7581,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7615,7 +7615,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7665,7 +7665,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7695,7 +7695,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7729,7 +7729,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7755,7 +7755,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7801,7 +7801,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7827,7 +7827,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7857,7 +7857,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -7887,7 +7887,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7925,7 +7925,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7959,7 +7959,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -7985,7 +7985,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8015,7 +8015,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "repositoryName",
 			"type": "String",
@@ -8033,7 +8033,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8059,7 +8059,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8089,7 +8089,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8119,7 +8119,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8141,7 +8141,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8163,7 +8163,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8193,7 +8193,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8219,7 +8219,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8249,7 +8249,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8279,7 +8279,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8305,7 +8305,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8331,7 +8331,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8357,7 +8357,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8383,7 +8383,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8409,7 +8409,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8431,7 +8431,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8465,7 +8465,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8499,7 +8499,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8533,7 +8533,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8567,7 +8567,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8601,7 +8601,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "since",
 			"type": "String",
@@ -8619,7 +8619,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8645,7 +8645,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8675,7 +8675,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8701,7 +8701,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8727,7 +8727,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8757,7 +8757,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8783,7 +8783,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8805,7 +8805,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8827,7 +8827,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8849,7 +8849,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8871,7 +8871,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8893,7 +8893,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8927,7 +8927,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8957,7 +8957,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -8987,7 +8987,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9017,7 +9017,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9043,7 +9043,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9077,7 +9077,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9111,7 +9111,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9141,7 +9141,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9167,7 +9167,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9201,7 +9201,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9227,7 +9227,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9261,7 +9261,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9295,7 +9295,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9329,7 +9329,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9363,7 +9363,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9397,7 +9397,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9435,7 +9435,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9473,7 +9473,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9511,7 +9511,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9533,7 +9533,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9559,7 +9559,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9601,7 +9601,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9631,7 +9631,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9677,7 +9677,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "repositoryName",
 			"type": "String",
@@ -9703,7 +9703,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9737,7 +9737,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9767,7 +9767,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9797,7 +9797,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9835,7 +9835,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -9873,7 +9873,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "q",
 			"type": "String",
@@ -9907,7 +9907,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "email",
 			"type": "String",
@@ -9925,7 +9925,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "q",
 			"type": "String",
@@ -9959,7 +9959,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "q",
 			"type": "String",
@@ -9993,7 +9993,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "q",
 			"type": "String",
@@ -10027,7 +10027,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10045,7 +10045,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "body",
 			"type": "JSON",
@@ -10063,7 +10063,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10081,7 +10081,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10103,7 +10103,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "armoredPublicKey",
 			"type": "String",
@@ -10121,7 +10121,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "title",
 			"type": "String",
@@ -10143,7 +10143,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10161,7 +10161,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "body",
 			"type": "JSON",
@@ -10179,7 +10179,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10197,7 +10197,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10215,7 +10215,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10233,7 +10233,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -10255,7 +10255,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10273,7 +10273,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -10287,7 +10287,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "since",
 			"type": "Number",
@@ -10305,7 +10305,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10323,7 +10323,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10345,7 +10345,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10367,7 +10367,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10393,7 +10393,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10415,7 +10415,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10441,7 +10441,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10459,7 +10459,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10477,7 +10477,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10499,7 +10499,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "id",
 			"type": "String",
@@ -10517,7 +10517,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10539,7 +10539,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10565,7 +10565,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "orginizationName",
 			"type": "String",
@@ -10583,7 +10583,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10605,7 +10605,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}],
 		"callbacks": [{
 			"name": "error",
@@ -10619,7 +10619,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "page",
 			"type": "Number",
@@ -10641,7 +10641,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10659,7 +10659,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10677,7 +10677,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10695,7 +10695,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "user",
 			"type": "String",
@@ -10713,7 +10713,7 @@
 		"args": [{
 			"name": "accessToken",
 			"type": "credentials",
-			"info": "The access_token obtained from Github. (optional)"
+			"info": "The access_token obtained from Github."
 		}, {
 			"name": "name",
 			"type": "String",

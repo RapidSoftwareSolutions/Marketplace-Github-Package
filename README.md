@@ -394,7 +394,7 @@ Check to see if the current user is subscribed to a thread.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The thread ID (required)
 
 #### Request example
@@ -421,7 +421,7 @@ Check if you are starring a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -454,7 +454,7 @@ Delete a notification thread subscription.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The thread ID (required)
 
 #### Request example
@@ -481,7 +481,7 @@ List public events
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -510,7 +510,7 @@ List public events for an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -541,7 +541,7 @@ List repository events
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -574,7 +574,7 @@ List issue events for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -607,7 +607,7 @@ List public events for a network of repositories
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The repository name (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -640,7 +640,7 @@ List events performed by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -671,7 +671,7 @@ List events for a user's organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | user            | String     | The user name (required)
 | organizationName| String     | The name of the organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
@@ -704,7 +704,7 @@ List public events performed by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -735,7 +735,7 @@ List events that a user has received
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -766,7 +766,7 @@ List public events that a user has received
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -797,7 +797,7 @@ Get all feeds available for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -822,7 +822,7 @@ View a single notification thread.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The ID of the thread (required)
 
 #### Request example
@@ -849,7 +849,7 @@ Get all notifications for the current user, grouped by repository.
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | all          | String     | If true, show notifications marked as read. Default: false (optional)
 | participating| String     | If true, only shows notifications in which the user is directly participating or mentioned. Default: false (optional)
 | since        | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
@@ -882,7 +882,7 @@ Get all notifications for the given user.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | all           | String     | If true, show notifications marked as read. Default: false (optional)
@@ -919,7 +919,7 @@ Get a Repository Subscription.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The onwer name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -952,7 +952,7 @@ List Stargazers
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -985,7 +985,7 @@ List repositories being starred by the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -1014,7 +1014,7 @@ List repositories being starred by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -1045,7 +1045,7 @@ List repositories being watched by the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -1074,7 +1074,7 @@ List repositories being watched by a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -1105,7 +1105,7 @@ Get watchers for repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -1138,7 +1138,7 @@ Mark a notification thread as read.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The Id of the thread (required)
 
 #### Request example
@@ -1165,7 +1165,7 @@ Mark notifications as read for authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | lastReadAt | String     | Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Default: Time.now (optional)
 
 #### Request example
@@ -1192,7 +1192,7 @@ Mark notifications in a repo as read.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | lastReadAt    | String     | Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Default: Time.now (optional)
@@ -1223,7 +1223,7 @@ This lets you subscribe or unsubscribe from a conversation. Unsubscribing from a
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The ID of the thread (required)
 | subscribed | String     | Determines if notifications should be received from this thread (optional)
 | ignored    | String     | Determines if all notifications should be blocked from this thread (optional)
@@ -1254,7 +1254,7 @@ Set a Repository Subscription
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | subscribed    | String     | Determines if notifications should be received from this repository. (optional)
@@ -1287,7 +1287,7 @@ Star a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -1316,7 +1316,7 @@ Unstar a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -1345,7 +1345,7 @@ Unwatch a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -1401,7 +1401,7 @@ Create a new authorization
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
@@ -1444,7 +1444,7 @@ Delete an authorization
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
@@ -1477,7 +1477,7 @@ Delete a grant. (In preview period. See README.)
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
@@ -1510,7 +1510,7 @@ Get a single authorization
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
@@ -1543,7 +1543,7 @@ List your authorizations
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | username   | String     | The username obtained from Github. (required)
 | password   | String     | The password obtained from Github. (required)
 | page       | Number     | Page number of the results to fetch. (optional)
@@ -1576,7 +1576,7 @@ Get a single grant. (In preview period. See README.)
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | id           | String     | The authorization ID (required)
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
@@ -1613,7 +1613,7 @@ List your grants. (In preview period. See README.)
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| The access_token obtained from Github. (optional)
+| accessToken  | credentials| The access_token obtained from Github.
 | username     | String     | The username obtained from Github. (required)
 | password     | String     | The password obtained from Github. (required)
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
@@ -1648,7 +1648,7 @@ Get or create an authorization for a specific app
 
 | Field       | Type       | Description
 |-------------|------------|----------
-| accessToken | credentials| The access_token obtained from Github. (optional)
+| accessToken | credentials| The access_token obtained from Github.
 | clientId    | String     | The 20 character OAuth app client key for which to create the token. (optional)
 | clientSecret| String     | The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
 | scopes      | JSON       | A list of scopes that this authorization is in. (optional)
@@ -1685,7 +1685,7 @@ Get or create an authorization for a specific app and fingerprint
 
 | Field       | Type       | Description
 |-------------|------------|----------
-| accessToken | credentials| The access_token obtained from Github. (optional)
+| accessToken | credentials| The access_token obtained from Github.
 | clientId    | String     | The 20 character OAuth app client key for which to create the token. (optional)
 | fingerprint | String     | A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 | clientSecret| String     | The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
@@ -1776,7 +1776,7 @@ Update an existing authorization
 
 | Field       | Type       | Description
 |-------------|------------|----------
-| accessToken | credentials| The access_token obtained from Github. (optional)
+| accessToken | credentials| The access_token obtained from Github.
 | id          | String     | The authorization ID (required)
 | scopes      | JSON       | A list of scopes that this authorization is in. (optional)
 | addScopes   | JSON       | A list of scopes to add to this authorization. (optional)
@@ -1815,7 +1815,7 @@ Create an organization
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | login      | String     | The organization's username. (required)
 | admin      | String     | The login of the user who will manage this organization. (required)
 | profileName| String     | The organization's display name. (optional)
@@ -1846,7 +1846,7 @@ Get license information
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -1871,7 +1871,7 @@ Queue an indexing job
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | target     | String     | A string representing the item to index. (required)
 
 #### Request example
@@ -1898,7 +1898,7 @@ Get statistics.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | type       | String     | Possible values: issues, hooks, milestones, orgs, comments, pages, users, gists, pulls, repos, all. (required)
 
 #### Request example
@@ -1925,7 +1925,7 @@ Sync LDAP mapping for a team.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | teamId     | Number     | The ID of the team (required)
 
 #### Request example
@@ -1952,7 +1952,7 @@ Sync LDAP mapping for a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -1979,7 +1979,7 @@ Update LDAP mapping for a team.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | teamId     | Number     | The ID of the team (required)
 | data       | String     | JSON payload with the new LDAP data. (optional). Ex.: {"ldap_dn": "cn=Enterprise Ops,ou=teams,dc=github,dc=com"}
 
@@ -2008,7 +2008,7 @@ Update LDAP mapping for a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | data       | String     | JSON payload with the new LDAP data. (optional). Ex.: {"ldap_dn": "uid=asdf,ou=users,dc=github,dc=com"}
 
@@ -2037,7 +2037,7 @@ Check if a gist is starred
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist (required)
 
 #### Request example
@@ -2064,7 +2064,7 @@ Create a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
 | description| String     | A description of the gist. (optional)
 | public     | String     | Indicates whether the gist is public. Default: false (required)
@@ -2095,7 +2095,7 @@ Create a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | body       | String     | The comment text. (required)
 
@@ -2124,7 +2124,7 @@ Delete a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2151,7 +2151,7 @@ Delete a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | commentId  | String     | The comment ID. (required)
 
@@ -2180,7 +2180,7 @@ Edit a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 | description| String     | A description of the gist. (optional)
 | files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
@@ -2211,7 +2211,7 @@ Edit a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | commentId  | String     | The comment ID. (required)
 | body       | String     | The comment text. (required)
@@ -2242,7 +2242,7 @@ Fork a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2269,7 +2269,7 @@ Get a single gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2296,7 +2296,7 @@ List the authenticated user's gists or if called anonymously, this will return a
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
@@ -2327,7 +2327,7 @@ Get a single comment
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | id         | String     | The comment ID. (required)
 
@@ -2356,7 +2356,7 @@ List comments on a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2383,7 +2383,7 @@ List gist commits
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2410,7 +2410,7 @@ List a user's gists
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -2443,7 +2443,7 @@ List gist forks
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -2474,7 +2474,7 @@ List all public gists
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
@@ -2501,7 +2501,7 @@ Get a specific revision of a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 | sha        | String     | The SHA1 hash of the revision (required)
 
@@ -2530,7 +2530,7 @@ List the authenticated user's starred gists
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
 #### Request example
@@ -2557,7 +2557,7 @@ Star a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2584,7 +2584,7 @@ Unstar a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
 #### Request example
@@ -2611,7 +2611,7 @@ Create a Blob
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | content       | String     | The new blob's content. (required)
@@ -2644,7 +2644,7 @@ Create a Commit
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | message       | String     | String of the commit message (required)
@@ -2683,7 +2683,7 @@ Create a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
@@ -2716,7 +2716,7 @@ Create a Tag Object
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | tag           | String     | String of the tag (required)
@@ -2755,7 +2755,7 @@ Create a Tree
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | tree          | JSON       | Array of Hash objects (of path, mode, type and sha) specifying a tree structure (required)
@@ -2788,7 +2788,7 @@ Delete a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
@@ -2819,7 +2819,7 @@ Get a Blob
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -2854,7 +2854,7 @@ Get a Commit
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -2885,7 +2885,7 @@ Get a Commit Signature Verification. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -2916,7 +2916,7 @@ Get a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
@@ -2947,7 +2947,7 @@ Get all References
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -2980,7 +2980,7 @@ Get a Tag
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -3011,7 +3011,7 @@ Get a Tag Signature Verification. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -3042,7 +3042,7 @@ Get all tag References
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -3075,7 +3075,7 @@ Get a Tree
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
@@ -3108,7 +3108,7 @@ Update a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
@@ -3143,7 +3143,7 @@ Create a new access token
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | installationId| Number     | The id of the installation for this integration. (required)
 | userId        | Number     | The id of the user for whom the integration is acting on behalf of. (optional)
 
@@ -3172,7 +3172,7 @@ Add assignees to an issue.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
@@ -3205,7 +3205,7 @@ Add labels to an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
@@ -3238,7 +3238,7 @@ Check assignee
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | assignee      | String     | Login for the user that this issue should be assigned to. (required)
@@ -3269,7 +3269,7 @@ Create an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | title         | String     | The title of the issue. (required)
@@ -3310,7 +3310,7 @@ Create a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
@@ -3343,7 +3343,7 @@ Create a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | name          | String     | The name of the label. (required)
@@ -3376,7 +3376,7 @@ Create a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | title         | String     | The title of the milestone. (required)
@@ -3413,7 +3413,7 @@ Delete a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | id            | String     | The ID of the comment (required)
@@ -3444,7 +3444,7 @@ Delete a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | name          | String     | The name of the label. (required)
@@ -3475,7 +3475,7 @@ Delete a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the milestone. (required)
@@ -3506,7 +3506,7 @@ Edit an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
@@ -3549,7 +3549,7 @@ Edit a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | id            | String     | The ID of the comment. (required)
@@ -3582,7 +3582,7 @@ Get a single issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
@@ -3613,7 +3613,7 @@ List all issues across all the authenticated user's visible repositories includi
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | filter     | String     | Indicates which sorts of issues to return. Can be one of: * assigned: Issues assigned to you, * created: Issues created by you, * mentioned: Issues mentioning you, * subscribed: Issues you're subscribed to updates for, * all: All issues the authenticated user can see, regardless of participation or creation, Default: assigned (optional)
 | state      | String     | Indicates the state of the issues to return. Can be either open, closed, or all. Default: open (optional)
 | labels     | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
@@ -3654,7 +3654,7 @@ List assignees
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 
@@ -3683,7 +3683,7 @@ Get a single comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | id            | String     | The ID of the comment. (required)
@@ -3714,7 +3714,7 @@ List comments on an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
@@ -3749,7 +3749,7 @@ List comments in a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | sort          | String     | Either created or updated. Default: created (optional)
@@ -3788,7 +3788,7 @@ Get a single event
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the reposotiry. (required)
 | id            | String     | The ID of the event. (required)
@@ -3819,7 +3819,7 @@ List events for an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
@@ -3854,7 +3854,7 @@ List events for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -3887,7 +3887,7 @@ List events for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     |  The number of the issue.(required)
@@ -3922,7 +3922,7 @@ List all issues for a given organization for the authenticated user
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization. (required)
 | filter          | String     | Indicates which sorts of issues to return. Can be one of: * assigned: Issues assigned to you, * created: Issues created by you, * mentioned: Issues mentioning you, * subscribed: Issues you're subscribed to updates for, * all: All issues the authenticated user can see, regardless of participation or creation, Default: assigned (optional)
 | state           | String     | Indicates the state of the issues to return. Can be either open, closed, or all. Default: open (optional)
@@ -3965,7 +3965,7 @@ List issues for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | milestone     | String     | If an integer is passed, it should refer to a milestone by its number field. If the string * is passed, issues with any milestone are accepted. If the string none is passed, issues without milestones are returned. (optional)
@@ -4016,7 +4016,7 @@ List all issues across owned and member repositories for the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | filter     | String     | Indicates which sorts of issues to return. Can be one of: * assigned: Issues assigned to you, * created: Issues created by you, * mentioned: Issues mentioning you, * subscribed: Issues you're subscribed to updates for, * all: All issues the authenticated user can see, regardless of participation or creation, Default: assigned (optional)
 | state      | String     | Indicates the state of the issues to return. Can be either open, closed, or all. Default: open (optional)
 | labels     | String     | String list of comma separated Label names. Example: bug,ui,@high (optional)
@@ -4057,7 +4057,7 @@ List labels on an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
@@ -4088,7 +4088,7 @@ Get a single label
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | name          | String     | The name of the label. (required)
@@ -4119,7 +4119,7 @@ List all labels for this repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -4152,7 +4152,7 @@ Get a single milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the milestone. (required)
@@ -4183,7 +4183,7 @@ Get labels for every issue in a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the milestone. (required)
@@ -4214,7 +4214,7 @@ List milestones for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | state         | String     | The state of the milestone. Either open, closed, or all. Default: open (optional)
@@ -4253,7 +4253,7 @@ Users with push access can lock an issue's conversation.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | he owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
@@ -4284,7 +4284,7 @@ Remove all labels from an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
@@ -4315,7 +4315,7 @@ Remove assignees from an issue.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
@@ -4348,7 +4348,7 @@ Remove a label from an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
@@ -4381,7 +4381,7 @@ Replace all labels for an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
@@ -4414,7 +4414,7 @@ Users with push access can unlock an issue's conversation.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
@@ -4445,7 +4445,7 @@ Update a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | oldname       | String     | The old name of the label. (required)
@@ -4480,7 +4480,7 @@ Update a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the milestone (required)
@@ -4519,7 +4519,7 @@ Cancel an import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -4548,7 +4548,7 @@ Delete a migration archive
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The migration ID. (required)
 
@@ -4577,7 +4577,7 @@ Get import commit authors. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | since         | String     | Only authors found after this id are returned. Provide the highest author ID you've seen so far. New authors may be added to the list at any point while the importer is performing the raw step. (optional)
@@ -4608,7 +4608,7 @@ Get import progress. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -4637,7 +4637,7 @@ List files larger than 100MB found during the import. (In preview period. See RE
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The owner name (required)
 | name       | String     | The name of the system to import from (required). Supported Subversion, Mercurial, and TFS.
 
@@ -4666,7 +4666,7 @@ Get the URL to a migration archive.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The ID of the migration (required)
 
@@ -4695,7 +4695,7 @@ Get the status of a migration
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The ID of the migration (required)
 
@@ -4724,7 +4724,7 @@ Get a list of migrations
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -4755,7 +4755,7 @@ Map a commit author. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | authorId      | String     | The commit author id. (required)
@@ -4790,7 +4790,7 @@ Set import LFS preference. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The owner name (required)
 | systemName | String     | The name of the system to import from (required). Supported Subversion, Mercurial, and TFS.
 
@@ -4819,7 +4819,7 @@ Start an import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | vcsUrl        | String     | The URL of the originating repository. (required)
@@ -4858,7 +4858,7 @@ Start a migration.
 
 | Field             | Type       | Description
 |-------------------|------------|----------
-| accessToken       | credentials| The access_token obtained from Github. (optional)
+| accessToken       | credentials| The access_token obtained from Github.
 | organizationName  | String     | The name of the organization (required)
 | repositories      | JSON       | A list of arrays indicating which repositories should be migrated. (required)
 | lockRepositories  | String     | Indicates whether repositories should be locked (to prevent manipulation) while migrating data. Default: false. (optional)
@@ -4891,7 +4891,7 @@ Unlock a repository that was locked for migration.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The ID of the migration (required)
 | repositoryName  | String     | The name of the repository (required)
@@ -4922,7 +4922,7 @@ Update existing import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | data          | String     | Json object with data to be updating (optional). If no data are provided, the import will be restarted. Ex.: {"vcs": "tfvc", "tfvc_project": "project1", "human_name": "project1 (tfs)"}
@@ -4953,7 +4953,7 @@ Lists all the emojis available to use on GitHub.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -4978,7 +4978,7 @@ Get a single gitignore template
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | name       | String     | The name of the .gitignore template to get e.g. 'C' (required)
 
 #### Request example
@@ -5005,7 +5005,7 @@ Lists available gitignore templates
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -5030,7 +5030,7 @@ Get an individual license. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | license    | String     | The name of the license. Ex: mit (required)
 
 #### Request example
@@ -5057,7 +5057,7 @@ List all licenses. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -5082,7 +5082,7 @@ This endpoint provides information about GitHub.com, the service. Or, if you acc
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -5107,7 +5107,7 @@ Get your current rate limit status
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -5132,7 +5132,7 @@ Get the contents of a repository's license. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -5161,7 +5161,7 @@ Render an arbitrary Markdown document
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | text       | String     | The Markdown text to render (required)
 | mode       | String     | The rendering mode, `markdown` to render a document as plain Markdown, just like README files are rendered. `gfm` to render a document as user-content, e.g. like user comments or issues are rendered. In GFM mode, hard line breaks are always taken into account, and issue and user mentions are linked accordingly. (optional)
 | context    | String     | The repository context. Only taken into account when rendering as `gfm` (optional)
@@ -5192,7 +5192,7 @@ Render a Markdown document in raw mode
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | data       | String     | Raw data to send as the body of the request (required)
 
 #### Request example
@@ -5219,7 +5219,7 @@ Add or update organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 | role            | String     | The role to give the user in the organization. (required). * admin - The user will become an owner of the organization, * member - The user will become a non-owner member of the organization. Default: member
@@ -5250,7 +5250,7 @@ Add team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 | user       | String     | The user name (required)
 | role       | String     | The role that this user should have in the team. (optional). The role that this user should have in the team. Can be one of: * member - a normal member of the team, * maintainer - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description. Default: member
@@ -5281,7 +5281,7 @@ Add team repository
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | id              | String     | The team ID (required)
 | orginizationName| String     | The name of the organization (required)
 | repositoryName  | String     | The name of the repository (required)
@@ -5314,7 +5314,7 @@ Check membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -5343,7 +5343,7 @@ Check public membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -5372,7 +5372,7 @@ Check if a team manages a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | id            | String     | The team ID (required)
 | user          | String     | The user name (required)
 | repositoryName| String     | The name of the repository (required)
@@ -5403,7 +5403,7 @@ Conceal a user's membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -5432,7 +5432,7 @@ Create a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | name            | String     | Must be passed as "web". (required)
 | config          | JSON       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
@@ -5467,7 +5467,7 @@ Create team
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | name            | String     | The name of the team. (required)
 | description     | String     | The description of the team. (optional)
@@ -5502,7 +5502,7 @@ Delete a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
@@ -5531,7 +5531,7 @@ Method description
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 
 #### Request example
@@ -5558,7 +5558,7 @@ Remove team repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | id            | String     | The team ID (required)
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
@@ -5589,7 +5589,7 @@ Edit a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 | config          | JSON       | Key/value pairs to provide settings for this webhook (required). The config object can accept the following keys: *url (Required) - The URL to which the payloads will be delivered; *content_type (string) - The media type used to serialize the payloads. Supported values include json and form. The default is form; *secret (string) - If provided, payloads will be delivered with an X-Hub-Signature header. The value of this header is computed as the [HMAC hex digest of the body, using the secret as the key][hub-signature]; *insecure_ssl (string) - Determines whether the SSL certificate of the host for url will be verified when delivering payloads. Supported values include "0" (verification is performed) and "1" (verification is not performed). The default is "0". We strongly recommend not setting this to "1" as you are subject to man-in-the-middle and other attacks.
@@ -5624,7 +5624,7 @@ Edit team
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 | name       | String     | The name of the team. (required)
 | description| String     | The description of the team. (optional)
@@ -5657,7 +5657,7 @@ Get an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -5688,7 +5688,7 @@ List all organizations
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | since      | String     | The integer ID of the last Organization that you've seen. (optional)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -5719,7 +5719,7 @@ List organizations for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -5750,7 +5750,7 @@ Get single hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
@@ -5779,7 +5779,7 @@ List hooks
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -5810,7 +5810,7 @@ Members list
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | filter          | String     | Filter members returned in the list. (optional). Can be one of: * 2fa_disabled: Members without two-factor authentication enabled. Available for organization owners. * all: All members the authenticated user can see.
 | role            | String     | Filter members returned by their role. (optional). Can be one of: * all: All members of the organization, regardless of role. * admin: Organization owners. * member: Non-owner organization members. Default: all
@@ -5845,7 +5845,7 @@ Get organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -5874,7 +5874,7 @@ List your organization memberships
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | state      | String     | Indicates the state of the memberships to return. Can be either active or pending. If not specified, both active and pending memberships are returned. (optional)
 
 #### Request example
@@ -5901,7 +5901,7 @@ Public members list
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 
 #### Request example
@@ -5928,7 +5928,7 @@ Get team
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 
 #### Request example
@@ -5955,7 +5955,7 @@ Method description
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     |  The team ID(required)
 | role       | String     | Filters members returned by their role in the team. (optional). Can be one of: * member - normal members of the team. * maintainer - team maintainers. * all - all members of the team. Default: all
 | page       | Number     | Page number of the results to fetch. (optional)
@@ -5988,7 +5988,7 @@ Get team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 | user       | String     | The user name (required)
 
@@ -6017,7 +6017,7 @@ Get team repos
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -6048,7 +6048,7 @@ List teams
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -6079,7 +6079,7 @@ Ping a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
@@ -6108,7 +6108,7 @@ Publicize a user's membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -6137,7 +6137,7 @@ Remove a member
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -6166,7 +6166,7 @@ Remove organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
@@ -6195,7 +6195,7 @@ Remove team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 | user       | String     | The user name (required)
 
@@ -6224,7 +6224,7 @@ Edit an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | billingEmail    | String     | Billing email address. This address is not publicized. (optional)
 | company         | String     | The company name. (optional)
@@ -6263,7 +6263,7 @@ Get if a pull request has been merged
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6298,7 +6298,7 @@ Create a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | title         | String     | The title of the pull request. (required)
@@ -6335,7 +6335,7 @@ Create a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6374,7 +6374,7 @@ Reply to existing pull request comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6409,7 +6409,7 @@ Create a pull request from an existing issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | issue         | Number     | The issue number in this repository to turn into a Pull Request. (required)
@@ -6444,7 +6444,7 @@ Delete a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the comment (required)
@@ -6475,7 +6475,7 @@ Edit a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the comment (required)
@@ -6508,7 +6508,7 @@ Get a single pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6539,7 +6539,7 @@ List pull requests
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | state         | String     | Either open, closed, or all to filter by state. Default: open (optional)
@@ -6582,7 +6582,7 @@ Get a single comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the comment (required)
@@ -6613,7 +6613,7 @@ List comments on a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6648,7 +6648,7 @@ List comments in a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sort          | String     | Possible values are: `created`, `updated`, Default: `created` (optional)
@@ -6687,7 +6687,7 @@ List commits on a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6722,7 +6722,7 @@ List pull requests files
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6757,7 +6757,7 @@ Merge a pull request (Merge Button)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6796,7 +6796,7 @@ Update a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
@@ -6835,7 +6835,7 @@ Create reaction for a commit comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -6868,7 +6868,7 @@ Create reaction for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | Te owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | Tne number of the issue (required)
@@ -6901,7 +6901,7 @@ Create reaction for an issue comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -6934,7 +6934,7 @@ Create reaction for a pull request review comment. (In preview period. See READM
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -6967,7 +6967,7 @@ Delete a reaction. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The reaction ID (required)
 
 #### Request example
@@ -6994,7 +6994,7 @@ List reactions for a commit comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -7027,7 +7027,7 @@ List reactions for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
@@ -7060,7 +7060,7 @@ List reactions for an issue comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -7093,7 +7093,7 @@ List reactions for a pull request review comment. (In preview period. See README
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -7126,7 +7126,7 @@ Add user as a collaborator
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | collabuser    | String     | The name of the collaborator (required)
@@ -7159,7 +7159,7 @@ Add required status checks contexts of protected branch. (In preview period. See
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The branch name (required)
@@ -7196,7 +7196,7 @@ Add team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -7233,7 +7233,7 @@ Add user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -7270,7 +7270,7 @@ Check if user is a collaborator.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | collabuser    | String     | The name of the collaborator (required)
@@ -7301,7 +7301,7 @@ Compare two commits.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | base          | String     | The branch (or git ref) you want your changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repositoryName that requests a merge to a base of another repositoryName. (required)
@@ -7334,7 +7334,7 @@ Create a new repository for the authenticated user.
 
 | Field            | Type       | Description
 |------------------|------------|----------
-| accessToken      | credentials| The access_token obtained from Github. (optional)
+| accessToken      | credentials| The access_token obtained from Github.
 | name             | String     | The name of the repository (required)
 | description      | String     | A short description of the repository (optional)
 | homepage         | String     | A URL with more information about the repository (optional)
@@ -7387,7 +7387,7 @@ Create a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA1 hash of the commit (required)
@@ -7424,7 +7424,7 @@ Create a deployment.
 
 | Field                | Type       | Description
 |----------------------|------------|----------
-| accessToken          | credentials| The access_token obtained from Github. (optional)
+| accessToken          | credentials| The access_token obtained from Github.
 | user                 | String     | The owner name (required)
 | repositoryName       | String     | The name of the repository (required)
 | ref                  | String     | The ref to deploy. This can be a branch, tag, or sha. (required)
@@ -7471,7 +7471,7 @@ Create a deployment status.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The deployment ID (required)
@@ -7514,7 +7514,7 @@ Create a new file in the given repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | path          | String     | The content path. (required)
@@ -7553,7 +7553,7 @@ Create a new repository for an organization.
 
 | Field            | Type       | Description
 |------------------|------------|----------
-| accessToken      | credentials| The access_token obtained from Github. (optional)
+| accessToken      | credentials| The access_token obtained from Github.
 | orginizationName | String     | The name of the organization (required)
 | name             | String     | The name of the repository (required)
 | description      | String     | A short description of the repository (optional)
@@ -7608,7 +7608,7 @@ Create a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | name          | String     | Use web for a webhook or use the name of a valid service. (required)
@@ -7645,7 +7645,7 @@ Add a new deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | title         | String     | A name for the key. (required)
@@ -7680,7 +7680,7 @@ Create a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | name          | String     | The name of the project (required)
@@ -7713,7 +7713,7 @@ Create a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -7750,7 +7750,7 @@ Create a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
@@ -7783,7 +7783,7 @@ Create a release.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| The access_token obtained from Github. (optional)
+| accessToken    | credentials| The access_token obtained from Github.
 | user           | String     | The owner name (required)
 | repositoryName | String     | The name of the repository (required)
 | tagName        | String     | String of the tag (required)
@@ -7824,7 +7824,7 @@ Create a status.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA1 hash of the status (required)
@@ -7863,7 +7863,7 @@ Delete a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -7892,7 +7892,7 @@ Delete a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The asset ID (required)
@@ -7923,7 +7923,7 @@ Delete a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -7954,7 +7954,7 @@ Delete a download.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The download ID (required)
@@ -7985,7 +7985,7 @@ Delete a file.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | path          | String     | The content path. (required)
@@ -8024,7 +8024,7 @@ Deleate a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
@@ -8055,7 +8055,7 @@ Delete a repository invitation. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The invitation ID (required)
 
@@ -8084,7 +8084,7 @@ Remove a deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The key ID (required)
@@ -8115,7 +8115,7 @@ Delete a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
@@ -8146,7 +8146,7 @@ Delete a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
@@ -8177,7 +8177,7 @@ Delete a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -8208,7 +8208,7 @@ Delete a release
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
@@ -8239,7 +8239,7 @@ Update a repo.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | user            | String     | The owner name (required)
 | repositoryName  | String     | The name of the repository (required)
 | name            | String     | The name of the repository (required)
@@ -8290,7 +8290,7 @@ Edit a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The asset ID (required)
@@ -8325,7 +8325,7 @@ Edit a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
@@ -8366,7 +8366,7 @@ Edit a release.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| The access_token obtained from Github. (optional)
+| accessToken    | credentials| The access_token obtained from Github.
 | user           | String     | The owner name (required)
 | repositoryName | String     | The name of the repository (required)
 | id             | String     | The release ID (required)
@@ -8409,7 +8409,7 @@ Create a fork.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | organization  | String     | Optional parameter to specify the organization name if forking into an organization. (optional)
@@ -8440,7 +8440,7 @@ Get a repo for a user.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -8469,7 +8469,7 @@ List your repositories
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | visibility | String     | Can be one of `all`, `public`, or `private`. Default: `all`. (optional)
 | affiliation| String     | Comma-separated list of values. Can include: `owner`, `collaborator`, `organization_member`. (optional)
 | type       | String     | Possible values: `all`, `owner`, `public`, `private`, `member`. Default: `all`. (optional)
@@ -8508,7 +8508,7 @@ List commit comments for a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -8541,7 +8541,7 @@ Get archive link.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | archiveFormat | String     | Either tarball or zipball, Deafult: tarball. (required)
@@ -8574,7 +8574,7 @@ Get a single release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The assetID (required)
@@ -8605,7 +8605,7 @@ Get branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -8640,7 +8640,7 @@ Get branch protection. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -8675,7 +8675,7 @@ List branches. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | protected     | String     | Set to true to only return protected branches (optional)
@@ -8710,7 +8710,7 @@ Get a single repo by id.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The repository ID (required)
 
 #### Request example
@@ -8737,7 +8737,7 @@ Get the total number of clones and breakdown per day or week for the last 14 day
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -8770,7 +8770,7 @@ List collaborators
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -8803,7 +8803,7 @@ Get the combined status for a specific ref.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | Ref to fetch the status for. It can be a SHA, a branch name, or a tag name. (required)
@@ -8838,7 +8838,7 @@ Get a single commit.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA1 hash of the commit (required)
@@ -8869,7 +8869,7 @@ Get a single commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -8900,7 +8900,7 @@ List comments for a single commit.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA1 hash of the commit (required)
@@ -8935,7 +8935,7 @@ List commits on a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | Sha or branch to start listing commits from. (optional)
@@ -8978,7 +8978,7 @@ Get the contents of a file or directory in a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | path          | String     | The content path. (required)
@@ -9011,7 +9011,7 @@ Get contributors for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | anon          | String     | Set to 1 or true to include anonymous contributors in results. (optional)
@@ -9046,7 +9046,7 @@ List deployment statuses.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The deployment ID (required)
@@ -9077,7 +9077,7 @@ List deployments.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The short or long sha that was recorded at creation time. Default: none. (optional)
@@ -9118,7 +9118,7 @@ Get a single download.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The download ID (required)
@@ -9149,7 +9149,7 @@ List downloads for repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9182,7 +9182,7 @@ List repositories for the specified org.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 | type            | String     | Possible values: `all`, `public`, `private`, `forks`, `sources`, `member`. Default: `all`. (optional)
 | page            | Number     | Page number of the results to fetch. (optional)
@@ -9215,7 +9215,7 @@ List public repositories for the specified user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | type       | String     | Possible values: `all`, `owner`, `member`. Default: `owner`. (optional)
 | sort       | String     | Possible values: `created`, `updated`, `pushed`, `full_name`. Default: `full_name`. (optional)
@@ -9252,7 +9252,7 @@ List forks.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sort          | String     | Possible values: `newest`, `oldest`, `stargazers`, default: `newest`. (optional)
@@ -9287,7 +9287,7 @@ Get single hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
@@ -9318,7 +9318,7 @@ List hooks.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9351,7 +9351,7 @@ List a user's repository invitations. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | repositoryName| String     | The name of the repository (required)
 
 #### Request example
@@ -9378,7 +9378,7 @@ Get a deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The key ID (required)
@@ -9409,7 +9409,7 @@ List deploy keys.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9442,7 +9442,7 @@ Get languages for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9475,7 +9475,7 @@ Get latest Pages build
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -9504,7 +9504,7 @@ Get the latest release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -9533,7 +9533,7 @@ Get information about a Pages site. (Use preview header to include additional in
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9566,7 +9566,7 @@ Get a specific Pages build
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The build ID (required)
@@ -9597,7 +9597,7 @@ List Pages builds
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9630,7 +9630,7 @@ Get the top 10 popular contents over the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -9663,7 +9663,7 @@ List a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
@@ -9694,7 +9694,7 @@ Get project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
@@ -9725,7 +9725,7 @@ List project cards.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -9756,7 +9756,7 @@ Get a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -9787,7 +9787,7 @@ List a project's columns.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
@@ -9818,7 +9818,7 @@ List projects.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -9847,7 +9847,7 @@ Get required status checks of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -9882,7 +9882,7 @@ List required status checks contexts of protected branch. (In preview period. Se
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -9917,7 +9917,7 @@ Get restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -9952,7 +9952,7 @@ List team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -9987,7 +9987,7 @@ List user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10022,7 +10022,7 @@ List all public repositories
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | since      | String     | The integer ID of the last Repository that you've seen. (optional)
 
 #### Request example
@@ -10049,7 +10049,7 @@ Get the README for the given repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | The name of the commit/branch/tag. Default: the repository’s default branch (usually master) (optional)
@@ -10080,7 +10080,7 @@ Get the top 10 referrers over the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -10113,7 +10113,7 @@ Get a single release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
@@ -10144,7 +10144,7 @@ Get a release by tag name.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | tag           | String     | String of the tag (required)
@@ -10175,7 +10175,7 @@ List releases for a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -10208,7 +10208,7 @@ Get the SHA-1 of a commit reference.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
@@ -10239,7 +10239,7 @@ Get the number of additions and deletions per week.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -10268,7 +10268,7 @@ Get the last year of commit activity data.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -10297,7 +10297,7 @@ Get contributors list with additions, deletions, and commit counts.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -10326,7 +10326,7 @@ Get the weekly commit count for the repository owner and everyone else.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -10355,7 +10355,7 @@ Get the number of commits per hour in each day.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -10384,7 +10384,7 @@ Get status for a specfic ref.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA hash of the commit (required)
@@ -10419,7 +10419,7 @@ Get tags for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -10452,7 +10452,7 @@ Get teams for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -10485,7 +10485,7 @@ Get the total number of views and breakdown per day or week for the last 14 days
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | page          | Number     | Page number of the results to fetch. (optional)
@@ -10518,7 +10518,7 @@ List assets for a release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
@@ -10549,7 +10549,7 @@ Perform a merge.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | base          | String     | The branch (or git ref) you want your changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repositoryName that requests a merge to a base of another repositoryName. (required)
@@ -10584,7 +10584,7 @@ Move a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
@@ -10619,7 +10619,7 @@ Move a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -10652,7 +10652,7 @@ Ping a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
@@ -10683,7 +10683,7 @@ Remove branch protection. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10718,7 +10718,7 @@ Remove user as a collaborator.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | collabuser    | String     | The name of the collaborator (required)
@@ -10749,7 +10749,7 @@ Remove required status checks of protected branch. (In preview period. See READM
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10784,7 +10784,7 @@ Remove required status checks contexts of protected branch. (In preview period. 
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10819,7 +10819,7 @@ Remove restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10854,7 +10854,7 @@ Remove team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10889,7 +10889,7 @@ Remove user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10924,7 +10924,7 @@ Replace required status checks contexts of protected branch. (In preview period.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10961,7 +10961,7 @@ Replace team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -10998,7 +10998,7 @@ Replace user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | branch        | String     | The name of the branch (required)
@@ -11035,7 +11035,7 @@ Request a page build. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
@@ -11064,7 +11064,7 @@ Test a [push] hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
@@ -11095,7 +11095,7 @@ Update branch protection. (In preview period. See README.)
 
 | Field               | Type       | Description
 |---------------------|------------|----------
-| accessToken         | credentials| The access_token obtained from Github. (optional)
+| accessToken         | credentials| The access_token obtained from Github.
 | user                | String     | The owner name (required)
 | repositoryName      | String     | The name of the repository (required)
 | branch              | String     | The name of the branch (required)
@@ -11134,7 +11134,7 @@ Update a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
@@ -11167,7 +11167,7 @@ Update a file.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | path          | String     | The content path. (required)
@@ -11208,7 +11208,7 @@ Update a repository invitation. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The invitation ID (required)
 | permission    | String     | The permissions that the associated user will have on the repository. (optional)
@@ -11239,7 +11239,7 @@ Update a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
@@ -11274,7 +11274,7 @@ Update a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
@@ -11307,7 +11307,7 @@ Update a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
@@ -11340,7 +11340,7 @@ Update required status checks of protected branch. (In preview period. See READM
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The new name of the column (required)
 | branch        | String     | The branch name (required)
@@ -11377,7 +11377,7 @@ Upload a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| The access_token obtained from Github. (optional)
+| accessToken   | credentials| The access_token obtained from Github.
 | user          | String     | The owner name (required)
 | repositoryName| String     | The new name of the repository (required)
 | id            | String     | The release ID (required)
@@ -11414,7 +11414,7 @@ Search code.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | q          | String     | Search Term (required)
 | sort       | String     | The sort field. Can only be indexed, which indicates how recently a file has been indexed by the GitHub search infrastructure. Default: results are sorted by best match. (optional)
 | order      | String     | asc or desc (optional)
@@ -11449,7 +11449,7 @@ Search against public email addresses.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | email      | String     | The email address (required)
 
 #### Request example
@@ -11476,7 +11476,7 @@ Search issues.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | q          | String     | Search Term (required)
 | sort       | String     | The sort field. Can be comments, created, or updated. Default: results are sorted by best match. (optional)
 | order      | String     | asc or desc (optional)
@@ -11511,7 +11511,7 @@ Search repositories.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | q          | String     | Search Term (required)
 | sort       | String     | stars, forks, or updated (optional)
 | order      | String     | asc or desc (optional)
@@ -11546,7 +11546,7 @@ Search users.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | q          | String     | Search Term (required)
 | sort       | String     | The sort field. Can be followers, repositories, or joined. Default: results are sorted by best match. (optional)
 | order      | String     | asc or desc (optional)
@@ -11581,7 +11581,7 @@ Accept a repository invitation. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The invitation ID (required)
 
 #### Request example
@@ -11608,7 +11608,7 @@ Add email address(es)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | body       | JSON       | You can post a single email address or an array of addresses. (required)
 
 #### Request example
@@ -11635,7 +11635,7 @@ Check if you are following a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -11662,7 +11662,7 @@ Check if one user follows another
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | otherUser  | String     | Other user name (required)
 
@@ -11691,7 +11691,7 @@ Create a GPG key. (In preview period. See README.)
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | armoredPublicKey| String     | GPG key contents (required)
 
 #### Request example
@@ -11718,7 +11718,7 @@ Create a public key
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | title      | String     | The key title (required)
 | key        | String     | The SSH key (required)
 
@@ -11747,7 +11747,7 @@ Decline a repository invitation. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The invitation ID (required)
 
 #### Request example
@@ -11774,7 +11774,7 @@ Delete email address(es)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | body       | JSON       | You can post a single email address or an array of addresses. (required)
 
 #### Request example
@@ -11801,7 +11801,7 @@ Delete a GPG key. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GPG key ID (required)
 
 #### Request example
@@ -11828,7 +11828,7 @@ Delete a public key
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The key ID (required)
 
 #### Request example
@@ -11855,7 +11855,7 @@ Demote a site administrator to an ordinary user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -11882,7 +11882,7 @@ Edit your organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The new name of the organization (required)
 | state           | String     | The state that the membership should be in. Only "active" will be accepted. (required)
 
@@ -11911,7 +11911,7 @@ Follow a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -11938,7 +11938,7 @@ Get the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -11963,7 +11963,7 @@ Get all users
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | since      | Number     | The integer ID of the last User that you’ve seen. (optional)
 
 #### Request example
@@ -11990,7 +11990,7 @@ Get a single user by GitHub ID
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GitHub user ID (required)
 
 #### Request example
@@ -12017,7 +12017,7 @@ List email addresses for a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12046,7 +12046,7 @@ List the authenticated user's followers
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12075,7 +12075,7 @@ List a user's followers
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -12106,7 +12106,7 @@ List who the authenticated user is following
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12135,7 +12135,7 @@ List who a user is following
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -12166,7 +12166,7 @@ Get a single user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -12193,7 +12193,7 @@ Get a single GPG key. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GPG key ID (required)
 
 #### Request example
@@ -12220,7 +12220,7 @@ List your GPG keys. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12249,7 +12249,7 @@ Get a single public key
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The key ID (required)
 
 #### Request example
@@ -12276,7 +12276,7 @@ List your public keys
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12305,7 +12305,7 @@ List public keys for a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
@@ -12336,7 +12336,7 @@ Get your organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github. (optional)
+| accessToken     | credentials| The access_token obtained from Github.
 | orginizationName| String     | The name of the organization (required)
 
 #### Request example
@@ -12363,7 +12363,7 @@ List organizations for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12392,7 +12392,7 @@ List a user's repository invitations. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 
 #### Request example
 ```json
@@ -12417,7 +12417,7 @@ Get your teams
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
@@ -12446,7 +12446,7 @@ Promote an ordinary user to a site administrator
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -12473,7 +12473,7 @@ Suspend a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -12500,7 +12500,7 @@ Method description
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -12527,7 +12527,7 @@ Unsuspend a user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
 #### Request example
@@ -12554,7 +12554,7 @@ Update the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| The access_token obtained from Github. (optional)
+| accessToken| credentials| The access_token obtained from Github.
 | name       | String     | The new name of the user (optional)
 | email      | String     | Publicly visible email address. (optional)
 | blog       | String     | The new blog URL of the user. (optional)
