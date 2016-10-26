@@ -55,7 +55,6 @@ describe("Github API package", () => {
         credentials: ['accessToken']
     }
 
-    let abc = 0;
     function prepareApi(struct, baseType) {
         if (!baseType)
             baseType = "";
