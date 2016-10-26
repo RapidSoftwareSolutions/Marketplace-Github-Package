@@ -4133,7 +4133,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4189,7 +4189,7 @@
 			"type": "String",
 			"info": "The team ID (required)"
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4215,7 +4215,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4237,7 +4237,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4285,7 +4285,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4307,7 +4307,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4341,7 +4341,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4375,7 +4375,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4441,7 +4441,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4505,7 +4505,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4583,7 +4583,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4605,7 +4605,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4631,7 +4631,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4665,7 +4665,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4705,7 +4705,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}],
@@ -4819,7 +4819,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4845,7 +4845,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4867,7 +4867,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4889,7 +4889,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4911,7 +4911,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -4955,7 +4955,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -6281,7 +6281,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -7847,7 +7847,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}, {
@@ -10223,7 +10223,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The new name of the organization (required)"
 		}, {
@@ -10555,7 +10555,7 @@
 			"type": "credentials",
 			"info": "The access_token obtained from Github."
 		}, {
-			"name": "orginizationName",
+			"name": "organizationName",
 			"type": "String",
 			"info": "The name of the organization (required)"
 		}],
