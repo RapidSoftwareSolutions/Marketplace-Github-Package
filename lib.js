@@ -7,32 +7,30 @@ const path = require('path');
     let clients    = {};
 
     let mediaHash = JSON.parse(fs.readFileSync(path.join(__dirname, "media_tree.json"), "utf8"));
-    let createClient = (accept) => 
-        new GH({
-            debug: false,
-            protocol: 'https',
-            host: 'api.github.com',
-            followRedirects: false,
-            timeout: 5000,
-            headers: {
-                'user-agent': 'RapidApi-App',
-                'accept': accept,
-            },
-        });
-
     for(let accept in mediaHash) {
-        clients[accept] = createClient(accept);
+        //clients[accept] = createClient(accept);
 
         for(let i in mediaHash[accept]) {
             mediaTypes[mediaHash[accept][i]] = accept;
         }
     }
 
-    clients['default'] = createClient('application/vnd.github+json');
-
-    module.exports.client = clients;
+    //module.exports.client = clients;
     module.exports.accept = mediaTypes;
 })();
+
+module.exports.createClient = (accept) => 
+    new GH({
+        debug: false,
+        protocol: 'https',
+        host: 'api.github.com',
+        followRedirects: false,
+        timeout: 5000,
+        headers: {
+            'user-agent': 'RapidApi-App ' + new Date(),
+            'accept': accept,
+        },
+    });
 
 module.exports.toCamelCase = (str, upper) => {
     str = str.toLowerCase().replace(/(?:(^.)|(\s+.)|(-.)|(_.))/g, 
@@ -53,6 +51,27 @@ module.exports.clearArgs = (obj) => {
             delete obj[i];
 
     return obj;
+}
+
+module.exports.methodAuth = (method, args) => {
+    switch(method) {
+        //kmp
+        /* You must use Basic Authentication when accessing it, 
+        where the username is the OAuth application 
+        client_id and the password is its client_secret*/
+
+        case 'checkAuthorization': 
+        case 'resetAuthorization':
+        case 'revokeAuthorization':
+        //case 'deleteGrantAuthorization':
+            return {
+                type: 'basic',
+                username: args.clientId,
+                password: args.clientSecret
+            };
+
+        default: return false;
+    }
 }
 
 module.exports.metadata     = () => fs.readFileSync('./git_metadata.json').toString();

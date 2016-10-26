@@ -11,7 +11,8 @@ const PORT          = process.env.PORT || 8080;
 const app           = express();
 const optionsHash   = {
     'organization_name': 'org',
-    'repository_name':   'repo'
+    'repository_name':   'repo',
+    'token':              'access_token'
 };
 
 let metadata   = lib.metadata(),
@@ -25,13 +26,13 @@ app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(JSON.parse(trueMeta)); 
 for (let {name, args, url, github} of metaObject.blocks) {
     let gitSection = github.section,
         gitName    = github.name,
-        client     = lib.client[lib.accept[url] || 'default'],
         reqArgs    = [];
 
     for(let arg in args) if(arg.req) reqArgs.push(arg);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
-        let auth     = { type: 'oauth' };
+        let client   = lib.createClient(lib.accept[url] || 'application/vnd.github+json')
+        let auth     = {};
         let options  = {};
         let response = {
             callback     : "",
@@ -40,24 +41,24 @@ for (let {name, args, url, github} of metaObject.blocks) {
 
         req.body.args = lib.clearArgs(req.body.args);
 
-        auth.token = req.body.args.accessToken;
+        if(req.body.args.accessToken) {
+            auth.type  = 'oauth';
+            auth.token = req.body.args.accessToken;
+        }
+
+        if(req.body.args.clientSecret) {
+            auth.type  = 'oauth'
+            auth.key    = req.body.args.clientId;
+            auth.secret = req.body.args.clientSecret;
+        }
 
         if(req.body.args.username || req.body.args.password) {
             auth.type     = 'basic';
             auth.username = req.body.args.username;
             auth.password = req.body.args.password;
 
-            delete req.body.args.username;
-            delete req.body.args.password;
-            delete auth.token;
-        }
-
-        if(req.body.args.clientSecret) {
-            auth.key    = req.body.args.clientId;
-            auth.secret = req.body.args.clientSecret;
-
-            delete req.body.args.clientSecret
-            delete auth.token;
+            delete auth.key;
+            delete auth.secret;
         }
 
         if(req.body.args.twoFactorCode) {
@@ -68,10 +69,10 @@ for (let {name, args, url, github} of metaObject.blocks) {
             delete req.body.args.twoFactorCode;
         }
 
-        if(auth.token && auth.token != "") {
-            client.authenticate(auth);
+        if(Object.keys(auth).length > 0) {
+            client.authenticate(lib.methodAuth(name, req.body.args) || auth);
         }
-       
+
         res.status(200);
 
         for(let key in req.body.args) {
@@ -83,7 +84,7 @@ for (let {name, args, url, github} of metaObject.blocks) {
 
             if(!!~reqArgs.indexOf(key) && !key) {
                 response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
-                   response.callback = 'error';
+                response.callback = 'error';
 
                 res.send(response);
                 return;
@@ -91,7 +92,7 @@ for (let {name, args, url, github} of metaObject.blocks) {
         }
 
         let to = options['to'] || 'to';
-        
+
         if(gitName == 'createFile')
             options['content'] = new Buffer(options['content'] || ' ').toString('base64');
 
