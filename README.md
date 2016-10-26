@@ -8,7 +8,7 @@ An object oriented wrapper for the GitHub v3 API.
 2. In the user settings sidebar, click *Personal access tokens*.
 3. Click *Generate new token*.
 4. Give your token a descriptive name.
-5. Select the scopes you wClick Generate token.ish to grant to this token.
+5. Select the scopes you wish to grant to this token.
 6. Click Generate token.
 7. Copy the token to your clipboard. For security reasons, after you navigate off this page, no one will be able to see the token again.
 
