@@ -488,9 +488,9 @@ describe("Github API package", () => {
         });
     });
 
-    it("/getOrCreateAuthorizationForAppAuthorization", () => {
+    it("/getOrCreateAuthorizationForApp", () => {
         return request(app)
-        .post("/api/Github/getOrCreateAuthorizationForAppAuthorization")
+        .post("/api/Github/getOrCreateAuthorizationForApp")
         .send({args:{
             accessToken: token, client_id: "String", client_secret: "String", scopes: "Array", note: "String", note_url: "String", fingerprint: "String", 
         }})
@@ -500,9 +500,9 @@ describe("Github API package", () => {
         });
     });
 
-    it("/getOrCreateAuthorizationForAppAndFingerprintAuthorization", () => {
+    it("/getOrCreateAuthorizationForAppAndFingerprint", () => {
         return request(app)
-        .post("/api/Github/getOrCreateAuthorizationForAppAndFingerprintAuthorization")
+        .post("/api/Github/getOrCreateAuthorizationForAppAndFingerprint")
         .send({args:{
             accessToken: token, client_id: "String", fingerprint: "String", client_secret: "String", scopes: "Array", note: "String", note_url: "String", 
         }})

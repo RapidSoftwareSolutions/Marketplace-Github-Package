@@ -12,399 +12,17 @@ An object oriented wrapper for the GitHub v3 API.
 6. Click **Generate token**.
 7. Copy the token to your clipboard. For security reasons, after you navigate off this page, no one will be able to see the token again.
 
-## TOC: 
-* [checkNotificationThreadSubscription](#checkNotificationThreadSubscription)
-* [checkRepositoryStarring](#checkRepositoryStarring)
-* [deleteNotificationThreadSubscription](#deleteNotificationThreadSubscription)
-* [getPublicEvents](#getPublicEvents)
-* [getOrganizationEvents](#getOrganizationEvents)
-* [getRepositoryEvents](#getRepositoryEvents)
-* [getRepositoryIssuesEvents](#getRepositoryIssuesEvents)
-* [getRepositoryNetworkEvents](#getRepositoryNetworkEvents)
-* [getUserPerformedEvents](#getUserPerformedEvents)
-* [getUserOrganizationEvents](#getUserOrganizationEvents)
-* [getUserPublicPerformedEvents](#getUserPublicPerformedEvents)
-* [getUserReceivedEvents](#getUserReceivedEvents)
-* [getUserReceivedPublicEvents](#getUserReceivedPublicEvents)
-* [getFeeds](#getFeeds)
-* [getNotificationThread](#getNotificationThread)
-* [getUserNotifications](#getUserNotifications)
-* [getUserRepositoryNotifications](#getUserRepositoryNotifications)
-* [getRepositorySubscription](#getRepositorySubscription)
-* [getRepositoryStargazers](#getRepositoryStargazers)
-* [getStarredRepositories](#getStarredRepositories)
-* [getUserStarredRepositories](#getUserStarredRepositories)
-* [getWatchedRepositories](#getWatchedRepositories)
-* [getUserWatchedRepositories](#getUserWatchedRepositories)
-* [getRepositoryWatchers](#getRepositoryWatchers)
-* [markNotificationThreadAsRead](#markNotificationThreadAsRead)
-* [markNotificationsAsRead](#markNotificationsAsRead)
-* [markNotificationsAsReadForRepository](#markNotificationsAsReadForRepository)
-* [setNotificationThreadSubscription](#setNotificationThreadSubscription)
-* [setRepositorySubscription](#setRepositorySubscription)
-* [starRepository](#starRepository)
-* [unstarRepository](#unstarRepository)
-* [unwatchRepository](#unwatchRepository)
-* [checkAuthorization](#checkAuthorization)
-* [createAuthorization](#createAuthorization)
-* [deleteAuthorization](#deleteAuthorization)
-* [deleteGrantAuthorization](#deleteGrantAuthorization)
-* [getAuthorization](#getAuthorization)
-* [getAllAuthorization](#getAllAuthorization)
-* [getGrantAuthorization](#getGrantAuthorization)
-* [getGrantsAuthorization](#getGrantsAuthorization)
-* [getOrCreateAuthorizationForApp](#getOrCreateAuthorizationForApp)
-* [getOrCreateAuthorizationForAppAndFingerprint](#getOrCreateAuthorizationForAppAndFingerprint)
-* [resetAuthorization](#resetAuthorization)
-* [revokeAuthorization](#revokeAuthorization)
-* [updateAuthorization](#updateAuthorization)
-* [createOrganizationEnterprise](#createOrganizationEnterprise)
-* [getLicenseEnterprise](#getLicenseEnterprise)
-* [queueIndexingJobEnterprise](#queueIndexingJobEnterprise)
-* [statsEnterprise](#statsEnterprise)
-* [syncLdapForTeamEnterprise](#syncLdapForTeamEnterprise)
-* [syncLdapForUserEnterprise](#syncLdapForUserEnterprise)
-* [updateLdapForTeamEnterprise](#updateLdapForTeamEnterprise)
-* [updateLdapForUserEnterprise](#updateLdapForUserEnterprise)
-* [checkGistStar](#checkGistStar)
-* [createGist](#createGist)
-* [createGistComment](#createGistComment)
-* [deleteGist](#deleteGist)
-* [deleteGistComment](#deleteGistComment)
-* [editGist](#editGist)
-* [updateGistComment](#updateGistComment)
-* [forkGist](#forkGist)
-* [getGist](#getGist)
-* [getAllGists](#getAllGists)
-* [getGistComment](#getGistComment)
-* [getGistComments](#getGistComments)
-* [getGistCommits](#getGistCommits)
-* [getUserGists](#getUserGists)
-* [getGistForks](#getGistForks)
-* [getPublicGists](#getPublicGists)
-* [getGistByRevision](#getGistByRevision)
-* [getStarredGists](#getStarredGists)
-* [starGist](#starGist)
-* [unstarGist](#unstarGist)
-* [createBlob](#createBlob)
-* [createCommit](#createCommit)
-* [createReference](#createReference)
-* [createTag](#createTag)
-* [createTree](#createTree)
-* [deleteReference](#deleteReference)
-* [getBlob](#getBlob)
-* [getCommit](#getCommit)
-* [getCommitSignatureVerification](#getCommitSignatureVerification)
-* [getReference](#getReference)
-* [getReferences](#getReferences)
-* [getTag](#getTag)
-* [getTagSignatureVerification](#getTagSignatureVerification)
-* [getTags](#getTags)
-* [getTree](#getTree)
-* [updateReference](#updateReference)
-* [createInstallation](#createInstallation)
-* [addAssigneesToIssue](#addAssigneesToIssue)
-* [addIssueLabels](#addIssueLabels)
-* [checkAssignee](#checkAssignee)
-* [createIssue](#createIssue)
-* [createIssueComment](#createIssueComment)
-* [createLabel](#createLabel)
-* [createMilestone](#createMilestone)
-* [deleteIssueComment](#deleteIssueComment)
-* [deleteLabel](#deleteLabel)
-* [deleteMilestone](#deleteMilestone)
-* [updateIssue](#updateIssue)
-* [updateIssueComment](#updateIssueComment)
-* [getIssue](#getIssue)
-* [getAllIssues](#getAllIssues)
-* [getAssignees](#getAssignees)
-* [getIssueComment](#getIssueComment)
-* [getIssueComments](#getIssueComments)
-* [getIssuesCommentsForRepository](#getIssuesCommentsForRepository)
-* [getIssueEvent](#getIssueEvent)
-* [getIssueEvents](#getIssueEvents)
-* [getIssueEventsForRepository](#getIssueEventsForRepository)
-* [getIssueEventsTimeline](#getIssueEventsTimeline)
-* [getIssuesForOrganization](#getIssuesForOrganization)
-* [getIssuesForRepository](#getIssuesForRepository)
-* [getUserIssues](#getUserIssues)
-* [getIssueLabels](#getIssueLabels)
-* [getLabel](#getLabel)
-* [getRepositoryLabels](#getRepositoryLabels)
-* [getMilestone](#getMilestone)
-* [getMilestoneLabels](#getMilestoneLabels)
-* [getRepositoryMilestones](#getRepositoryMilestones)
-* [lockIssue](#lockIssue)
-* [removeIssueAllLabels](#removeIssueAllLabels)
-* [removeAssigneesFromIssue](#removeAssigneesFromIssue)
-* [removeIssueLabel](#removeIssueLabel)
-* [replaceAllIssueLabels](#replaceAllIssueLabels)
-* [unlockIssue](#unlockIssue)
-* [updateLabel](#updateLabel)
-* [updateMilestone](#updateMilestone)
-* [cancelImport](#cancelImport)
-* [deleteMigrationArchive](#deleteMigrationArchive)
-* [getImportCommitAuthors](#getImportCommitAuthors)
-* [getImportProgress](#getImportProgress)
-* [getLargeImportFiles](#getLargeImportFiles)
-* [getMigrationArchiveLink](#getMigrationArchiveLink)
-* [getMigrationStatus](#getMigrationStatus)
-* [getMigrations](#getMigrations)
-* [mapImportCommitAuthor](#mapImportCommitAuthor)
-* [setImportLfsPreference](#setImportLfsPreference)
-* [startImport](#startImport)
-* [startMigration](#startMigration)
-* [unlockRepositoryLockedForMigration](#unlockRepositoryLockedForMigration)
-* [updateImport](#updateImport)
-* [getEmojis](#getEmojis)
-* [getGitignoreTemplate](#getGitignoreTemplate)
-* [getGitignoreTemplates](#getGitignoreTemplates)
-* [getLicense](#getLicense)
-* [getLicenses](#getLicenses)
-* [getMeta](#getMeta)
-* [getRateLimit](#getRateLimit)
-* [getRepoLicenseMisc](#getRepoLicenseMisc)
-* [renderMarkdown](#renderMarkdown)
-* [renderMarkdownRaw](#renderMarkdownRaw)
-* [addOrganizationMembership](#addOrganizationMembership)
-* [addOrganizationTeamMembership](#addOrganizationTeamMembership)
-* [addOrganizationTeamRepository](#addOrganizationTeamRepository)
-* [checkOrganizationMembership](#checkOrganizationMembership)
-* [checkOrganizationPublicMembership](#checkOrganizationPublicMembership)
-* [checkOrganizationTeamRepository](#checkOrganizationTeamRepository)
-* [cancelOrganizationMembership](#cancelOrganizationMembership)
-* [createOrganizationHook](#createOrganizationHook)
-* [createOrganizationTeam](#createOrganizationTeam)
-* [deleteOrganizationHook](#deleteOrganizationHook)
-* [deleteOrganizationTeam](#deleteOrganizationTeam)
-* [deleteOrganizationTeamRepository](#deleteOrganizationTeamRepository)
-* [editOrganizationHook](#editOrganizationHook)
-* [editOrganizationTeam](#editOrganizationTeam)
-* [getOrganization](#getOrganization)
-* [getAllOrganizations](#getAllOrganizations)
-* [getUserOrganizations](#getUserOrganizations)
-* [getOrganizationHook](#getOrganizationHook)
-* [getOrganizationHooks](#getOrganizationHooks)
-* [getOrganizationMembers](#getOrganizationMembers)
-* [getOrganizationMembership](#getOrganizationMembership)
-* [getOrganizationMemberships](#getOrganizationMemberships)
-* [getOrganizationPublicMembers](#getOrganizationPublicMembers)
-* [getOrganizationTeam](#getOrganizationTeam)
-* [getOrganizationTeamMembers](#getOrganizationTeamMembers)
-* [getOrganizationTeamMembership](#getOrganizationTeamMembership)
-* [getOrganizationTeamRepositories](#getOrganizationTeamRepositories)
-* [getOrganizationTeams](#getOrganizationTeams)
-* [pingOrganizationHook](#pingOrganizationHook)
-* [publicizeOrganizationMembership](#publicizeOrganizationMembership)
-* [removeOrganizationMember](#removeOrganizationMember)
-* [removeOrganizationMembership](#removeOrganizationMembership)
-* [removeOrganizationTeamMembership](#removeOrganizationTeamMembership)
-* [updateOrganization](#updateOrganization)
-* [checkMergedPullRequest](#checkMergedPullRequest)
-* [createPullRequest](#createPullRequest)
-* [createPullRequestComment](#createPullRequestComment)
-* [createPullRequestCommentReply](#createPullRequestCommentReply)
-* [createPullRequestFromIssue](#createPullRequestFromIssue)
-* [deletePullRequestComment](#deletePullRequestComment)
-* [editPullRequestComment](#editPullRequestComment)
-* [getPullRequest](#getPullRequest)
-* [getAllPullRequests](#getAllPullRequests)
-* [getPullRequestComment](#getPullRequestComment)
-* [getPullRequestComments](#getPullRequestComments)
-* [getPullRequestCommentsForRepository](#getPullRequestCommentsForRepository)
-* [getPullRequestCommits](#getPullRequestCommits)
-* [getPullRequestFiles](#getPullRequestFiles)
-* [mergePullRequest](#mergePullRequest)
-* [updatePullRequest](#updatePullRequest)
-* [createReactionForCommitComment](#createReactionForCommitComment)
-* [createReactionForIssue](#createReactionForIssue)
-* [createReactionForIssueComment](#createReactionForIssueComment)
-* [createReactionForPullRequestReviewComment](#createReactionForPullRequestReviewComment)
-* [deleteReaction](#deleteReaction)
-* [getReactionForCommitComment](#getReactionForCommitComment)
-* [getReactionForIssue](#getReactionForIssue)
-* [getReactionForIssueComment](#getReactionForIssueComment)
-* [getReactionForPullRequestReviewComment](#getReactionForPullRequestReviewComment)
-* [addRepositoryCollaborator](#addRepositoryCollaborator)
-* [addProtectedBranchRequiredStatusChecksContexts](#addProtectedBranchRequiredStatusChecksContexts)
-* [addProtectedBranchTeamRestrictions](#addProtectedBranchTeamRestrictions)
-* [addProtectedBranchUserRestrictions](#addProtectedBranchUserRestrictions)
-* [checkRepositoryCollaborator](#checkRepositoryCollaborator)
-* [compareRepositoryCommits](#compareRepositoryCommits)
-* [createRepository](#createRepository)
-* [createRepositoryCommitComment](#createRepositoryCommitComment)
-* [createRepositoryDeployment](#createRepositoryDeployment)
-* [createRepositoryDeploymentStatus](#createRepositoryDeploymentStatus)
-* [createRepositoryFile](#createRepositoryFile)
-* [createRepositoryForOrganization](#createRepositoryForOrganization)
-* [createRepositoryHook](#createRepositoryHook)
-* [createRepositoryKey](#createRepositoryKey)
-* [createRepositoryProject](#createRepositoryProject)
-* [createRepositoryProjectCard](#createRepositoryProjectCard)
-* [createRepositoryProjectColumn](#createRepositoryProjectColumn)
-* [createRepositoryRelease](#createRepositoryRelease)
-* [createRepositoryStatus](#createRepositoryStatus)
-* [deleteRepository](#deleteRepository)
-* [deleteRepositoryAsset](#deleteRepositoryAsset)
-* [deleteRepositoryCommitComment](#deleteRepositoryCommitComment)
-* [deleteRepositoryDownload](#deleteRepositoryDownload)
-* [deleteRepositoryFile](#deleteRepositoryFile)
-* [deleteRepositoryHook](#deleteRepositoryHook)
-* [deleteRepositoryInvite](#deleteRepositoryInvite)
-* [deleteRepositoryKey](#deleteRepositoryKey)
-* [deleteRepositoryProject](#deleteRepositoryProject)
-* [deleteRepositoryProjectCard](#deleteRepositoryProjectCard)
-* [deleteRepositoryProjectColumn](#deleteRepositoryProjectColumn)
-* [deleteRepositoryRelease](#deleteRepositoryRelease)
-* [editRepository](#editRepository)
-* [editRepositoryAsset](#editRepositoryAsset)
-* [editRepositoryHook](#editRepositoryHook)
-* [editRepositoryRelease](#editRepositoryRelease)
-* [forkRepository](#forkRepository)
-* [getRepository](#getRepository)
-* [getAllRepositories](#getAllRepositories)
-* [getRepositoryAllCommitComments](#getRepositoryAllCommitComments)
-* [getRepositoryArchiveLink](#getRepositoryArchiveLink)
-* [getRepositoryAsset](#getRepositoryAsset)
-* [getRepositoryBranch](#getRepositoryBranch)
-* [getRepositoryBranchProtection](#getRepositoryBranchProtection)
-* [getRepositoryBranches](#getRepositoryBranches)
-* [getRepositoryById](#getRepositoryById)
-* [getRepositoryClones](#getRepositoryClones)
-* [getRepositoryCollaborators](#getRepositoryCollaborators)
-* [getRepositoryCombinedStatus](#getRepositoryCombinedStatus)
-* [getRepositoryCommit](#getRepositoryCommit)
-* [getRepositoryCommitComment](#getRepositoryCommitComment)
-* [getRepositoryCommitComments](#getRepositoryCommitComments)
-* [getRepositoryCommits](#getRepositoryCommits)
-* [getRepositoryContent](#getRepositoryContent)
-* [getRepositoryContributors](#getRepositoryContributors)
-* [getRepositoryDeploymentStatuses](#getRepositoryDeploymentStatuses)
-* [getRepositoryDeployments](#getRepositoryDeployments)
-* [getRepositoryDownload](#getRepositoryDownload)
-* [getRepositoryDownloads](#getRepositoryDownloads)
-* [getOrganizationRepositories](#getOrganizationRepositories)
-* [getUserRepositories](#getUserRepositories)
-* [getRepositoryForks](#getRepositoryForks)
-* [getRepositoryHook](#getRepositoryHook)
-* [getRepositoryHooks](#getRepositoryHooks)
-* [getRepositoryInvites](#getRepositoryInvites)
-* [getRepositoryKey](#getRepositoryKey)
-* [getRepositoryKeys](#getRepositoryKeys)
-* [getRepositoryLanguages](#getRepositoryLanguages)
-* [getRepositoryLatestPagesBuild](#getRepositoryLatestPagesBuild)
-* [getRepositoryLatestRelease](#getRepositoryLatestRelease)
-* [getRepositoryPages](#getRepositoryPages)
-* [getRepositoryPagesBuild](#getRepositoryPagesBuild)
-* [getRepositoryPagesBuilds](#getRepositoryPagesBuilds)
-* [getRepositoryPaths](#getRepositoryPaths)
-* [getRepositoryProject](#getRepositoryProject)
-* [getRepositoryProjectCard](#getRepositoryProjectCard)
-* [getRepositoryProjectCards](#getRepositoryProjectCards)
-* [getRepositoryProjectColumn](#getRepositoryProjectColumn)
-* [getRepositoryProjectColumns](#getRepositoryProjectColumns)
-* [getRepositoryProjects](#getRepositoryProjects)
-* [getProtectedBranchRequiredStatusChecks](#getProtectedBranchRequiredStatusChecks)
-* [getProtectedBranchRequiredStatusChecksContexts](#getProtectedBranchRequiredStatusChecksContexts)
-* [getProtectedBranchRestrictions](#getProtectedBranchRestrictions)
-* [getProtectedBranchTeamRestrictions](#getProtectedBranchTeamRestrictions)
-* [getProtectedBranchUserRestrictions](#getProtectedBranchUserRestrictions)
-* [getPublicRepositories](#getPublicRepositories)
-* [getRepositoryReadme](#getRepositoryReadme)
-* [getRepositoryReferrers](#getRepositoryReferrers)
-* [getRepositoryRelease](#getRepositoryRelease)
-* [getRepositoryReleaseByTag](#getRepositoryReleaseByTag)
-* [getRepositoryReleases](#getRepositoryReleases)
-* [getRepositoryShaOfCommitRef](#getRepositoryShaOfCommitRef)
-* [getRepositoryStatsCodeFrequency](#getRepositoryStatsCodeFrequency)
-* [getRepositoryStatsCommitActivity](#getRepositoryStatsCommitActivity)
-* [getRepositoryStatsContributors](#getRepositoryStatsContributors)
-* [getRepositoryStatsParticipation](#getRepositoryStatsParticipation)
-* [getRepositoryStatsPunchCard](#getRepositoryStatsPunchCard)
-* [getRepositoryStatuses](#getRepositoryStatuses)
-* [getRepositoryTags](#getRepositoryTags)
-* [getRepositoryTeams](#getRepositoryTeams)
-* [getRepositoryViews](#getRepositoryViews)
-* [getRepositoryAssets](#getRepositoryAssets)
-* [mergeRepository](#mergeRepository)
-* [moveRepositoryProjectCard](#moveRepositoryProjectCard)
-* [moveRepositoryProjectColumn](#moveRepositoryProjectColumn)
-* [pingRepositoryHook](#pingRepositoryHook)
-* [removeBranchProtection](#removeBranchProtection)
-* [removeRepositoryCollaborator](#removeRepositoryCollaborator)
-* [removeProtectedBranchRequiredStatusChecks](#removeProtectedBranchRequiredStatusChecks)
-* [removeProtectedBranchRequiredStatusChecksContexts](#removeProtectedBranchRequiredStatusChecksContexts)
-* [removeProtectedBranchRestrictions](#removeProtectedBranchRestrictions)
-* [removeProtectedBranchTeamRestrictions](#removeProtectedBranchTeamRestrictions)
-* [removeProtectedBranchUserRestrictions](#removeProtectedBranchUserRestrictions)
-* [replaceProtectedBranchRequiredStatusChecksContexts](#replaceProtectedBranchRequiredStatusChecksContexts)
-* [replaceProtectedBranchTeamRestrictions](#replaceProtectedBranchTeamRestrictions)
-* [replaceProtectedBranchUserRestrictions](#replaceProtectedBranchUserRestrictions)
-* [requestRepositoryPageBuild](#requestRepositoryPageBuild)
-* [testRepositoryHook](#testRepositoryHook)
-* [updateRepositoryBranchProtection](#updateRepositoryBranchProtection)
-* [updateRepositoryCommitComment](#updateRepositoryCommitComment)
-* [updateRepositoryFile](#updateRepositoryFile)
-* [updateRepositoryInvite](#updateRepositoryInvite)
-* [updateRepositoryProject](#updateRepositoryProject)
-* [updateRepositoryProjectCard](#updateRepositoryProjectCard)
-* [updateRepositoryProjectColumn](#updateRepositoryProjectColumn)
-* [updateProtectedBranchRequiredStatusChecks](#updateProtectedBranchRequiredStatusChecks)
-* [uploadRepositoryAsset](#uploadRepositoryAsset)
-* [codeSearch](#codeSearch)
-* [emailSearch](#emailSearch)
-* [issuesSearch](#issuesSearch)
-* [repositorySearch](#repositorySearch)
-* [usersSearch](#usersSearch)
-* [acceptRepositoryInvite](#acceptRepositoryInvite)
-* [addEmails](#addEmails)
-* [checkFollowing](#checkFollowing)
-* [checkIfOneFollowersOther](#checkIfOneFollowersOther)
-* [createGpgKey](#createGpgKey)
-* [createKey](#createKey)
-* [declineRepositoryInvite](#declineRepositoryInvite)
-* [deleteEmails](#deleteEmails)
-* [deleteGpgKey](#deleteGpgKey)
-* [deleteKey](#deleteKey)
-* [demoteUser](#demoteUser)
-* [editOrganizationMembership](#editOrganizationMembership)
-* [followUser](#followUser)
-* [getUser](#getUser)
-* [getAllUsers](#getAllUsers)
-* [getUserById](#getUserById)
-* [getUserEmails](#getUserEmails)
-* [getUserFollowers](#getUserFollowers)
-* [getFollowersForUser](#getFollowersForUser)
-* [getUserFollowing](#getUserFollowing)
-* [getFollowingForUser](#getFollowingForUser)
-* [getSingleUser](#getSingleUser)
-* [getGpgKey](#getGpgKey)
-* [getGpgKeys](#getGpgKeys)
-* [getKey](#getKey)
-* [getKeys](#getKeys)
-* [getKeysForUser](#getKeysForUser)
-* [getUserOrganizationMembership](#getUserOrganizationMembership)
-* [getUserOrganizations](#getUserOrganizations)
-* [getRepositoryInvites](#getRepositoryInvites)
-* [getUserTeams](#getUserTeams)
-* [promoteUser](#promoteUser)
-* [suspendUser](#suspendUser)
-* [unfollowUserUser](#unfollowUserUser)
-* [unsuspendUser](#unsuspendUser)
-* [updateUser](#updateUser)
- 
-<a name="checkNotificationThreadSubscription"/>
+
 ## Github.checkNotificationThreadSubscription
-Method description
+Check to see if the current user is subscribed to a thread.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The thread ID (required)
 
-<a name="checkRepositoryStarring"/>
 ## Github.checkRepositoryStarring
-Method description
+Check if you are starring a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -414,18 +32,16 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="deleteNotificationThreadSubscription"/>
 ## Github.deleteNotificationThreadSubscription
-Method description
+Delete a notification thread subscription.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The thread ID (required)
 
-<a name="getPublicEvents"/>
 ## Github.getPublicEvents
-Method description
+List public events
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -433,9 +49,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationEvents"/>
 ## Github.getOrganizationEvents
-Method description
+List public events for an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -444,9 +59,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryEvents"/>
 ## Github.getRepositoryEvents
-Method description
+List repository events
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -456,9 +70,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryIssuesEvents"/>
 ## Github.getRepositoryIssuesEvents
-Method description
+List issue events for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -468,9 +81,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryNetworkEvents"/>
 ## Github.getRepositoryNetworkEvents
-Method description
+List public events for a network of repositories
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -480,9 +92,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserPerformedEvents"/>
 ## Github.getUserPerformedEvents
-Method description
+List events performed by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -491,9 +102,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserOrganizationEvents"/>
 ## Github.getUserOrganizationEvents
-Method description
+List events for a user's organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -503,9 +113,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserPublicPerformedEvents"/>
 ## Github.getUserPublicPerformedEvents
-Method description
+List public events performed by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -514,9 +123,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserReceivedEvents"/>
 ## Github.getUserReceivedEvents
-Method description
+List events that a user has received
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -525,9 +133,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserReceivedPublicEvents"/>
 ## Github.getUserReceivedPublicEvents
-Method description
+List public events that a user has received
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -536,26 +143,23 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getFeeds"/>
 ## Github.getFeeds
-Method description
+Get all feeds available for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getNotificationThread"/>
 ## Github.getNotificationThread
-Method description
+View a single notification thread.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The ID of the thread (required)
 
-<a name="getUserNotifications"/>
 ## Github.getUserNotifications
-Method description
+Get all notifications for the current user, grouped by repository.
 
 | Field        | Type       | Description
 |--------------|------------|----------
@@ -565,9 +169,8 @@ Method description
 | since        | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | before       | String     | Only show notifications updated before the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. (optional)
 
-<a name="getUserRepositoryNotifications"/>
 ## Github.getUserRepositoryNotifications
-Method description
+Get all notifications for the given user.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -579,9 +182,8 @@ Method description
 | since         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 | before        | String     | Only show notifications updated before the given time. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. (optional)
 
-<a name="getRepositorySubscription"/>
 ## Github.getRepositorySubscription
-Method description
+Get a Repository Subscription.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -591,9 +193,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryStargazers"/>
 ## Github.getRepositoryStargazers
-Method description
+List Stargazers
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -603,9 +204,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getStarredRepositories"/>
 ## Github.getStarredRepositories
-Method description
+List repositories being starred by the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -613,9 +213,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserStarredRepositories"/>
 ## Github.getUserStarredRepositories
-Method description
+List repositories being starred by a user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -624,9 +223,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getWatchedRepositories"/>
 ## Github.getWatchedRepositories
-Method description
+List repositories being watched by the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -634,9 +232,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserWatchedRepositories"/>
 ## Github.getUserWatchedRepositories
-Method description
+List repositories being watched by a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -645,9 +242,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryWatchers"/>
 ## Github.getRepositoryWatchers
-Method description
+Get watchers for repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -657,27 +253,24 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="markNotificationThreadAsRead"/>
 ## Github.markNotificationThreadAsRead
-Method description
+Mark a notification thread as read.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The Id of the thread (required)
 
-<a name="markNotificationsAsRead"/>
 ## Github.markNotificationsAsRead
-Method description
+Mark notifications as read for authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | lastReadAt | String     | Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Default: Time.now (optional)
 
-<a name="markNotificationsAsReadForRepository"/>
 ## Github.markNotificationsAsReadForRepository
-Method description
+Mark notifications in a repo as read.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -686,9 +279,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | lastReadAt    | String     | Describes the last point that notifications were checked. Anything updated since this time will not be updated. This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Default: Time.now (optional)
 
-<a name="setNotificationThreadSubscription"/>
 ## Github.setNotificationThreadSubscription
-Method description
+This lets you subscribe or unsubscribe from a conversation. Unsubscribing from a conversation mutes all future notifications (until you comment or get @mentioned once more).
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -697,9 +289,8 @@ Method description
 | subscribed | String     | Determines if notifications should be received from this thread (optional)
 | ignored    | String     | Determines if all notifications should be blocked from this thread (optional)
 
-<a name="setRepositorySubscription"/>
 ## Github.setRepositorySubscription
-Method description
+Set a Repository Subscription
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -709,9 +300,8 @@ Method description
 | subscribed    | String     | Determines if notifications should be received from this repository. (optional)
 | ignored       | String     | Determines if all notifications should be blocked from this repository. (optional)
 
-<a name="starRepository"/>
 ## Github.starRepository
-Method description
+Star a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -719,9 +309,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="unstarRepository"/>
 ## Github.unstarRepository
-Method description
+Unstar a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -729,9 +318,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="unwatchRepository"/>
 ## Github.unwatchRepository
-Method description
+Unwatch a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -739,9 +327,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="checkAuthorization"/>
 ## Github.checkAuthorization
-Method description
+Check an authorization
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -749,9 +336,8 @@ Method description
 | clientId    | String| The 20 character OAuth app client key for which to create the token. (required)
 | clientSecret| String| The username obtained from Github. (required)
 
-<a name="createAuthorization"/>
 ## Github.createAuthorization
-Method description
+Create a new authorization
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -762,9 +348,8 @@ Method description
 | clientSecret| String| The 40 character OAuth app client secret for which to create the token. (optional)
 | fingerprint | String| A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 
-<a name="deleteAuthorization"/>
 ## Github.deleteAuthorization
-Method description
+Delete an authorization
 
 | Field   | Type  | Description
 |---------|-------|----------
@@ -772,9 +357,8 @@ Method description
 | password| String| The password obtained from Github. (required)
 | id      | String| The authorization ID (required)
 
-<a name="deleteGrantAuthorization"/>
 ## Github.deleteGrantAuthorization
-Method description
+Delete a grant. (In preview period. See README.)
 
 | Field   | Type  | Description
 |---------|-------|----------
@@ -782,9 +366,8 @@ Method description
 | password| String| The password obtained from Github. (required)
 | id      | String| The authorization ID (required)
 
-<a name="getAuthorization"/>
 ## Github.getAuthorization
-Method description
+Get a single authorization
 
 | Field        | Type       | Description
 |--------------|------------|----------
@@ -794,9 +377,8 @@ Method description
 | twoFactorCode| String     | Required for two-factor auth method. (optional)
 | id           | String     | The authorization ID (required)
 
-<a name="getAllAuthorization"/>
 ## Github.getAllAuthorization
-Method description
+List your authorizations
 
 | Field   | Type  | Description
 |---------|-------|----------
@@ -805,9 +387,8 @@ Method description
 | page    | Number| Page number of the results to fetch. (optional)
 | perPage | Number| A custom page size up to 100. Default is 30. (optional)
 
-<a name="getGrantAuthorization"/>
 ## Github.getGrantAuthorization
-Method description
+Get a single grant. (In preview period. See README.)
 
 | Field        | Type  | Description
 |--------------|-------|----------
@@ -818,9 +399,8 @@ Method description
 | page         | Number| Page number of the results to fetch. (optional)
 | perPage      | Number| A custom page size up to 100. Default is 30. (optional)
 
-<a name="getGrantsAuthorization"/>
 ## Github.getGrantsAuthorization
-Method description
+List your grants. (In preview period. See README.)
 
 | Field        | Type  | Description
 |--------------|-------|----------
@@ -830,9 +410,8 @@ Method description
 | page         | Number| Page number of the results to fetch. (optional)
 | perPage      | Number| A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrCreateAuthorizationForApp"/>
 ## Github.getOrCreateAuthorizationForApp
-Method description
+Get or create an authorization for a specific app
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -845,9 +424,8 @@ Method description
 | noteUrl     | String| A URL to remind you what app the OAuth token is for. (optional)
 | fingerprint | String| A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 
-<a name="getOrCreateAuthorizationForAppAndFingerprint"/>
 ## Github.getOrCreateAuthorizationForAppAndFingerprint
-Method description
+Get or create an authorization for a specific app and fingerprint
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -860,9 +438,8 @@ Method description
 | note        | String| A note to remind you what the OAuth token is for. (optional)
 | noteUrl     | String| A URL to remind you what app the OAuth token is for. (optional)
 
-<a name="resetAuthorization"/>
 ## Github.resetAuthorization
-Method description
+Reset an authorization
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -870,9 +447,8 @@ Method description
 | clientId    | String| The 20 character OAuth app client key for which to create the token. (required)
 | clientSecret| String| The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
 
-<a name="revokeAuthorization"/>
 ## Github.revokeAuthorization
-Method description
+Revoke an authorization for an application
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -880,9 +456,8 @@ Method description
 | clientId    | String| The 20 character OAuth app client key for which to create the token. (required)
 | clientSecret| String| The 40 character OAuth app client secret associated with the client ID specified in the URL. (required)
 
-<a name="updateAuthorization"/>
 ## Github.updateAuthorization
-Method description
+Update an existing authorization
 
 | Field       | Type  | Description
 |-------------|-------|----------
@@ -896,9 +471,8 @@ Method description
 | noteUrl     | String| A URL to remind you what app the OAuth token is for. (optional)
 | fingerprint | String| A unique string to distinguish an authorization from others created for the same client ID and user. (optional)
 
-<a name="createOrganizationEnterprise"/>
 ## Github.createOrganizationEnterprise
-Method description
+Create an organization
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -907,53 +481,47 @@ Method description
 | admin      | String     | The login of the user who will manage this organization. (required)
 | profileName| String     | The organization's display name. (optional)
 
-<a name="getLicenseEnterprise"/>
 ## Github.getLicenseEnterprise
-Method description
+Get license information
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="queueIndexingJobEnterprise"/>
 ## Github.queueIndexingJobEnterprise
-Method description
+Queue an indexing job
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | target     | String     | A string representing the item to index. (required)
 
-<a name="statsEnterprise"/>
 ## Github.statsEnterprise
-Method description
+Get statistics.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | type       | String     | Possible values: issues, hooks, milestones, orgs, comments, pages, users, gists, pulls, repos, all. (required)
 
-<a name="syncLdapForTeamEnterprise"/>
 ## Github.syncLdapForTeamEnterprise
-Method description
+Sync LDAP mapping for a team.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | teamId     | Number     | The ID of the team (required)
 
-<a name="syncLdapForUserEnterprise"/>
 ## Github.syncLdapForUserEnterprise
-Method description
+Sync LDAP mapping for a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="updateLdapForTeamEnterprise"/>
 ## Github.updateLdapForTeamEnterprise
-Method description
+Update LDAP mapping for a team.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -961,9 +529,8 @@ Method description
 | teamId     | Number     | The ID of the team (required)
 | data       | String     | JSON payload with the new LDAP data. (optional). Ex.: {"ldap_dn": "cn=Enterprise Ops,ou=teams,dc=github,dc=com"}
 
-<a name="updateLdapForUserEnterprise"/>
 ## Github.updateLdapForUserEnterprise
-Method description
+Update LDAP mapping for a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -971,18 +538,16 @@ Method description
 | user       | String     | The user name (required)
 | data       | String     | JSON payload with the new LDAP data. (optional). Ex.: {"ldap_dn": "uid=asdf,ou=users,dc=github,dc=com"}
 
-<a name="checkGistStar"/>
 ## Github.checkGistStar
-Method description
+Check if a gist is starred
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist (required)
 
-<a name="createGist"/>
 ## Github.createGist
-Method description
+Create a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -991,9 +556,8 @@ Method description
 | description| String     | A description of the gist. (optional)
 | public     | String     | Indicates whether the gist is public. Default: false (required)
 
-<a name="createGistComment"/>
 ## Github.createGistComment
-Method description
+Create a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1001,18 +565,16 @@ Method description
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | body       | String     | The comment text. (required)
 
-<a name="deleteGist"/>
 ## Github.deleteGist
-Method description
+Delete a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="deleteGistComment"/>
 ## Github.deleteGistComment
-Method description
+Delete a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1020,9 +582,8 @@ Method description
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | commentId  | String     | The comment ID. (required)
 
-<a name="editGist"/>
 ## Github.editGist
-Method description
+Edit a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1031,9 +592,8 @@ Method description
 | description| String     | A description of the gist. (optional)
 | files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
 
-<a name="updateGistComment"/>
 ## Github.updateGistComment
-Method description
+Edit a comment
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1042,27 +602,24 @@ Method description
 | commentId  | String     | The comment ID. (required)
 | body       | String     | The comment text. (required)
 
-<a name="forkGist"/>
 ## Github.forkGist
-Method description
+Fork a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="getGist"/>
 ## Github.getGist
-Method description
+Get a single gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="getAllGists"/>
 ## Github.getAllGists
-Method description
+List the authenticated user's gists or if called anonymously, this will return all public gists
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1071,9 +628,8 @@ Method description
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="getGistComment"/>
 ## Github.getGistComment
-Method description
+Get a single comment
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1081,27 +637,24 @@ Method description
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 | id         | String     | The comment ID. (required)
 
-<a name="getGistComments"/>
 ## Github.getGistComments
-Method description
+List comments on a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | gistId     | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="getGistCommits"/>
 ## Github.getGistCommits
-Method description
+List gist commits
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="getUserGists"/>
 ## Github.getUserGists
-Method description
+List a user's gists
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1111,9 +664,8 @@ Method description
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="getGistForks"/>
 ## Github.getGistForks
-Method description
+List gist forks
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1122,18 +674,16 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPublicGists"/>
 ## Github.getPublicGists
-Method description
+List all public gists
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="getGistByRevision"/>
 ## Github.getGistByRevision
-Method description
+Get a specific revision of a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1141,36 +691,32 @@ Method description
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 | sha        | String     | The SHA1 hash of the revision (required)
 
-<a name="getStarredGists"/>
 ## Github.getStarredGists
-Method description
+List the authenticated user's starred gists
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | since      | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="starGist"/>
 ## Github.starGist
-Method description
+Star a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="unstarGist"/>
 ## Github.unstarGist
-Method description
+Unstar a gist
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | Id (SHA1 hash) of the gist. (required)
 
-<a name="createBlob"/>
 ## Github.createBlob
-Method description
+Create a Blob
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1180,9 +726,8 @@ Method description
 | content       | String     | The new blob's content. (required)
 | encoding      | String     | The encoding used for content. Currently, "utf-8" and "base64" are supported. Default: "utf-8". (required)
 
-<a name="createCommit"/>
 ## Github.createCommit
-Method description
+Create a Commit
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1195,9 +740,8 @@ Method description
 | author        | JSON       | An object containing information about the author (optional). Avaliable parameters: "name" (string) The name of the author (or committer) of the commit; "email" (string) The email of the author (or committer) of the commit; "date" (string) Indicates when this commit was authored (or committed). This is a timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ. Ex.:"author": {"name": "Scott Chacon", "email": "schacon@gmail.com", "date": "2008-07-09T16:13:30+12:00"}
 | committer     | JSON       | An object containing information about the committer (optional). Both the author and committer parameters have the same keys.
 
-<a name="createReference"/>
 ## Github.createReference
-Method description
+Create a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1207,9 +751,8 @@ Method description
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
 
-<a name="createTag"/>
 ## Github.createTag
-Method description
+Create a Tag Object
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1222,9 +765,8 @@ Method description
 | type          | String     | String of the type of the object we’re tagging. Normally this is a commit but it can also be a tree or a blob. (required)
 | tagger        | JSON       | JSON object that contains the following keys: `name` - String of the name of the author of the tag, `email` - String of the email of the author of the tag, `date` - Timestamp of when this object was tagged (required)
 
-<a name="createTree"/>
 ## Github.createTree
-Method description
+Create a Tree
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1234,9 +776,8 @@ Method description
 | tree          | JSON       | Array of Hash objects (of path, mode, type and sha) specifying a tree structure (required)
 | baseTree      | String     | String of the SHA1 of the tree you want to update with new data (optional)
 
-<a name="deleteReference"/>
 ## Github.deleteReference
-Method description
+Delete a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1245,9 +786,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
 
-<a name="getBlob"/>
 ## Github.getBlob
-Method description
+Get a Blob
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1258,9 +798,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getCommit"/>
 ## Github.getCommit
-Method description
+Get a Commit
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1269,9 +808,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
 
-<a name="getCommitSignatureVerification"/>
 ## Github.getCommitSignatureVerification
-Method description
+Get a Commit Signature Verification. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1280,9 +818,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
 
-<a name="getReference"/>
 ## Github.getReference
-Method description
+Get a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1291,9 +828,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
 
-<a name="getReferences"/>
 ## Github.getReferences
-Method description
+Get all References
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1303,9 +839,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getTag"/>
 ## Github.getTag
-Method description
+Get a Tag
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1314,9 +849,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
 
-<a name="getTagSignatureVerification"/>
 ## Github.getTagSignatureVerification
-Method description
+Get a Tag Signature Verification. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1325,9 +859,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | The SHA1 value to set this reference to (required)
 
-<a name="getTags"/>
 ## Github.getTags
-Method description
+Get all tag References
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1337,9 +870,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getTree"/>
 ## Github.getTree
-Method description
+Get a Tree
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1349,9 +881,8 @@ Method description
 | sha           | String     | The SHA1 value to set this reference to (required)
 | recursive     | String     | Get a Tree Recursively (optional). True or false
 
-<a name="updateReference"/>
 ## Github.updateReference
-Method description
+Update a Reference
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1362,9 +893,8 @@ Method description
 | sha           | String     | The SHA1 value to set this reference to (required)
 | force         | String     | Boolean indicating whether to force the update or to make sure the update is a fast-forward update. The default is false, so leaving this out or setting it to false will make sure you’re not overwriting work. (optional)
 
-<a name="createInstallation"/>
 ## Github.createInstallation
-Method description
+Create a new access token
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1372,9 +902,8 @@ Method description
 | installationId| Number     | The id of the installation for this integration. (required)
 | userId        | Number     | The id of the user for whom the integration is acting on behalf of. (optional)
 
-<a name="addAssigneesToIssue"/>
 ## Github.addAssigneesToIssue
-Method description
+Add assignees to an issue.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1384,9 +913,8 @@ Method description
 | number        | Number     | The number of the issue (required)
 | assignees     | JSON       | Logins for the users that should be added to the issue. (required)
 
-<a name="addIssueLabels"/>
 ## Github.addIssueLabels
-Method description
+Add labels to an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1396,9 +924,8 @@ Method description
 | number        | Number     | The number of the issue (required)
 | body          | JSON       | Array of the labels that should be added to the issue. (required)
 
-<a name="checkAssignee"/>
 ## Github.checkAssignee
-Method description
+Check assignee
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1407,9 +934,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | assignee      | String     | Login for the user that this issue should be assigned to. (required)
 
-<a name="createIssue"/>
 ## Github.createIssue
-Method description
+Create an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1423,9 +949,8 @@ Method description
 | labels        | JSON       | Array of strings - Labels to associate with this issue. (optional)
 | assignees     | JSON       | Logins for Users to assign to this issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
 
-<a name="createIssueComment"/>
 ## Github.createIssueComment
-Method description
+Create a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1435,9 +960,8 @@ Method description
 | number        | Number     | The number of the issue (required)
 | body          | String     | The contents of the comment. (required) Ex.: {"body": "Me too"}
 
-<a name="createLabel"/>
 ## Github.createLabel
-Method description
+Create a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1447,9 +971,8 @@ Method description
 | name          | String     | The name of the label. (required)
 | color         | String     | 6 character hex code, without a leading #. (required)
 
-<a name="createMilestone"/>
 ## Github.createMilestone
-Method description
+Create a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1461,9 +984,8 @@ Method description
 | description   | String     | A description of the milestone. (optional)
 | dueOn         | String     | Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="deleteIssueComment"/>
 ## Github.deleteIssueComment
-Method description
+Delete a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1472,9 +994,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | id            | String     | The ID of the comment (required)
 
-<a name="deleteLabel"/>
 ## Github.deleteLabel
-Method description
+Delete a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1483,9 +1004,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | name          | String     | The name of the label. (required)
 
-<a name="deleteMilestone"/>
 ## Github.deleteMilestone
-Method description
+Delete a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1494,9 +1014,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the milestone. (required)
 
-<a name="updateIssue"/>
 ## Github.updateIssue
-Method description
+Edit an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1511,9 +1030,8 @@ Method description
 | labels        | JSON       | Array of strings - Labels to associate with this issue. (optional)
 | assignees     | JSON       | Logins for Users to assign to this issue. Pass one or more user logins to replace the set of assignees on this Issue. .Send an empty array ([]) to clear all assignees from the Issue. NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise. (optional)
 
-<a name="updateIssueComment"/>
 ## Github.updateIssueComment
-Method description
+Edit a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1523,9 +1041,8 @@ Method description
 | id            | String     | The ID of the comment. (required)
 | body          | String     | The contents of the comment. (required). Ex.: {"body": "Me too"}
 
-<a name="getIssue"/>
 ## Github.getIssue
-Method description
+Get a single issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1534,9 +1051,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
 
-<a name="getAllIssues"/>
 ## Github.getAllIssues
-Method description
+List all issues across all the authenticated user's visible repositories including owned repositories, member repositories, and organization repositories
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1550,9 +1066,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getAssignees"/>
 ## Github.getAssignees
-Method description
+List assignees
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1560,9 +1075,8 @@ Method description
 | user          | String     | The owner name. (required)
 | repositoryName| String     | The name of the repository. (required)
 
-<a name="getIssueComment"/>
 ## Github.getIssueComment
-Method description
+Get a single comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1571,9 +1085,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | id            | String     | The ID of the comment. (required)
 
-<a name="getIssueComments"/>
 ## Github.getIssueComments
-Method description
+List comments on an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1584,9 +1097,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssuesCommentsForRepository"/>
 ## Github.getIssuesCommentsForRepository
-Method description
+List comments in a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1599,9 +1111,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssueEvent"/>
 ## Github.getIssueEvent
-Method description
+Get a single event
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1610,9 +1121,8 @@ Method description
 | repositoryName| String     | The name of the reposotiry. (required)
 | id            | String     | The ID of the event. (required)
 
-<a name="getIssueEvents"/>
 ## Github.getIssueEvents
-Method description
+List events for an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1623,9 +1133,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssueEventsForRepository"/>
 ## Github.getIssueEventsForRepository
-Method description
+List events for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1635,9 +1144,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssueEventsTimeline"/>
 ## Github.getIssueEventsTimeline
-Method description
+List events for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1648,9 +1156,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssuesForOrganization"/>
 ## Github.getIssuesForOrganization
-Method description
+List all issues for a given organization for the authenticated user
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -1665,9 +1172,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssuesForRepository"/>
 ## Github.getIssuesForRepository
-Method description
+List issues for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1686,9 +1192,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserIssues"/>
 ## Github.getUserIssues
-Method description
+List all issues across owned and member repositories for the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1702,9 +1207,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getIssueLabels"/>
 ## Github.getIssueLabels
-Method description
+List labels on an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1713,9 +1217,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the issue. (required)
 
-<a name="getLabel"/>
 ## Github.getLabel
-Method description
+Get a single label
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1724,9 +1227,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | name          | String     | The name of the label. (required)
 
-<a name="getRepositoryLabels"/>
 ## Github.getRepositoryLabels
-Method description
+List all labels for this repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1736,9 +1238,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getMilestone"/>
 ## Github.getMilestone
-Method description
+Get a single milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1747,9 +1248,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the milestone. (required)
 
-<a name="getMilestoneLabels"/>
 ## Github.getMilestoneLabels
-Method description
+Get labels for every issue in a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1758,9 +1258,8 @@ Method description
 | repositoryName| String     | The name of the repository. (required)
 | number        | Number     | The number of the milestone. (required)
 
-<a name="getRepositoryMilestones"/>
 ## Github.getRepositoryMilestones
-Method description
+List milestones for a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1773,9 +1272,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="lockIssue"/>
 ## Github.lockIssue
-Method description
+Users with push access can lock an issue's conversation.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1784,9 +1282,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
 
-<a name="removeIssueAllLabels"/>
 ## Github.removeIssueAllLabels
-Method description
+Remove all labels from an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1795,9 +1292,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue. (required)
 
-<a name="removeAssigneesFromIssue"/>
 ## Github.removeAssigneesFromIssue
-Method description
+Remove assignees from an issue.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1807,9 +1303,8 @@ Method description
 | number        | Number     | The number of the issue. (required)
 | assignees     | JSON       | Logins for the users that should be removed from the issue. (required). Ex.: "assignees": ["hubot", "other_assignee"]
 
-<a name="removeIssueLabel"/>
 ## Github.removeIssueLabel
-Method description
+Remove a label from an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1819,9 +1314,8 @@ Method description
 | number        | Number     | The number of the issue. (required)
 | name          | String     | The name of the label. (required)
 
-<a name="replaceAllIssueLabels"/>
 ## Github.replaceAllIssueLabels
-Method description
+Replace all labels for an issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1831,9 +1325,8 @@ Method description
 | number        | Number     | The number of the issue. (required)
 | body          | JSON       | Array of the labels that should be replaced for the issue. Sending an empty array ([]) will remove all Labels from the Issue. (required)
 
-<a name="unlockIssue"/>
 ## Github.unlockIssue
-Method description
+Users with push access can unlock an issue's conversation.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1842,9 +1335,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the issue (required)
 
-<a name="updateLabel"/>
 ## Github.updateLabel
-Method description
+Update a label
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1855,9 +1347,8 @@ Method description
 | name          | String     | The new name of the label. (required)
 | color         | String     | 6 character hex code, without a leading #. (required)
 
-<a name="updateMilestone"/>
 ## Github.updateMilestone
-Method description
+Update a milestone
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1870,9 +1361,8 @@ Method description
 | description   | String     | A description of the milestone. (optional)
 | dueOn         | String     | The milestone due date. Timestamp in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ (optional)
 
-<a name="cancelImport"/>
 ## Github.cancelImport
-Method description
+Cancel an import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1880,9 +1370,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="deleteMigrationArchive"/>
 ## Github.deleteMigrationArchive
-Method description
+Delete a migration archive
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -1890,9 +1379,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The migration ID. (required)
 
-<a name="getImportCommitAuthors"/>
 ## Github.getImportCommitAuthors
-Method description
+Get import commit authors. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1901,9 +1389,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | since         | String     | Only authors found after this id are returned. Provide the highest author ID you've seen so far. New authors may be added to the list at any point while the importer is performing the raw step. (optional)
 
-<a name="getImportProgress"/>
 ## Github.getImportProgress
-Method description
+Get import progress. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1911,9 +1398,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getLargeImportFiles"/>
 ## Github.getLargeImportFiles
-Method description
+List files larger than 100MB found during the import. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1921,9 +1407,8 @@ Method description
 | user       | String     | The owner name (required)
 | name       | String     | The name of the system to import from (required). Supported Subversion, Mercurial, and TFS.
 
-<a name="getMigrationArchiveLink"/>
 ## Github.getMigrationArchiveLink
-Method description
+Get the URL to a migration archive.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -1931,9 +1416,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The ID of the migration (required)
 
-<a name="getMigrationStatus"/>
 ## Github.getMigrationStatus
-Method description
+Get the status of a migration
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -1941,9 +1425,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The ID of the migration (required)
 
-<a name="getMigrations"/>
 ## Github.getMigrations
-Method description
+Get a list of migrations
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -1952,9 +1435,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="mapImportCommitAuthor"/>
 ## Github.mapImportCommitAuthor
-Method description
+Map a commit author. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1965,9 +1447,8 @@ Method description
 | email         | String     | The new Git author email. (optional)
 | name          | String     | The new Git author name. (optional)
 
-<a name="setImportLfsPreference"/>
 ## Github.setImportLfsPreference
-Method description
+Set import LFS preference. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -1975,9 +1456,8 @@ Method description
 | user       | String     | The owner name (required)
 | systemName | String     | The name of the system to import from (required). Supported Subversion, Mercurial, and TFS.
 
-<a name="startImport"/>
 ## Github.startImport
-Method description
+Start an import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -1990,9 +1470,8 @@ Method description
 | vcsPassword   | String     | If authentication is required, the password to provide to vcs_url. (optional)
 | tfvcProject   | String     | For a tfvc import, the name of the project that is being imported. (optional)
 
-<a name="startMigration"/>
 ## Github.startMigration
-Method description
+Start a migration.
 
 | Field             | Type       | Description
 |-------------------|------------|----------
@@ -2002,9 +1481,8 @@ Method description
 | lockRepositories  | String     | Indicates whether repositories should be locked (to prevent manipulation) while migrating data. Default: false. (optional)
 | excludeAttachments| String     | Indicates whether attachments should be excluded from the migration (to reduce migration archive file size). Default: false. (optional)
 
-<a name="unlockRepositoryLockedForMigration"/>
 ## Github.unlockRepositoryLockedForMigration
-Method description
+Unlock a repository that was locked for migration.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2013,9 +1491,8 @@ Method description
 | id              | String     | The ID of the migration (required)
 | repositoryName  | String     | The name of the repository (required)
 
-<a name="updateImport"/>
 ## Github.updateImport
-Method description
+Update existing import. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2024,67 +1501,59 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | data          | String     | Json object with data to be updating (optional). If no data are provided, the import will be restarted. Ex.: {"vcs": "tfvc", "tfvc_project": "project1", "human_name": "project1 (tfs)"}
 
-<a name="getEmojis"/>
 ## Github.getEmojis
-Method description
+Lists all the emojis available to use on GitHub.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getGitignoreTemplate"/>
 ## Github.getGitignoreTemplate
-Method description
+Get a single gitignore template
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | name       | String     | The name of the .gitignore template to get e.g. 'C' (required)
 
-<a name="getGitignoreTemplates"/>
 ## Github.getGitignoreTemplates
-Method description
+Lists available gitignore templates
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getLicense"/>
 ## Github.getLicense
-Method description
+Get an individual license. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | license    | String     | The name of the license. Ex: mit (required)
 
-<a name="getLicenses"/>
 ## Github.getLicenses
-Method description
+List all licenses. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getMeta"/>
 ## Github.getMeta
-Method description
+This endpoint provides information about GitHub.com, the service. Or, if you access this endpoint on your organization's GitHub Enterprise installation, this endpoint provides information about that installation.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getRateLimit"/>
 ## Github.getRateLimit
-Method description
+Get your current rate limit status
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getRepoLicenseMisc"/>
 ## Github.getRepoLicenseMisc
-Method description
+Get the contents of a repository's license. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2092,9 +1561,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="renderMarkdown"/>
 ## Github.renderMarkdown
-Method description
+Render an arbitrary Markdown document
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2103,18 +1571,16 @@ Method description
 | mode       | String     | The rendering mode, `markdown` to render a document as plain Markdown, just like README files are rendered. `gfm` to render a document as user-content, e.g. like user comments or issues are rendered. In GFM mode, hard line breaks are always taken into account, and issue and user mentions are linked accordingly. (optional)
 | context    | String     | The repository context. Only taken into account when rendering as `gfm` (optional)
 
-<a name="renderMarkdownRaw"/>
 ## Github.renderMarkdownRaw
-Method description
+Render a Markdown document in raw mode
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | data       | String     | Raw data to send as the body of the request (required)
 
-<a name="addOrganizationMembership"/>
 ## Github.addOrganizationMembership
-Method description
+Add or update organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2123,9 +1589,8 @@ Method description
 | user            | String     | The user name (required)
 | role            | String     | The role to give the user in the organization. (required). * admin - The user will become an owner of the organization, * member - The user will become a non-owner member of the organization. Default: member
 
-<a name="addOrganizationTeamMembership"/>
 ## Github.addOrganizationTeamMembership
-Method description
+Add team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2134,9 +1599,8 @@ Method description
 | user       | String     | The user name (required)
 | role       | String     | The role that this user should have in the team. (optional). The role that this user should have in the team. Can be one of: * member - a normal member of the team, * maintainer - a team maintainer. Able to add/remove other team members, promote other team members to team maintainer, and edit the team's name and description. Default: member
 
-<a name="addOrganizationTeamRepository"/>
 ## Github.addOrganizationTeamRepository
-Method description
+Add team repository
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2146,9 +1610,8 @@ Method description
 | repositoryName  | String     | The name of the repository (required)
 | permission      | String     | `pull` - team members can pull, but not push or administer this repository, `push` - team members can pull and push, but not administer this repository, `admin` - team members can pull, push and administer this repository. (optional)
 
-<a name="checkOrganizationMembership"/>
 ## Github.checkOrganizationMembership
-Method description
+Check membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2156,9 +1619,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="checkOrganizationPublicMembership"/>
 ## Github.checkOrganizationPublicMembership
-Method description
+Check public membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2166,9 +1628,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="checkOrganizationTeamRepository"/>
 ## Github.checkOrganizationTeamRepository
-Method description
+Check if a team manages a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2177,9 +1638,8 @@ Method description
 | user          | String     | The user name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="cancelOrganizationMembership"/>
 ## Github.cancelOrganizationMembership
-Method description
+Conceal a user's membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2187,9 +1647,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="createOrganizationHook"/>
 ## Github.createOrganizationHook
-Method description
+Create a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2200,9 +1659,8 @@ Method description
 | events          | JSON       | Determines what events the hook is triggered for. Default: ["push"]. (optional)
 | active          | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
-<a name="createOrganizationTeam"/>
 ## Github.createOrganizationTeam
-Method description
+Create team
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2213,9 +1671,8 @@ Method description
 | repoNames       | JSON       | The full name (e.g., "organization-name/repository-name") of repositories to add the team to. (optional)
 | privacy         | String     | The level of privacy this team should have. (optional). Can be one of: * secret - only visible to organization owners and members of this team. * closed - visible to all members of this organization. Default: secret
 
-<a name="deleteOrganizationHook"/>
 ## Github.deleteOrganizationHook
-Method description
+Delete a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2223,7 +1680,6 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
-<a name="deleteOrganizationTeam"/>
 ## Github.deleteOrganizationTeam
 Method description
 
@@ -2232,9 +1688,8 @@ Method description
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 
-<a name="deleteOrganizationTeamRepository"/>
 ## Github.deleteOrganizationTeamRepository
-Method description
+Remove team repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2243,9 +1698,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="editOrganizationHook"/>
 ## Github.editOrganizationHook
-Method description
+Edit a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2256,9 +1710,8 @@ Method description
 | events          | JSON       | Determines what events the hook is triggered for. Default: ["push"]. (optional)
 | active          | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
-<a name="editOrganizationTeam"/>
 ## Github.editOrganizationTeam
-Method description
+Edit team
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2268,9 +1721,8 @@ Method description
 | description| String     | The description of the team. (optional)
 | privacy    | String     | The level of privacy this team should have. (optional). Can be one of: * secret - only visible to organization owners and members of this team. * closed - visible to all members of this organization. Default: secret
 
-<a name="getOrganization"/>
 ## Github.getOrganization
-Method description
+Get an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2279,9 +1731,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getAllOrganizations"/>
 ## Github.getAllOrganizations
-Method description
+List all organizations
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2290,9 +1741,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserOrganizations"/>
 ## Github.getUserOrganizations
-Method description
+List organizations for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2301,9 +1751,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationHook"/>
 ## Github.getOrganizationHook
-Method description
+Get single hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2311,9 +1760,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
-<a name="getOrganizationHooks"/>
 ## Github.getOrganizationHooks
-Method description
+List hooks
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2322,9 +1770,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationMembers"/>
 ## Github.getOrganizationMembers
-Method description
+Members list
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2335,9 +1782,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationMembership"/>
 ## Github.getOrganizationMembership
-Method description
+Get organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2345,34 +1791,30 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="getOrganizationMemberships"/>
 ## Github.getOrganizationMemberships
-Method description
+List your organization memberships
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | state      | String     | Indicates the state of the memberships to return. Can be either active or pending. If not specified, both active and pending memberships are returned. (optional)
 
-<a name="getOrganizationPublicMembers"/>
 ## Github.getOrganizationPublicMembers
-Method description
+Public members list
 
 | Field           | Type       | Description
 |-----------------|------------|----------
 | accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 
-<a name="getOrganizationTeam"/>
 ## Github.getOrganizationTeam
-Method description
+Get team
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The team ID (required)
 
-<a name="getOrganizationTeamMembers"/>
 ## Github.getOrganizationTeamMembers
 Method description
 
@@ -2384,9 +1826,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationTeamMembership"/>
 ## Github.getOrganizationTeamMembership
-Method description
+Get team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2394,9 +1835,8 @@ Method description
 | id         | String     | The team ID (required)
 | user       | String     | The user name (required)
 
-<a name="getOrganizationTeamRepositories"/>
 ## Github.getOrganizationTeamRepositories
-Method description
+Get team repos
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2405,9 +1845,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationTeams"/>
 ## Github.getOrganizationTeams
-Method description
+List teams
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2416,9 +1855,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="pingOrganizationHook"/>
 ## Github.pingOrganizationHook
-Method description
+Ping a hook
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2426,9 +1864,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | id              | String     | The hook ID (required)
 
-<a name="publicizeOrganizationMembership"/>
 ## Github.publicizeOrganizationMembership
-Method description
+Publicize a user's membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2436,9 +1873,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="removeOrganizationMember"/>
 ## Github.removeOrganizationMember
-Method description
+Remove a member
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2446,9 +1882,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="removeOrganizationMembership"/>
 ## Github.removeOrganizationMembership
-Method description
+Remove organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2456,9 +1891,8 @@ Method description
 | organizationName| String     | The name of the organization (required)
 | user            | String     | The user name (required)
 
-<a name="removeOrganizationTeamMembership"/>
 ## Github.removeOrganizationTeamMembership
-Method description
+Remove team membership
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -2466,9 +1900,8 @@ Method description
 | id         | String     | The team ID (required)
 | user       | String     | The user name (required)
 
-<a name="updateOrganization"/>
 ## Github.updateOrganization
-Method description
+Edit an organization
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -2481,9 +1914,8 @@ Method description
 | name            | String     | The shorthand name of the company. (optional)
 | description     | String     | The description of the company. (optional)
 
-<a name="checkMergedPullRequest"/>
 ## Github.checkMergedPullRequest
-Method description
+Get if a pull request has been merged
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2494,9 +1926,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="createPullRequest"/>
 ## Github.createPullRequest
-Method description
+Create a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2508,9 +1939,8 @@ Method description
 | base          | String     | The branch (or git ref) you want your changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repositoryName that requests a merge to a base of another repositoryName. (required)
 | body          | String     | The contents of the pull request. (optional)
 
-<a name="createPullRequestComment"/>
 ## Github.createPullRequestComment
-Method description
+Create a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2523,9 +1953,8 @@ Method description
 | path          | String     | Relative path of the file to comment on. (required)
 | position      | Number     | Column index in the diff to comment on. (required)
 
-<a name="createPullRequestCommentReply"/>
 ## Github.createPullRequestCommentReply
-Method description
+Reply to existing pull request comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2536,9 +1965,8 @@ Method description
 | body          | String     | The text of the comment (required)
 | inReplyTo     | Number     | The comment id to reply to. (required)
 
-<a name="createPullRequestFromIssue"/>
 ## Github.createPullRequestFromIssue
-Method description
+Create a pull request from an existing issue
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2549,9 +1977,8 @@ Method description
 | head          | String     | The branch (or git ref) where your changes are implemented. (required)
 | base          | String     | The branch (or git ref) you want your changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repositoryName that requests a merge to a base of another repositoryName. (required)
 
-<a name="deletePullRequestComment"/>
 ## Github.deletePullRequestComment
-Method description
+Delete a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2560,9 +1987,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the comment (required)
 
-<a name="editPullRequestComment"/>
 ## Github.editPullRequestComment
-Method description
+Edit a comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2572,9 +1998,8 @@ Method description
 | number        | Number     | The number of the comment (required)
 | body          | String     | The text of the comment (required)
 
-<a name="getPullRequest"/>
 ## Github.getPullRequest
-Method description
+Get a single pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2583,9 +2008,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the pull request (required)
 
-<a name="getAllPullRequests"/>
 ## Github.getAllPullRequests
-Method description
+List pull requests
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2600,9 +2024,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPullRequestComment"/>
 ## Github.getPullRequestComment
-Method description
+Get a single comment
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2611,9 +2034,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the comment (required)
 
-<a name="getPullRequestComments"/>
 ## Github.getPullRequestComments
-Method description
+List comments on a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2624,9 +2046,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPullRequestCommentsForRepository"/>
 ## Github.getPullRequestCommentsForRepository
-Method description
+List comments in a repository
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2639,9 +2060,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPullRequestCommits"/>
 ## Github.getPullRequestCommits
-Method description
+List commits on a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2652,9 +2072,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPullRequestFiles"/>
 ## Github.getPullRequestFiles
-Method description
+List pull requests files
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2665,9 +2084,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="mergePullRequest"/>
 ## Github.mergePullRequest
-Method description
+Merge a pull request (Merge Button)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2680,9 +2098,8 @@ Method description
 | sha           | String     | SHA that pull request head must match to allow merge (optional)
 | mergeMethod   | String     | Merge method to use. Possible values are `merge`, `squash`, or `rebase`. (In preview period. See README.) (optional)
 
-<a name="updatePullRequest"/>
 ## Github.updatePullRequest
-Method description
+Update a pull request
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2695,9 +2112,8 @@ Method description
 | state         | String     | State of this Pull Request. Either open or closed. (optional)
 | base          | String     | The name of the branch you want your changes pulled into. This should be an existing branch on the current repository. You cannot update the base branch on a pull request to point to another repository. (optional)
 
-<a name="createReactionForCommitComment"/>
 ## Github.createReactionForCommitComment
-Method description
+Create reaction for a commit comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2707,9 +2123,8 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | The reaction type. (required)
 
-<a name="createReactionForIssue"/>
 ## Github.createReactionForIssue
-Method description
+Create reaction for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2719,9 +2134,8 @@ Method description
 | number        | Number     | Tne number of the issue (required)
 | content       | String     | The reaction type. (required)
 
-<a name="createReactionForIssueComment"/>
 ## Github.createReactionForIssueComment
-Method description
+Create reaction for an issue comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2731,9 +2145,8 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | The reaction type. (required)
 
-<a name="createReactionForPullRequestReviewComment"/>
 ## Github.createReactionForPullRequestReviewComment
-Method description
+Create reaction for a pull request review comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2743,18 +2156,16 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | The reaction type. (required)
 
-<a name="deleteReaction"/>
 ## Github.deleteReaction
-Method description
+Delete a reaction. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The reaction ID (required)
 
-<a name="getReactionForCommitComment"/>
 ## Github.getReactionForCommitComment
-Method description
+List reactions for a commit comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2764,9 +2175,8 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | Indicates which type of reaction to return. (optional)
 
-<a name="getReactionForIssue"/>
 ## Github.getReactionForIssue
-Method description
+List reactions for an issue. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2776,9 +2186,8 @@ Method description
 | number        | Number     | The number of the issue (required)
 | content       | String     | Indicates which type of reaction to return. (optional)
 
-<a name="getReactionForIssueComment"/>
 ## Github.getReactionForIssueComment
-Method description
+List reactions for an issue comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2788,9 +2197,8 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | Indicates which type of reaction to return. (optional)
 
-<a name="getReactionForPullRequestReviewComment"/>
 ## Github.getReactionForPullRequestReviewComment
-Method description
+List reactions for a pull request review comment. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2800,9 +2208,8 @@ Method description
 | id            | String     | The comment ID (required)
 | content       | String     | Indicates which type of reaction to return. (optional)
 
-<a name="addRepositoryCollaborator"/>
 ## Github.addRepositoryCollaborator
-Method description
+Add user as a collaborator
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2812,9 +2219,8 @@ Method description
 | collabuser    | String     | The name of the collaborator (required)
 | permission    | String     | `pull` - can pull, but not push to or administer this repository, `push` - can pull and push, but not administer this repository, `admin` - can pull, push and administer this repository. (optional)
 
-<a name="addProtectedBranchRequiredStatusChecksContexts"/>
 ## Github.addProtectedBranchRequiredStatusChecksContexts
-Method description
+Add required status checks contexts of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2826,9 +2232,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="addProtectedBranchTeamRestrictions"/>
 ## Github.addProtectedBranchTeamRestrictions
-Method description
+Add team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2840,9 +2245,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="addProtectedBranchUserRestrictions"/>
 ## Github.addProtectedBranchUserRestrictions
-Method description
+Add user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2854,9 +2258,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="checkRepositoryCollaborator"/>
 ## Github.checkRepositoryCollaborator
-Method description
+Check if user is a collaborator.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2865,9 +2268,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | collabuser    | String     | The name of the collaborator (required)
 
-<a name="compareRepositoryCommits"/>
 ## Github.compareRepositoryCommits
-Method description
+Compare two commits.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2877,9 +2279,8 @@ Method description
 | base          | String     | The branch (or git ref) you want your changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repositoryName that requests a merge to a base of another repositoryName. (required)
 | head          | String     | The branch (or git ref) where your changes are implemented. (required)
 
-<a name="createRepository"/>
 ## Github.createRepository
-Method description
+Create a new repository for the authenticated user.
 
 | Field            | Type       | Description
 |------------------|------------|----------
@@ -2899,9 +2300,8 @@ Method description
 | allowMergeCommit | String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
 | allowRebaseMerge | String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
-<a name="createRepositoryCommitComment"/>
 ## Github.createRepositoryCommitComment
-Method description
+Create a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2913,9 +2313,8 @@ Method description
 | path          | String     | Relative path of the file to comment on. (optional)
 | position      | Number     | Line index in the diff to comment on. (optional)
 
-<a name="createRepositoryDeployment"/>
 ## Github.createRepositoryDeployment
-Method description
+Create a deployment.
 
 | Field                | Type       | Description
 |----------------------|------------|----------
@@ -2932,9 +2331,8 @@ Method description
 | transientEnvironment | String     | Specifies if the given environment is specific to the deployment and will no longer exist at some point in the future. Default: false. (In preview period. See README.) (optional)
 | productionEnvironment| String     | Specifies if the given environment is a one that end-users directly interact with. Default: true when environment is `production` and false otherwise. (In preview period. See README.) (optional)
 
-<a name="createRepositoryDeploymentStatus"/>
 ## Github.createRepositoryDeploymentStatus
-Method description
+Create a deployment status.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2949,9 +2347,8 @@ Method description
 | environmentUrl| String     | URL for accessing the deployment environment. Default: "". (In preview period. See README.) (optional)
 | autoInactive  | String     | When true the new `inactive` status is added to all other non-transient, non-production environment deployments with the same repository and environment name as the created status's deployment. Default: true. (In preview period. See README.) (optional)
 
-<a name="createRepositoryFile"/>
 ## Github.createRepositoryFile
-Method description
+Create a new file in the given repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -2964,9 +2361,8 @@ Method description
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
 | committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"}
 
-<a name="createRepositoryForOrganization"/>
 ## Github.createRepositoryForOrganization
-Method description
+Create a new repository for an organization.
 
 | Field            | Type       | Description
 |------------------|------------|----------
@@ -2987,9 +2383,8 @@ Method description
 | allowMergeCommit | String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
 | allowRebaseMerge | String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
-<a name="createRepositoryHook"/>
 ## Github.createRepositoryHook
-Method description
+Create a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3001,9 +2396,8 @@ Method description
 | events        | JSON       | Determines what events the hook is triggered for. Default: `['push']`. (optional)
 | active        | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
-<a name="createRepositoryKey"/>
 ## Github.createRepositoryKey
-Method description
+Add a new deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3014,9 +2408,8 @@ Method description
 | key           | String     | The contents of the key. (required)
 | readOnly      | String     | If true, the key will only be able to read repository contents. Otherwise, the key will be able to read and write. (optional)
 
-<a name="createRepositoryProject"/>
 ## Github.createRepositoryProject
-Method description
+Create a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3026,9 +2419,8 @@ Method description
 | name          | String     | The name of the project (required)
 | body          | String     | The body of the project (required)
 
-<a name="createRepositoryProjectCard"/>
 ## Github.createRepositoryProjectCard
-Method description
+Create a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3040,9 +2432,8 @@ Method description
 | contentId     | String     | The id of the Issue or Pull Request to associate with this card. (optional)
 | contentType   | String     | The type of content to associate with this card. Can be either 'Issue' or 'PullRequest'. (optional)
 
-<a name="createRepositoryProjectColumn"/>
 ## Github.createRepositoryProjectColumn
-Method description
+Create a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3052,9 +2443,8 @@ Method description
 | number        | Number     | The number of the project (required)
 | name          | String     | The name of the column. (required)
 
-<a name="createRepositoryRelease"/>
 ## Github.createRepositoryRelease
-Method description
+Create a release.
 
 | Field          | Type       | Description
 |----------------|------------|----------
@@ -3068,9 +2458,8 @@ Method description
 | draft          | String     | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
 | prerelease     | String     | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
 
-<a name="createRepositoryStatus"/>
 ## Github.createRepositoryStatus
-Method description
+Create a status.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3083,9 +2472,8 @@ Method description
 | description   | String     | Short description of the status. (optional)
 | context       | String     | A string label to differentiate this status from the status of other systems. (optional)
 
-<a name="deleteRepository"/>
 ## Github.deleteRepository
-Method description
+Delete a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3093,9 +2481,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="deleteRepositoryAsset"/>
 ## Github.deleteRepositoryAsset
-Method description
+Delete a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3104,9 +2491,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The asset ID (required)
 
-<a name="deleteRepositoryCommitComment"/>
 ## Github.deleteRepositoryCommitComment
-Method description
+Delete a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3115,9 +2501,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
 
-<a name="deleteRepositoryDownload"/>
 ## Github.deleteRepositoryDownload
-Method description
+Delete a download.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3126,9 +2511,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The download ID (required)
 
-<a name="deleteRepositoryFile"/>
 ## Github.deleteRepositoryFile
-Method description
+Delete a file.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3141,9 +2525,8 @@ Method description
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
 | committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
 
-<a name="deleteRepositoryHook"/>
 ## Github.deleteRepositoryHook
-Method description
+Deleate a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3152,9 +2535,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
 
-<a name="deleteRepositoryInvite"/>
 ## Github.deleteRepositoryInvite
-Method description
+Delete a repository invitation. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3162,9 +2544,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The invitation ID (required)
 
-<a name="deleteRepositoryKey"/>
 ## Github.deleteRepositoryKey
-Method description
+Remove a deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3173,9 +2554,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The key ID (required)
 
-<a name="deleteRepositoryProject"/>
 ## Github.deleteRepositoryProject
-Method description
+Delete a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3184,9 +2564,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
 
-<a name="deleteRepositoryProjectCard"/>
 ## Github.deleteRepositoryProjectCard
-Method description
+Delete a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3195,9 +2574,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
 
-<a name="deleteRepositoryProjectColumn"/>
 ## Github.deleteRepositoryProjectColumn
-Method description
+Delete a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3206,9 +2584,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
 
-<a name="deleteRepositoryRelease"/>
 ## Github.deleteRepositoryRelease
-Method description
+Delete a release
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3217,9 +2594,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
 
-<a name="editRepository"/>
 ## Github.editRepository
-Method description
+Update a repo.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -3238,9 +2614,8 @@ Method description
 | allowMergeCommit| String     | Either true to allow merging pull requests with a merge commit, or false to prevent merging pull requests with merge commits. Default: true. (In preview period. See README.) (optional)
 | allowRebaseMerge| String     | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. (In preview period. See README.) (optional)
 
-<a name="editRepositoryAsset"/>
 ## Github.editRepositoryAsset
-Method description
+Edit a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3251,9 +2626,8 @@ Method description
 | name          | String     | The file name of the asset (required)
 | label         | String     | An alternate short description of the asset. Used in place of the filename. (optional)
 
-<a name="editRepositoryHook"/>
 ## Github.editRepositoryHook
-Method description
+Edit a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3267,9 +2641,8 @@ Method description
 | removeEvents  | JSON       | Determines a list of events to be removed from the list of events that the Hook triggers for. (optional)
 | active        | String     | Determines whether the hook is actually triggered on pushes. (optional)
 
-<a name="editRepositoryRelease"/>
 ## Github.editRepositoryRelease
-Method description
+Edit a release.
 
 | Field          | Type       | Description
 |----------------|------------|----------
@@ -3284,9 +2657,8 @@ Method description
 | draft          | String     | true to create a draft (unpublished) release, false to create a published one. Default: false (optional)
 | prerelease     | String     | true to identify the release as a prerelease. false to identify the release as a full release. Default: false (optional)
 
-<a name="forkRepository"/>
 ## Github.forkRepository
-Method description
+Create a fork.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3295,9 +2667,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | organization  | String     | Optional parameter to specify the organization name if forking into an organization. (optional)
 
-<a name="getRepository"/>
 ## Github.getRepository
-Method description
+Get a repo for a user.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3305,9 +2676,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getAllRepositories"/>
 ## Github.getAllRepositories
-Method description
+List your repositories
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -3320,9 +2690,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryAllCommitComments"/>
 ## Github.getRepositoryAllCommitComments
-Method description
+List commit comments for a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3332,9 +2701,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryArchiveLink"/>
 ## Github.getRepositoryArchiveLink
-Method description
+Get archive link.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3344,9 +2712,8 @@ Method description
 | archiveFormat | String     | Either tarball or zipball, Deafult: tarball. (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (optional)
 
-<a name="getRepositoryAsset"/>
 ## Github.getRepositoryAsset
-Method description
+Get a single release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3355,9 +2722,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The assetID (required)
 
-<a name="getRepositoryBranch"/>
 ## Github.getRepositoryBranch
-Method description
+Get branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3368,9 +2734,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryBranchProtection"/>
 ## Github.getRepositoryBranchProtection
-Method description
+Get branch protection. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3381,9 +2746,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryBranches"/>
 ## Github.getRepositoryBranches
-Method description
+List branches. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3394,18 +2758,16 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryById"/>
 ## Github.getRepositoryById
-Method description
+Get a single repo by id.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The repository ID (required)
 
-<a name="getRepositoryClones"/>
 ## Github.getRepositoryClones
-Method description
+Get the total number of clones and breakdown per day or week for the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3415,9 +2777,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryCollaborators"/>
 ## Github.getRepositoryCollaborators
-Method description
+List collaborators
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3427,9 +2788,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryCombinedStatus"/>
 ## Github.getRepositoryCombinedStatus
-Method description
+Get the combined status for a specific ref.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3440,9 +2800,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryCommit"/>
 ## Github.getRepositoryCommit
-Method description
+Get a single commit.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3451,9 +2810,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | sha           | String     | SHA1 hash of the commit (required)
 
-<a name="getRepositoryCommitComment"/>
 ## Github.getRepositoryCommitComment
-Method description
+Get a single commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3462,9 +2820,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The comment ID (required)
 
-<a name="getRepositoryCommitComments"/>
 ## Github.getRepositoryCommitComments
-Method description
+List comments for a single commit.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3475,9 +2832,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryCommits"/>
 ## Github.getRepositoryCommits
-Method description
+List commits on a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3492,9 +2848,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryContent"/>
 ## Github.getRepositoryContent
-Method description
+Get the contents of a file or directory in a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3504,9 +2859,8 @@ Method description
 | path          | String     | The content path. (required)
 | ref           | String     | The String name of the Commit/Branch/Tag. Defaults to master. (optional)
 
-<a name="getRepositoryContributors"/>
 ## Github.getRepositoryContributors
-Method description
+Get contributors for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3517,9 +2871,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryDeploymentStatuses"/>
 ## Github.getRepositoryDeploymentStatuses
-Method description
+List deployment statuses.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3528,9 +2881,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The deployment ID (required)
 
-<a name="getRepositoryDeployments"/>
 ## Github.getRepositoryDeployments
-Method description
+List deployments.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3544,9 +2896,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryDownload"/>
 ## Github.getRepositoryDownload
-Method description
+Get a single download.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3555,9 +2906,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The download ID (required)
 
-<a name="getRepositoryDownloads"/>
 ## Github.getRepositoryDownloads
-Method description
+List downloads for repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3567,9 +2917,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getOrganizationRepositories"/>
 ## Github.getOrganizationRepositories
-Method description
+List repositories for the specified org.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -3579,9 +2928,8 @@ Method description
 | page            | Number     | Page number of the results to fetch. (optional)
 | perPage         | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserRepositories"/>
 ## Github.getUserRepositories
-Method description
+List public repositories for the specified user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -3593,9 +2941,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryForks"/>
 ## Github.getRepositoryForks
-Method description
+List forks.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3606,9 +2953,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryHook"/>
 ## Github.getRepositoryHook
-Method description
+Get single hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3617,9 +2963,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
 
-<a name="getRepositoryHooks"/>
 ## Github.getRepositoryHooks
-Method description
+List hooks.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3629,18 +2974,16 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryInvites"/>
 ## Github.getRepositoryInvites
-Method description
+List a user's repository invitations. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
 | accessToken   | credentials| The access_token obtained from Github.
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryKey"/>
 ## Github.getRepositoryKey
-Method description
+Get a deploy key.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3649,9 +2992,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The key ID (required)
 
-<a name="getRepositoryKeys"/>
 ## Github.getRepositoryKeys
-Method description
+List deploy keys.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3661,9 +3003,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryLanguages"/>
 ## Github.getRepositoryLanguages
-Method description
+Get languages for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3673,9 +3014,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryLatestPagesBuild"/>
 ## Github.getRepositoryLatestPagesBuild
-Method description
+Get latest Pages build
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3683,9 +3023,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryLatestRelease"/>
 ## Github.getRepositoryLatestRelease
-Method description
+Get the latest release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3693,9 +3032,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryPages"/>
 ## Github.getRepositoryPages
-Method description
+Get information about a Pages site. (Use preview header to include additional info.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3705,9 +3043,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryPagesBuild"/>
 ## Github.getRepositoryPagesBuild
-Method description
+Get a specific Pages build
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3716,9 +3053,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The build ID (required)
 
-<a name="getRepositoryPagesBuilds"/>
 ## Github.getRepositoryPagesBuilds
-Method description
+List Pages builds
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3728,9 +3064,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryPaths"/>
 ## Github.getRepositoryPaths
-Method description
+Get the top 10 popular contents over the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3740,9 +3075,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryProject"/>
 ## Github.getRepositoryProject
-Method description
+List a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3751,9 +3085,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
 
-<a name="getRepositoryProjectCard"/>
 ## Github.getRepositoryProjectCard
-Method description
+Get project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3762,9 +3095,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The card ID (required)
 
-<a name="getRepositoryProjectCards"/>
 ## Github.getRepositoryProjectCards
-Method description
+List project cards.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3773,9 +3105,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
 
-<a name="getRepositoryProjectColumn"/>
 ## Github.getRepositoryProjectColumn
-Method description
+Get a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3784,9 +3115,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The column ID (required)
 
-<a name="getRepositoryProjectColumns"/>
 ## Github.getRepositoryProjectColumns
-Method description
+List a project's columns.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3795,9 +3125,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | number        | Number     | The number of the project (required)
 
-<a name="getRepositoryProjects"/>
 ## Github.getRepositoryProjects
-Method description
+List projects.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3805,9 +3134,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getProtectedBranchRequiredStatusChecks"/>
 ## Github.getProtectedBranchRequiredStatusChecks
-Method description
+Get required status checks of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3818,9 +3146,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getProtectedBranchRequiredStatusChecksContexts"/>
 ## Github.getProtectedBranchRequiredStatusChecksContexts
-Method description
+List required status checks contexts of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3831,9 +3158,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getProtectedBranchRestrictions"/>
 ## Github.getProtectedBranchRestrictions
-Method description
+Get restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3844,9 +3170,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getProtectedBranchTeamRestrictions"/>
 ## Github.getProtectedBranchTeamRestrictions
-Method description
+List team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3857,9 +3182,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getProtectedBranchUserRestrictions"/>
 ## Github.getProtectedBranchUserRestrictions
-Method description
+List user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3870,18 +3194,16 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getPublicRepositories"/>
 ## Github.getPublicRepositories
-Method description
+List all public repositories
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | since      | String     | The integer ID of the last Repository that you've seen. (optional)
 
-<a name="getRepositoryReadme"/>
 ## Github.getRepositoryReadme
-Method description
+Get the README for the given repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3890,9 +3212,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | The name of the commit/branch/tag. Default: the repository’s default branch (usually master) (optional)
 
-<a name="getRepositoryReferrers"/>
 ## Github.getRepositoryReferrers
-Method description
+Get the top 10 referrers over the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3902,9 +3223,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryRelease"/>
 ## Github.getRepositoryRelease
-Method description
+Get a single release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3913,9 +3233,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
 
-<a name="getRepositoryReleaseByTag"/>
 ## Github.getRepositoryReleaseByTag
-Method description
+Get a release by tag name.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3924,9 +3243,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | tag           | String     | String of the tag (required)
 
-<a name="getRepositoryReleases"/>
 ## Github.getRepositoryReleases
-Method description
+List releases for a repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3936,9 +3254,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryShaOfCommitRef"/>
 ## Github.getRepositoryShaOfCommitRef
-Method description
+Get the SHA-1 of a commit reference.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3947,9 +3264,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | ref           | String     | String of the name of the fully qualified reference (ie: heads/master). If it doesn’t have at least one slash, it will be rejected. (required)
 
-<a name="getRepositoryStatsCodeFrequency"/>
 ## Github.getRepositoryStatsCodeFrequency
-Method description
+Get the number of additions and deletions per week.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3957,9 +3273,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryStatsCommitActivity"/>
 ## Github.getRepositoryStatsCommitActivity
-Method description
+Get the last year of commit activity data.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3967,9 +3282,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryStatsContributors"/>
 ## Github.getRepositoryStatsContributors
-Method description
+Get contributors list with additions, deletions, and commit counts.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3977,9 +3291,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryStatsParticipation"/>
 ## Github.getRepositoryStatsParticipation
-Method description
+Get the weekly commit count for the repository owner and everyone else.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3987,9 +3300,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryStatsPunchCard"/>
 ## Github.getRepositoryStatsPunchCard
-Method description
+Get the number of commits per hour in each day.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -3997,9 +3309,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="getRepositoryStatuses"/>
 ## Github.getRepositoryStatuses
-Method description
+Get status for a specfic ref.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4010,9 +3321,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryTags"/>
 ## Github.getRepositoryTags
-Method description
+Get tags for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4022,9 +3332,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryTeams"/>
 ## Github.getRepositoryTeams
-Method description
+Get teams for the specified repository.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4034,9 +3343,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryViews"/>
 ## Github.getRepositoryViews
-Method description
+Get the total number of views and breakdown per day or week for the last 14 days.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4046,9 +3354,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryAssets"/>
 ## Github.getRepositoryAssets
-Method description
+List assets for a release.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4057,9 +3364,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The release ID (required)
 
-<a name="mergeRepository"/>
 ## Github.mergeRepository
-Method description
+Perform a merge.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4070,9 +3376,8 @@ Method description
 | head          | String     | The branch (or git ref) where your changes are implemented. (required)
 | commitMessage | String     | Commit message to use for the merge commit. If omitted, a default message will be used. (optional)
 
-<a name="moveRepositoryProjectCard"/>
 ## Github.moveRepositoryProjectCard
-Method description
+Move a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4083,9 +3388,8 @@ Method description
 | position      | String     | Can be one of first, last, or after:, where is the id value of a column in the same project. (required)
 | columnId      | String     | The id value of a column in the same project. (optional)
 
-<a name="moveRepositoryProjectColumn"/>
 ## Github.moveRepositoryProjectColumn
-Method description
+Move a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4095,9 +3399,8 @@ Method description
 | id            | String     | The column ID (required)
 | position      | String     | Can be one of first, last, or after:, where is the id value of a column in the same project. (required)
 
-<a name="pingRepositoryHook"/>
 ## Github.pingRepositoryHook
-Method description
+Ping a hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4106,9 +3409,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
 
-<a name="removeBranchProtection"/>
 ## Github.removeBranchProtection
-Method description
+Remove branch protection. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4119,9 +3421,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="removeRepositoryCollaborator"/>
 ## Github.removeRepositoryCollaborator
-Method description
+Remove user as a collaborator.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4130,9 +3431,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | collabuser    | String     | The name of the collaborator (required)
 
-<a name="removeProtectedBranchRequiredStatusChecks"/>
 ## Github.removeProtectedBranchRequiredStatusChecks
-Method description
+Remove required status checks of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4143,9 +3443,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="removeProtectedBranchRequiredStatusChecksContexts"/>
 ## Github.removeProtectedBranchRequiredStatusChecksContexts
-Method description
+Remove required status checks contexts of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4156,9 +3455,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="removeProtectedBranchRestrictions"/>
 ## Github.removeProtectedBranchRestrictions
-Method description
+Remove restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4169,9 +3467,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="removeProtectedBranchTeamRestrictions"/>
 ## Github.removeProtectedBranchTeamRestrictions
-Method description
+Remove team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4182,9 +3479,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="removeProtectedBranchUserRestrictions"/>
 ## Github.removeProtectedBranchUserRestrictions
-Method description
+Remove user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4195,9 +3491,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="replaceProtectedBranchRequiredStatusChecksContexts"/>
 ## Github.replaceProtectedBranchRequiredStatusChecksContexts
-Method description
+Replace required status checks contexts of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4209,9 +3504,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="replaceProtectedBranchTeamRestrictions"/>
 ## Github.replaceProtectedBranchTeamRestrictions
-Method description
+Replace team restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4223,9 +3517,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="replaceProtectedBranchUserRestrictions"/>
 ## Github.replaceProtectedBranchUserRestrictions
-Method description
+Replace user restrictions of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4237,9 +3530,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="requestRepositoryPageBuild"/>
 ## Github.requestRepositoryPageBuild
-Method description
+Request a page build. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4247,9 +3539,8 @@ Method description
 | user          | String     | The owner name (required)
 | repositoryName| String     | The name of the repository (required)
 
-<a name="testRepositoryHook"/>
 ## Github.testRepositoryHook
-Method description
+Test a [push] hook.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4258,9 +3549,8 @@ Method description
 | repositoryName| String     | The name of the repository (required)
 | id            | String     | The hook ID (required)
 
-<a name="updateRepositoryBranchProtection"/>
 ## Github.updateRepositoryBranchProtection
-Method description
+Update branch protection. (In preview period. See README.)
 
 | Field               | Type       | Description
 |---------------------|------------|----------
@@ -4273,9 +3563,8 @@ Method description
 | page                | Number     | Page number of the results to fetch. (optional)
 | perPage             | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="updateRepositoryCommitComment"/>
 ## Github.updateRepositoryCommitComment
-Method description
+Update a commit comment.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4285,9 +3574,8 @@ Method description
 | id            | String     | The comment ID (required)
 | body          | String     | The contents of the comment (required)
 
-<a name="updateRepositoryFile"/>
 ## Github.updateRepositoryFile
-Method description
+Update a file.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4301,9 +3589,8 @@ Method description
 | branch        | String     | The branch name. If not provided, uses the repository’s default branch (usually master). (optional)
 | committer     | JSON       | Object containing information about the committer. You must provide values for both name and email (optional). Ex.: "committer": {"name": "Scott Chacon", "email": "schacon@gmail.com"} (optional)
 
-<a name="updateRepositoryInvite"/>
 ## Github.updateRepositoryInvite
-Method description
+Update a repository invitation. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4312,9 +3599,8 @@ Method description
 | id            | String     | The invitation ID (required)
 | permission    | String     | The permissions that the associated user will have on the repository. (optional)
 
-<a name="updateRepositoryProject"/>
 ## Github.updateRepositoryProject
-Method description
+Update a project.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4325,9 +3611,8 @@ Method description
 | name          | String     | The name of the project (required)
 | body          | String     | The body of the project (required)
 
-<a name="updateRepositoryProjectCard"/>
 ## Github.updateRepositoryProjectCard
-Method description
+Update a project card.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4337,9 +3622,8 @@ Method description
 | id            | String     | The card ID (required)
 | note          | String     | The note of the card. (optional)
 
-<a name="updateRepositoryProjectColumn"/>
 ## Github.updateRepositoryProjectColumn
-Method description
+Update a project column.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4349,9 +3633,8 @@ Method description
 | id            | String     | The column ID (required)
 | name          | String     | The new name of the column (required)
 
-<a name="updateProtectedBranchRequiredStatusChecks"/>
 ## Github.updateProtectedBranchRequiredStatusChecks
-Method description
+Update required status checks of protected branch. (In preview period. See README.)
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4363,9 +3646,8 @@ Method description
 | page          | Number     | Page number of the results to fetch. (optional)
 | perPage       | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="uploadRepositoryAsset"/>
 ## Github.uploadRepositoryAsset
-Method description
+Upload a release asset.
 
 | Field         | Type       | Description
 |---------------|------------|----------
@@ -4377,9 +3659,8 @@ Method description
 | name          | String     | The file name of the asset. This should be set in a URI query parameter. (required)
 | label         | String     | An alternate short description of the asset. Used in place of the filename. This should be set in a URI query parameter. (optional)
 
-<a name="codeSearch"/>
 ## Github.codeSearch
-Method description
+Search code.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4390,18 +3671,16 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="emailSearch"/>
 ## Github.emailSearch
-Method description
+Search against public email addresses.
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | email      | String     | The email address (required)
 
-<a name="issuesSearch"/>
 ## Github.issuesSearch
-Method description
+Search issues.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4412,9 +3691,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="repositorySearch"/>
 ## Github.repositorySearch
-Method description
+Search repositories.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4425,9 +3703,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="usersSearch"/>
 ## Github.usersSearch
-Method description
+Search users.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4438,36 +3715,32 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="acceptRepositoryInvite"/>
 ## Github.acceptRepositoryInvite
-Method description
+Accept a repository invitation. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The invitation ID (required)
 
-<a name="addEmails"/>
 ## Github.addEmails
-Method description
+Add email address(es)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | body       | JSON       | You can post a single email address or an array of addresses. (required)
 
-<a name="checkFollowing"/>
 ## Github.checkFollowing
-Method description
+Check if you are following a user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="checkIfOneFollowersOther"/>
 ## Github.checkIfOneFollowersOther
-Method description
+Check if one user follows another
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4475,18 +3748,16 @@ Method description
 | user       | String     | The user name (required)
 | otherUser  | String     | Other user name (required)
 
-<a name="createGpgKey"/>
 ## Github.createGpgKey
-Method description
+Create a GPG key. (In preview period. See README.)
 
-| Field           | Type       | Description
-|-----------------|------------|----------
-| accessToken     | credentials| The access_token obtained from Github.
-| armoredPublicKey| String     | GPG key contents (required)
+| Field               | Type       | Description
+|---------------------|------------|----------
+| accessToken         | credentials| The access_token obtained from Github.
+| armoredPublicKey    | String     | GPG key contents (required)
 
-<a name="createKey"/>
 ## Github.createKey
-Method description
+Create a public key
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4494,54 +3765,48 @@ Method description
 | title      | String     | The key title (required)
 | key        | String     | The SSH key (required)
 
-<a name="declineRepositoryInvite"/>
 ## Github.declineRepositoryInvite
-Method description
+Decline a repository invitation. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The invitation ID (required)
 
-<a name="deleteEmails"/>
 ## Github.deleteEmails
-Method description
+Delete email address(es)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | body       | JSON       | You can post a single email address or an array of addresses. (required)
 
-<a name="deleteGpgKey"/>
 ## Github.deleteGpgKey
-Method description
+Delete a GPG key. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GPG key ID (required)
 
-<a name="deleteKey"/>
 ## Github.deleteKey
-Method description
+Delete a public key
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The key ID (required)
 
-<a name="demoteUser"/>
 ## Github.demoteUser
-Method description
+Demote a site administrator to an ordinary user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="editOrganizationMembership"/>
 ## Github.editOrganizationMembership
-Method description
+Edit your organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
@@ -4549,44 +3814,39 @@ Method description
 | organizationName| String     | The new name of the organization (required)
 | state           | String     | The state that the membership should be in. Only "active" will be accepted. (required)
 
-<a name="followUser"/>
 ## Github.followUser
-Method description
+Follow a user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="getUser"/>
 ## Github.getUser
-Method description
+Get the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getAllUsers"/>
 ## Github.getAllUsers
-Method description
+Get all users
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | since      | Number     | The integer ID of the last User that you’ve seen. (optional)
 
-<a name="getUserById"/>
 ## Github.getUserById
-Method description
+Get a single user by GitHub ID
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GitHub user ID (required)
 
-<a name="getUserEmails"/>
 ## Github.getUserEmails
-Method description
+List email addresses for a user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4594,9 +3854,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserFollowers"/>
 ## Github.getUserFollowers
-Method description
+List the authenticated user's followers
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4604,9 +3863,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getFollowersForUser"/>
 ## Github.getFollowersForUser
-Method description
+List a user's followers
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4615,9 +3873,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserFollowing"/>
 ## Github.getUserFollowing
-Method description
+List who the authenticated user is following
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4625,9 +3882,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getFollowingForUser"/>
 ## Github.getFollowingForUser
-Method description
+List who a user is following
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4636,27 +3892,24 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getSingleUser"/>
 ## Github.getSingleUser
-Method description
+Get a single user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="getGpgKey"/>
 ## Github.getGpgKey
-Method description
+Get a single GPG key. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The GPG key ID (required)
 
-<a name="getGpgKeys"/>
 ## Github.getGpgKeys
-Method description
+List your GPG keys. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4664,18 +3917,16 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getKey"/>
 ## Github.getKey
-Method description
+Get a single public key
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | id         | String     | The key ID (required)
 
-<a name="getKeys"/>
 ## Github.getKeys
-Method description
+List your public keys
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4683,9 +3934,8 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getKeysForUser"/>
 ## Github.getKeysForUser
-Method description
+List public keys for a user
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4694,18 +3944,16 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getUserOrganizationMembership"/>
 ## Github.getUserOrganizationMembership
-Method description
+Get your organization membership
 
 | Field           | Type       | Description
 |-----------------|------------|----------
 | accessToken     | credentials| The access_token obtained from Github.
 | organizationName| String     | The name of the organization (required)
 
-<a name="getUserOrganizations"/>
 ## Github.getUserOrganizations
-Method description
+List organizations for the authenticated user.
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4713,17 +3961,15 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="getRepositoryInvites"/>
 ## Github.getRepositoryInvites
-Method description
+List a user's repository invitations. (In preview period. See README.)
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 
-<a name="getUserTeams"/>
 ## Github.getUserTeams
-Method description
+Get your teams
 
 | Field      | Type       | Description
 |------------|------------|----------
@@ -4731,25 +3977,22 @@ Method description
 | page       | Number     | Page number of the results to fetch. (optional)
 | perPage    | Number     | A custom page size up to 100. Default is 30. (optional)
 
-<a name="promoteUser"/>
 ## Github.promoteUser
-Method description
+Promote an ordinary user to a site administrator
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="suspendUser"/>
 ## Github.suspendUser
-Method description
+Suspend a user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="unfollowUserUser"/>
 ## Github.unfollowUserUser
 Method description
 
@@ -4758,18 +4001,16 @@ Method description
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="unsuspendUser"/>
 ## Github.unsuspendUser
-Method description
+Unsuspend a user
 
 | Field      | Type       | Description
 |------------|------------|----------
 | accessToken| credentials| The access_token obtained from Github.
 | user       | String     | The user name (required)
 
-<a name="updateUser"/>
 ## Github.updateUser
-Method description
+Update the authenticated user
 
 | Field      | Type       | Description
 |------------|------------|----------

@@ -12,16 +12,15 @@ const app           = express();
 const optionsHash   = {
     'organization_name': 'org',
     'repository_name':   'repo',
-    'token':              'access_token'
+    'token':             'access_token'
 };
 
-let metadata   = lib.metadata(),
-    trueMeta   = lib.truemetadata(),
-    metaObject = JSON.parse(metadata);
+let trueMeta   = JSON.parse(lib.truemetadata()),
+    metaObject = JSON.parse(lib.metadata());
 
 app.use(bodyParser.json(({limit: '50mb'})));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
-app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(JSON.parse(trueMeta)); });
+app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(trueMeta); });
 
 for (let {name, args, url, github} of metaObject.blocks) {
     let gitSection = github.section,
@@ -31,9 +30,10 @@ for (let {name, args, url, github} of metaObject.blocks) {
     for(let arg in args) if(arg.req) reqArgs.push(arg);
 
     app.post(`/api/${PACKAGE_NAME}/${name}`, (req, res) => {
-        let client   = lib.createClient(lib.accept[url] || 'application/vnd.github+json')
+        let client   = lib.createClient(lib.accept[url] || 'application/vnd.github+json');
         let auth     = {};
         let options  = {};
+        let fillin   = [];
         let response = {
             callback     : "",
             contextWrites: {}
@@ -82,13 +82,19 @@ for (let {name, args, url, github} of metaObject.blocks) {
                 options[optionsHash[optkey] || optkey] = req.body.args[key];
             }
 
-            if(!!~reqArgs.indexOf(key) && !key) {
-                response.contextWrites[to] = 'Error: Fill in required fields to use the GitHub Api.';
-                response.callback = 'error';
+            if(!!~reqArgs.indexOf(key) && !key) fillin.push(key);
+        }
 
-                res.send(response);
-                return;
-            }
+        if(fillin.length) {
+            response.callback = 'error';
+            response.contextWrites[to] = {
+                status_code: 'REQUIRED_FIELDS',
+                status_msg: 'Please, check and fill in required fields.',
+                fields: fillin
+            };
+
+            res.send(response);
+            return;
         }
 
         let to = options['to'] || 'to';
@@ -99,11 +105,14 @@ for (let {name, args, url, github} of metaObject.blocks) {
         if(typeof client[gitSection][gitName] === "function") {
             client[gitSection][gitName](options, (err, result) => {
                 if(!err) {
-                    response.contextWrites[to] = JSON.stringify(result);
-                    response.callback = 'success'; 
+                    response.callback = 'success';
+                    response.contextWrites[to] = result;
                 } else {
-                    response.contextWrites[to] = JSON.stringify(err || result);
                     response.callback = 'error';
+                    response.contextWrites[to] = {
+                        status_code: 'API_ERROR',
+                        status_msg: JSON.stringify(err || result)
+                    }
                 }
 
                 res.send(response);
