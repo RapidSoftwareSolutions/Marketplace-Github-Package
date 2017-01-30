@@ -2176,6 +2176,52 @@
             "description": "Create a gist"
         },
         {
+            "name": "createSingleFileGist",
+            "args": [
+                {
+                    "name": "accessToken",
+                    "type": "credentials",
+                    "info": "The access_token obtained from Github.",
+                    "required": true
+                },
+                {
+                    "name": "fileName",
+                    "type": "JSON",
+                    "info": "Name of file.",
+                    "required": true
+                },
+                {
+                    "name": "fileContents",
+                    "type": "JSON",
+                    "info": "Contents of file.",
+                    "required": true
+                },
+                {
+                    "name": "description",
+                    "type": "String",
+                    "info": "A description of the gist.",
+                    "required": false
+                },
+                {
+                    "name": "public",
+                    "type": "String",
+                    "info": "Indicates whether the gist is public. Default: false",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ],
+            "description": "Create a gist"
+        },
+        {
             "name": "createGistComment",
             "args": [
                 {
