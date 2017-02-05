@@ -554,7 +554,17 @@ Create a gist
 | accessToken| credentials| The access_token obtained from Github.
 | files      | JSON       | Files that make up this gist. The key of which should be a required string filename and the value another required hash with parameters: 'content' (required)
 | description| String     | A description of the gist. (optional)
-| public     | String     | Indicates whether the gist is public. Default: false (required)
+| public     | String     | Indicates whether the gist is public. Default: false
+
+## Github.createSingleFileGist
+Create a gist
+
+| Field       | Type       | Description
+|-------------|------------|----------
+| accessToken | credentials| The access_token obtained from Github.
+| fileName    | String     | Name of file.
+| fileContents| String     | Contents of file.
+| public      | String     | Indicates whether the gist is public.
 
 ## Github.createGistComment
 Create a comment

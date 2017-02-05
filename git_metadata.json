@@ -2209,6 +2209,52 @@
 	}, {
 		"github": {
 			"section": "gists",
+			"name": "create"
+		},
+		"url": "/gists",
+		"description": "Create a gist",
+		"method": "POST",
+		"name": "createSingleFileGist",
+		"args": [{
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
+		}, {
+            "name": "fileName",
+            "type": "JSON",
+            "info": "Name of file.",
+            "required": true
+        },
+        {
+            "name": "fileContents",
+            "type": "JSON",
+            "info": "Contents of file.",
+            "required": true
+        }, {
+			"name": "description",
+			"type": "String",
+			"info": " (optional)",
+			"req": false
+		}, {
+			"name": "accessToken",
+			"type": "credentials",
+			"info": "The access_token obtained from Github. (optional)"
+		}, {
+			"name": "public",
+			"type": "Boolean",
+			"info": "",
+			"req": true
+		}],
+		"callbacks": [{
+			"name": "error",
+			"info": "Error"
+		}, {
+			"name": "success",
+			"info": "Success"
+		}]
+	}, {
+		"github": {
+			"section": "gists",
 			"name": "createComment"
 		},
 		"url": "/gists/:gist_id/comments",

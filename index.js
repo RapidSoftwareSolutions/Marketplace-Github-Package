@@ -142,6 +142,13 @@ for (let {name, args, url, github} of metaObject.blocks) {
         if(gitName == 'createFile')
             options['content'] = new Buffer(options['content'] || ' ').toString('base64');
 
+        if(name == 'createSingleFileGist') {
+            options.files = {}
+            options.files[req.body.args['fileName']] = {
+                content: req.body.args['fileContents']
+            }
+        }
+
         if(typeof client[gitSection][gitName] === "function") {
             client[gitSection][gitName](options, (err, result) => {
                 if(!err) {
