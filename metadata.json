@@ -16,6 +16,22 @@
         "social"
     ],
     "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-Github-Package",
+    "events": [
+        {
+            "name": "webhooks",
+            "description": "This method is called when certain actions are done on a repository",
+            "steps": [
+                "Go to your repository and select Settings",
+                "Select the Webhooks tab",
+                "Click on the \"Add webhooks\" button and enter your password",
+                "Set the following URL as your Payload URL: __WEBHOOK_URL__",
+                "Select 'application/json' as the content type",
+                "Enter your project key as the Secret token"
+            ],
+            "payload": {},
+            "args": []
+        }
+    ],
     "blocks": [
         {
             "name": "checkNotificationThreadSubscription",

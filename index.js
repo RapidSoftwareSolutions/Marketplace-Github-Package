@@ -24,7 +24,6 @@ app.all(`/api/${PACKAGE_NAME}`, (req, res) => { res.send(trueMeta); });
 
 
 app.post(`/api/${PACKAGE_NAME}/webhooks`, (req, res) => {
-    /*
     const { body, params, headers } = req.body.args;
     const github_signature = headers["x-hub-signature"];
     const rapid_signature  = headers["rapid-signature"];
@@ -41,24 +40,11 @@ app.post(`/api/${PACKAGE_NAME}/webhooks`, (req, res) => {
     if (github_signature !== rapid_signature) {
         response.callback = 'error';
         response.contextWrites.to.client_msg = 'Mismatching signatures';
-        response.contextWrites.to.http_resp = '';
     } else {
         response.callback = 'success';
         response.contextWrites.to.client_msg = body;
-        response.contextWrites.to.http_resp = '';
     }
 
-    res.status(200).send(response);
-    */
-    const response = {
-        callback: 'success',
-        contextWrites: {
-            to: {
-                client_msg: {test: 'hello!'},
-                http_resp: ''
-            }
-        }
-    };
     res.status(200).send(response);
 });
 
