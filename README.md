@@ -1,4 +1,6 @@
-# Github Package
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/Github/functions?utm_source=RapidAPIGitHub_GitHubFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
+# GitHub Package
 An object oriented wrapper for the GitHub v3 API.
 * Domain: github.com
 * Credentials: accessToken
