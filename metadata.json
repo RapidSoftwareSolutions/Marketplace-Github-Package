@@ -29,7 +29,14 @@
                 "Enter your project key as the Secret token"
             ],
             "payload": {},
-            "args": []
+            "args": [
+                {
+                    'name': 'repositoryName',
+                    'type': 'string',
+                    'info': 'Name of the repository',
+                    'required': true
+                }
+            ]
         }
     ],
     "blocks": [
