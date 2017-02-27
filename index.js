@@ -32,19 +32,20 @@ app.post(`/api/${PACKAGE_NAME}/webhooks`, (req, res) => {
         contextWrites: {
             to: {
                 client_msg: {},
-                http_resp: {}
+                http_resp: '',
+                socket_token: ''
             }
         }
     };
 
-    if (github_signature !== rapid_signature) {
+    const found = params.find(param => param.repository_name === body.repository.name);
+    if (!found || github_signature !== rapid_signature) {
         response.callback = 'error';
         response.contextWrites.to.client_msg = 'Mismatching signatures';
-        response.contextWrites.to.http_resp = '';
     } else {
         response.callback = 'success';
         response.contextWrites.to.client_msg = body;
-        response.contextWrites.to.http_resp = '';
+        response.contextWrites.to.socket_token = found._rapid_sock_token;
     }
 
     res.status(200).send(response);
