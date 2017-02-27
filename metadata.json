@@ -31,10 +31,10 @@
             "payload": {},
             "args": [
                 {
-                    'name': 'repositoryName',
-                    'type': 'string',
-                    'info': 'Name of the repository',
-                    'required': true
+                    "name": 'repositoryName',
+                    "type": 'string',
+                    "info": 'Name of the repository',
+                    "required": true
                 }
             ]
         }
