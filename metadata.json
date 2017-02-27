@@ -31,9 +31,9 @@
             "payload": {},
             "args": [
                 {
-                    "name": 'repositoryName',
-                    "type": 'string',
-                    "info": 'Name of the repository',
+                    "name": "repositoryName",
+                    "type": "string",
+                    "info": "Name of the repository",
                     "required": true
                 }
             ]
