@@ -28,7 +28,25 @@
                 "Select 'application/json' as the content type",
                 "Enter your project key as the Secret token"
             ],
-            "payload": {},
+            "payload": {
+                "action": "opened",
+                "issue": {
+                    "url": "https://api.github.com/repos/octocat/Hello-World/issues/1347",
+                    "number": 1347
+                },
+                "repository" : {
+                    "id": 1296269,
+                    "full_name": "octocat/Hello-World",
+                    "owner": {
+                        "login": "octocat",
+                        "id": 1
+                    }
+                },
+                "sender": {
+                    "login": "octocat",
+                    "id": 1
+                }
+            },
             "args": [
                 {
                     "name": "repositoryName",
